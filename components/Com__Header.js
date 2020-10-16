@@ -2,9 +2,6 @@ import React from "react";
 
 import "../assets/style/componentStyle/com__header.scss";
 
-
-
-
 const Header = () => {
   return (
     <header>

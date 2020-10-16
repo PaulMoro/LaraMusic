@@ -1,0 +1,14 @@
+@import "./variables.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #F5F5F5;
+  display: grid;
+  grid-template-columns: 200px 100% ;
+  grid-template-rows: 68px 35vh 50vh 68px;
+  font-family: $font;
+}
