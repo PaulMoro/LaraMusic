@@ -6,11 +6,6 @@ module.exports = {
   },
 }
 
-const withSass = require('@zeit/next-sass')
-module.exports = withSass({
-  cssModules: true
-})
-
 const withSass = require('@zeit/next-sass');
 const withFonts = require('nextjs-fonts');
 
