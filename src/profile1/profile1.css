@@ -1,0 +1,109 @@
+/* Global style */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;;
+}
+
+
+/* Init Perfil Header */
+header {
+  width: 100%;
+  height: 102px;
+  background-color:  #9E4F9E; /* $primary-color */
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  padding: 28px 0 0 10%;
+  height: 53px;
+}
+
+.perfil {
+  padding: 28px 10% 0px 0px; 
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perfil img {
+  padding: 0;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+}
+
+.perfil h4 {
+  font-size: 16px; /* $fs-regular */
+  color: #F9F9F9; /* $background */
+}
+
+.perfil p {
+  font-size: 12px; /* $fs-small */
+  color: #FFC24B; /* $secondary-color */
+  font-weight: 600; /* $font-semi-bold */
+}
+
+/* Finish Perfil Header */
+/* Init Perfil nav */
+
+nav {
+  width: 100%;
+  height: 150px;
+  background: #F7F0F6; /* $background-soft */
+}
+
+nav h2 {
+  padding: 48px 0 34px 10%;
+  font-size: 36px; /* $fs-extra */
+  font-weight: 200; /* $font-ultra-light */
+}
+
+.menu {
+  padding-left: 10%;
+}
+
+.menu_actual {
+  padding: 0px 14px 7px 14px;
+  border-bottom: 1px solid #9E4F9E; /* $primary-color */
+  color:  #9E4F9E;/* $primary-color */
+  text-decoration: none;
+}
+
+.menu_noActual {
+  padding: 0px 14px 7px 14px;
+  text-decoration: none;
+  color: #989898;/* $text-grey-color */
+}
+
+/* finish Perfil nav */
+
+/* Init Perfil Section */
+
+section {
+  display: flex;
+  justify-content: flex-start;
+  border: green 1px solid;
+}
+
+.userInf{
+  width: 16.4%;
+  margin-left: 10%;
+  padding-top: 35px;
+  display: block;
+  justify-content: center;
+}
+
+.userInf__photo {
+  padding: 0;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  padding: 12px 25%;
+}
