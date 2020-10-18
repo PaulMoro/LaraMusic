@@ -87,7 +87,129 @@ nav h2 {
 
 /* finish Perfil nav */
 
+/* Init Perfil Section */
 
+section {
+  margin: 35px 12% 0 12%;
+  display: flex;
+}
+
+.userInf{
+  width: 29%;
+  height: 500px;
+  display: block;
+  margin-bottom: 100px;
+  border-right: 1px solid rgba(181, 181, 181, 0.5); /* $text-grey-color */
+}
+
+.userInf div {
+  display: flex;
+  justify-content: center;
+}
+
+.userInf__photo {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.userInf h2 {
+  text-align: center;
+  font-size: 36px; /* $fs-extra */
+  font-weight: 200;  /* $font-ultra-light */
+  letter-spacing: -1px;
+  color: #585858; /* $text-grey-color-hard */
+}
+
+.userInf h4 {
+  text-align: center;
+  font-size: 12px; /* $fs-small */
+  color: #FFC24B; /* $secondary-color */
+  font-weight: 600; /* $font-semi-bold */
+}
+
+.userInf p {
+  text-align: center;
+  font-size: 12px; /* $fs-small */
+  color: #3E2AD1; /* $label-color */
+  font-weight: 600; /* $font-semi-bold */
+  padding-top: 33px;
+}
+
+.userInf p img {
+  width: 16px;
+  height: 11px;
+}
+
+.userForm {
+  width: 71%;
+  height: 460px;
+  margin: 12px 0 0 54px;
+}
+
+.userForm h1 {
+  font-size: 58px; /* $fs-huge */
+  font-weight: 200; /* $font-ultra-light */
+  line-height: 64px;
+  letter-spacing: -1px;
+}
+
+.userForm p {
+  font-size: 16px; /* $fs-regular */
+  padding-top: 9px;
+  color: #989898;/* $text-grey-color */
+}
+
+.infAccount {
+  margin-top: 47px;
+}
+
+.infAccount__container {
+  display: flex;
+  margin-bottom: 23px; 
+}
+
+.infAccount__container__name {
+  width: 100px;
+  font-size: 14px; /* $fs-regular */
+  color: #585858; /* $text-grey-color-hard */
+  padding-top: 25px;
+}
+
+.infAccount__container input {
+  font-size: 24px; /* $fs-big */
+  padding:10px 10px 8px 25px;
+  width: 467px;
+  border:none;
+  border-bottom:1px solid #989898; /* $text-grey-color */
+}
+
+.infAccount__container input:focus { 
+  outline:none;
+  border-bottom:1px solid #9E4F9E; /* $primary-color */
+}
+
+.userForm button {
+  width: 133px;
+  height: 51px;
+  border-radius: 39px;
+  border: none;
+  background-color: #9E4F9E; /* $primary-color */
+  color:  #FFC24B; /* $secondary-color */
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.userInf button:focus, button:active { 
+  outline: none;
+  opacity: .9;
+}
+
+
+/* finish Perfil Section */
 
 
 
