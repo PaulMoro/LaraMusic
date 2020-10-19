@@ -7,7 +7,7 @@ import Nav from "../components/Com_nav.js"
 
 /* import style */
 
-import "../assets/style/globalStyle.scss"
+import "../assets/style/indexStyle.scss"
 
 
 

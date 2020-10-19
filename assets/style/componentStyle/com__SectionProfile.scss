@@ -1,0 +1,119 @@
+@import "./variables.scss";
+
+section {
+  margin: 35px 12% 0 12%;
+  display: flex;
+}
+
+.userInf{
+  width: 29%;
+  height: 620px;
+  display: block;
+  border-right: 1px solid $text-grey-color;
+}
+
+.userInf div {
+  display: flex;
+  justify-content: center;
+}
+
+.userInf__photo {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.userInf h2 {
+  text-align: center;
+  font-size: $fs-extra;
+  font-weight: $font-ultra-light;
+  letter-spacing: -1px;
+  color: $text-grey-color-hard;
+}
+
+.userInf h4 {
+  text-align: center;
+  font-size: $fs-smal;
+  color: $secondary-colo;
+  font-weight: $font-semi-bol;
+}
+
+.userInf p {
+  text-align: center;
+  font-size: $fs-smal;
+  color: $label-colo;
+  font-weight: $font-semi-bol;
+  padding-top: 33px;
+}
+
+.userInf p img {
+  width: 16px;
+  height: 11px;
+}
+
+.userForm {
+  width: 71%;
+  height: 620px;
+  margin: 12px 0 0 54px;
+}
+
+.userForm h1 {
+  font-size: $fs-hug;
+  font-weight: $font-ultra-ligh;
+  line-height: 64px;
+  letter-spacing: -1px;
+}
+
+.userForm p {
+  font-size: $fs-regula;
+  padding-top: 9px;
+  color: $text-grey-colo;
+}
+
+.infAccount {
+  margin-top: 47px;
+}
+
+.infAccount__container {
+  display: flex;
+  margin-bottom: 23px; 
+}
+
+.infAccount__container__name {
+  width: 90px;
+  font-size: $fs-regula;
+  color: $text-grey-color-har;
+  padding-top: 30px;
+}
+
+.infAccount__container input {
+  font-size: 24px; $fs-bi;
+  padding:10px 10px 8px 25px;
+  width: 467px;
+  border:none;
+  border-bottom:1px solid $text-grey-colo;
+}
+
+.infAccount__container input:focus { 
+  outline:none;
+  border-bottom:1px solid $primary-colo;
+}
+
+.userForm button {
+  width: 133px;
+  height: 51px;
+  border-radius: 39px;
+  border: none;
+  background-color: $primary-colo;
+  color: $secondary-colo;
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.userInf button:focus, button:active { 
+  outline: none;
+  opacity: .9;
+}

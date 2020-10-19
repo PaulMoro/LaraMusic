@@ -1,0 +1,27 @@
+@import "./variables.scss";
+
+footer {
+  padding-right: 14%;
+  padding-left: 18%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F9F9F9;
+}
+
+footer img {
+  width: 133px;
+  height: 45px;
+  margin: 21px 0px 108px 0px;
+}
+
+footer ul {
+  width: 364px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer li {
+  padding-top: 31px;
+  list-style: none;
+  color: $text-grey-color;
+}
