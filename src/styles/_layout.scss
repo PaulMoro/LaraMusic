@@ -1,0 +1,24 @@
+body {
+font-family: $font;
+}
+
+h1 {
+font-size: size($fs-huge);
+font-weight: $font-semi-bold;
+}
+
+h2 {
+font-size: size($fs-extra);
+font-weight: $font-semi-bold;
+}
+
+
+h3 {
+font-size: size($fs-big);
+font-weight: $font-semi-bold;
+}
+
+p {
+font-size: size($fs-regular);
+font-weight: $font-light;
+}
