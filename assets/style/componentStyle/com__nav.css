@@ -1,0 +1,63 @@
+nav {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  padding-left: 25px;
+  border-right: 1px solid rgba(15, 30, 54, 0.05);
+}
+
+.logo {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  width: 89px;
+  height: 34px;
+}
+
+.container {
+  height: 565px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav h2 {
+  font-size: 12px;
+}
+
+.list li {
+  padding: 5px 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.list p {
+  font-size: 12px;
+}
+
+.list img {
+  width: 30px;
+  height: 30px;
+}
+/*# sourceMappingURL=com__nav.css.map */
