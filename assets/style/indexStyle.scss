@@ -6,27 +6,13 @@
 }
 
 .lara {
-   background-color: #F5F5F5;
-   display: grid;
-   grid-template-columns: 200px 85% ;
-   grid-template-rows: 68px 100% 68px;
-   font-family: Arial, Source Sans Pro;
+  background-color: #F5F5F5;
+  display: grid;
+  grid-template-columns: 200px 85% ;
+  grid-template-rows: 68px 100% 68px;
+  font-family: Arial, Source Sans Pro;
+  width: 100vh;
+  height: 100vh;
 }
 
-header {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-main {
-  grid-column: 1/2;
-  grid-row: 1/3;
-}
-
-/* colores principales
- 0F1E36 oscuro
- 0F1E36 50%
- F51E38 rojo
- F5F5F5 Blanco
- 3E2AD1 azul*/
 
