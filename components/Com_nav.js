@@ -4,11 +4,11 @@ import "../assets/style/componentStyle/com__nav.scss";
 const Nav = () => {
   return (
   <nav>
-    <div class="logo">
+    <div className="logo">
       <img src="" alt="" sizes="" srcset=""/>
     </div>
-    <div class="container">
-      <ul class="list">
+    <div className="container">
+      <ul className="list">
         <li>
           <img src="" alt=""/>
           <p>Dicover</p>
@@ -31,7 +31,7 @@ const Nav = () => {
         </li>
       </ul>
       <h2>My Trakcs</h2>
-      <ul class="list">
+      <ul className="list">
         <li>
           <img src="" alt=""/>
           <p>Favourite</p>
@@ -50,7 +50,7 @@ const Nav = () => {
         </li>
       </ul>
       <h2>Play List</h2>
-      <ul class="list">
+      <ul className="list">
         <li>
           <img src="" alt=""/>
           <p>Bangla</p>

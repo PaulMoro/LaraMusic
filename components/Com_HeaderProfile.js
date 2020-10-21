@@ -6,7 +6,7 @@ const HeaderProfile = () => {
   return (
     <header>
     <img src="../assets/img/lara_header.png" alt=""/>
-    <div class="perfil">
+    <div className="perfil">
       <img src="../assets/img/user.jpg" alt=""/>
       <div >
         <h4>Anna Fernandez</h4>
