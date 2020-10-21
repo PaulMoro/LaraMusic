@@ -1,9 +1,9 @@
 import Recat from "react";
 import "../assets/style/componentStyle/com__nav.scss";
 
-const Nav = () => {
+const Main = () => {
   return (
-  <nav>
+  <main>
     <div className="logo">
       <img src="" alt="" sizes="" srcset=""/>
     </div>
@@ -69,8 +69,8 @@ const Nav = () => {
         </li>
       </ul>
     </div>
-  </nav>
+  </main>
   );
 };
 
-export default Nav
+export default Main

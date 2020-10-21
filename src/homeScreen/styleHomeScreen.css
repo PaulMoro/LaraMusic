@@ -18,6 +18,10 @@
    font-family: Arial, Source Sans Pro;
 }
 
+#__next {
+  grid-column: 1/3;
+  grid-row: 1/4;
+}
 
 /* Bar top */
 
