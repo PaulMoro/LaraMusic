@@ -1,0 +1,158 @@
+.header__bar {
+    background-color: $primary-color;
+    padding: $space-big;
+    @extend .flex-x;
+    align-items: center;
+    &-logo {
+        width: 200px;
+        height: 5vh;
+    }
+    nav {
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .login-link {
+            border: solid 1px $secondary-color;
+            border-radius: 28px;
+            padding: $space-xs $space-regular;
+            color: $secondary-color;
+            margin-left: $space-regular;
+        }
+    }
+
+}
+
+.login {
+
+    @extend .flex-y;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+
+    &__tabs-link {
+        button {
+            color: $text-grey-color;
+            text-decoration: none;
+            padding: $space-small;
+            font-size: size($fs-regular);
+            border: none;
+            background-color: transparent;
+
+            &:hover, &:active, &:focus  {
+                text-decoration: underline;
+                color: $primary-color;
+               outline: none;
+            }
+        }
+    }
+    &__container {
+        @extend .flex-x;
+        
+        &-image {
+            flex-shrink: 1;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+        .tabcontent {
+            background-color: $light-primary;
+            width: 45vw;
+            height: 60vh;
+
+            &__form {
+            flex-shrink: 1;
+            @extend .flex-y;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            padding: 0 $space-regular;
+            flex-basis: 100%;
+            h1 {
+                font-size: size($fs-extra);
+                line-height: size($fs-extra);
+                letter-spacing: -1px;
+                font-weight: $font-regular;
+                max-width: 80%;
+                color: $dark-grey;
+                margin: $space-small 0;
+                
+            }
+            p {
+                font-size: size($fs-small);
+            }
+
+            .buttons {
+                @extend .flex-x;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: $space-regular;
+                }
+
+            }
+
+            .form-group {
+                @extend .flex-y;
+                align-items: flex-start;
+                justify-content: space-evenly;
+            }
+            .form-item {
+                @extend .flex-x;
+                justify-content: space-between;
+                width: 90%;
+                margin: $space-small $space-regular;
+            }
+            label {
+                font-family: $font;
+                font-size: size($fs-small);
+                
+            }
+            input {
+                background-color: transparent;
+                border: none;
+                border-bottom: solid 1px $text-main-color;
+                width: 100%;
+                text-align: left;
+            }
+
+            button {
+                padding: $space-small; 
+                background-color: transparent;
+                border: none;
+                text-decoration: underline;
+                
+            }
+            small {
+                font-size: size($fs-small);
+                font-weight: $font-ultra-light;
+                width: 100%;
+                text-align: center;
+            }
+            .send {
+                background-color: $dark-primary;
+                color: $secondary-color;
+                border-radius: 28px;
+                padding: $space-small $space-regular;
+                border: none;
+                text-decoration: none;
+            }
+        }
+
+        .footer__nav {
+            @extend .flex-x;
+            align-items: flex-start;
+            background-color: $soft-grey;
+            padding: $space-regular;
+            height: 10vh;
+
+            a {
+                padding: 0 $space-big;
+                color: $dark-grey;
+                text-decoration: none;
+            }
+
+        }

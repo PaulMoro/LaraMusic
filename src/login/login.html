@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./artistplaylist.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header__bar">
+        <div class="header__bar-logo">
+            <img src="../images/logo.png" alt="lara-music-logo">
+        </div>
+        <nav>
+            <a href="">Lara Player</a>
+            <a class="login-link" href="">Login</a>
+        </nav>
+    </header>
+    <main class="login">
+
+        <div class="login__tabs-link">
+            <button class="tablinks" onclick="openTab(event, 'login')" id="defaultOpen">Login</button>
+            <button class="tablinks" onclick="openTab(event, 'create-account')">Create account</button>
+        </div>
+        <section id="login" class="tabcontent login__container">
+            <div class="tabcontent__form">
+                <h1>Music Online, your everlast playlist</h1>
+                <p>Play your favorite music from everywhere </p>
+                <form class="form-group">
+                    <div class="form-item" id="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"/>
+                    </div>
+
+                    <div  class="form-item" id="pass">
+                        <label for="pass">Password</label>
+                        <input id="pass" type="password" name="pass">
+                    </div>
+                    <div class="buttons">
+                        <button class="send" type="submit">Login</button>
+                        <button type="reset">Forgot your Password?</button>
+                    </div>
+                    <small>
+                        By registering you confirm that you accept the
+                        <a href="">Terms and Conditions and Privacy Policy</a>
+                    </small>
+                </form>
+            </div>
+            <div class="login__container-image">
+                <img src="../images/attractive-woman-listening-to-music-on-a-rooftop-P4NM2BH 1.jpg" alt="">
+            </div>
+        </section>
+        <section id="create-account" class="tabcontent account">
+            <h1></h1>
+            <p></p>
+            <div class="tabcontent__form">
+                <h1>Music Online, your everlast playlist</h1>
+                <p>Play your favorite music from everywhere </p>
+                <form class="form-group">
+                    <div class="form-item" id="name">
+                        <label for="name">Name</label>
+                        <input type="name" id="name" name="name" />
+                    </div>
+                    <div class="form-item" id="email">
+                        <label for="email">User email</label>
+                        <input type="email" id="email" name="email" />
+                    </div>
+            
+                    <div class="form-item" id="pass">
+                        <label for="pass">Password</label>
+                        <input id="pass" type="password" name="pass">
+                    </div>
+                    <div class="form-item" id="pass">
+                        <label for="pass">Password</label>
+                        <input id="pass" type="password" name="pass">
+                    </div>
+                    <div class="form-item" id="pass">
+                        <label for="pass">Birth Date</label>
+                        <input id="pass" type="password" name="pass">
+                    </div>
+                    <div class="form-item" id="pass">
+                        <label for="pass">Country</label>
+                        <input id="pass" type="password" name="pass">
+                    </div>
+                    <div class="buttons">
+                        <button class="send" type="submit">Login</button>
+                        
+                    </div>
+                    <small>
+                        By registering you confirm that you accept the
+                        <a href="">Terms and Conditions and Privacy Policy</a>
+                    </small>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__nav">
+        <img src="../images/logo-footer.png" alt="lara music">
+        <nav>
+            <a href="">Terms and conditions</a>
+            <a href="">Legal</a>
+
+        </nav>
+    </footer>
+    <script src="./login.js"></script>
+</body>
+
+</html>
