@@ -6,11 +6,11 @@
 }
 
 .lara {
-  background-color: #F5F5F5;
+  background-color: $background-soft;
   display: grid;
   grid-template-columns: 200px 85% ;
   grid-template-rows: 68px 100% 68px;
-  font-family: Arial, Source Sans Pro;
+  font-family: $font;
   width: 100vh;
   height: 100vh;
 }
