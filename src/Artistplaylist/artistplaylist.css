@@ -1,0 +1,174 @@
+/* colores principales
+0F1E36 oscuro
+0F1E36 50%
+F51E38 rojo
+F5F5F5 Blanco
+3E2AD1 azul*/
+
+* {     
+margin: 0px;
+padding: 0px;
+}
+
+body {
+background-color: #F5F5F5;
+display: grid;
+grid-template-columns: 200px 85% ;
+grid-template-rows: 68px 100% 68px;
+height: 100%;
+} 
+
+
+/* Bar top */
+
+header {
+grid-column: 2/3;
+grid-row: 1/2;
+display: flex;
+height: 68px;
+width: 100%;
+right: 0px;
+}
+
+.searchBar {
+height: 68px;
+width: 50%;
+}
+
+.searchBar img{
+opacity: .5;
+width: 25px;
+height: 25px;
+/*   padding: 26px 0 22px 22px ; */
+padding-left: 22px;
+top: 22px;
+}
+
+.searchBar input {
+color: #0F1E36;
+font-size:22px;
+border: 0px;
+background-color: #F5F5F5;
+height: 68px;
+top: 0px;
+}
+
+.searchBar input:focus {
+outline: none;
+}
+
+header ul {
+display: flex;
+width: 50%;
+}
+
+header ul li {
+list-style: none;
+border-left: 1px solid rgba(15, 30, 54, 0.05);
+}
+
+.iconsTop {
+width: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.iconsTop img {
+height: 30px;
+}
+
+.userInf {
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.userInf img{
+width: 34px;
+height: 34px;
+border-radius: 50%;
+}
+
+.userInf__prop{
+display: inline;
+margin-left: 9px;
+}
+
+.userInf__prop h4{
+font-size: 12px;
+}
+
+.userInf__prop--state{
+display: flex;
+justify-content: flex-start;
+}
+
+.userInf__prop--state img {
+border-radius: 0px;
+width: 15px;
+height: 10px;
+}
+
+.userInf__prop--state p {
+color: #3E2AD1;
+font-size: 10px;
+}
+
+/* Nav style right bar*/
+
+nav {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  padding-left: 25px;
+  border-right: 1px solid rgba(15, 30, 54, 0.05);
+}
+
+.logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.logo  img{
+  width: 89px;
+  height: 34px;
+}
+
+.container {
+  height: 565px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav h2 {
+  font-size: 12px;
+}
+
+.list li {
+  padding: 5px 0px;
+  list-style: none;
+  display: flex;
+  align-self: center;
+}
+
+.list p {
+  font-size: 12px;
+}
+
+.list img{
+  width: 30px;
+  height: 30px;
+}
+
+main {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+footer {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
