@@ -1,0 +1,59 @@
+@import "../variables.scss";
+.lara__specs {
+  display: flex;
+  padding: 0 10%;
+}
+.description__section {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  max-width: 500px;
+}
+.lara__specs__description {
+  position: absolute;
+  margin-top: 7em;
+}
+.description__title {
+  color: #1d293f;
+  font-size: 3em;
+  font-weight: 400;
+}
+.description__p {
+  color: #525252;
+  font-size: 1em;
+  margin-top: 1em;
+  width: 25vw;
+}
+.lara__specs__description__cards {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  max-width: 600px;
+}
+.card {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+.card p {
+  color: #525252;
+  font-weight: 600;
+}
+.lara__specs__description__cards img {
+  width: 130px;
+  height: 130px;
+}
+.lara__specs__description__cards p {
+  text-align: center;
+  width: 5em;
+}
+.lara__specs__img {
+  position: absolute;
+  left: 53%;
+  margin-top: 1%;
+}
+.lara__specs__img img {
+  width: 500px;
+  height: 650px;
+}

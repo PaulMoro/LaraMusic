@@ -1,4 +1,6 @@
 import React from "react";
+import "../assets/style/componentStyle/com__LaraSpecs.scss";
+import "../assets/style/componentStyle/global.scss";
 function LaraSpecs() {
   return (
     <section class="lara__specs">

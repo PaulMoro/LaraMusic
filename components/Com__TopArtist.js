@@ -1,4 +1,6 @@
 import React from "react";
+import "../assets/style/componentStyle/com__TopArtist.scss";
+import "../assets/style/componentStyle/global.scss";
 function TopArtist() {
   return (
     <section class="artist">

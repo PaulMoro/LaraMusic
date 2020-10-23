@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
-  "/landingPage": "pages/landingPage.js"
+  "/landingPage": "pages/landingPage.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
 }

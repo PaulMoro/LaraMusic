@@ -1,4 +1,6 @@
 import React from "react";
+import "../assets/style/componentStyle/com__Hero.scss";
+import "../assets/style/componentStyle/global.scss";
 function Hero() {
   return (
     <section class="hero">

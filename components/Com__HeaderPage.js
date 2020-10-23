@@ -1,16 +1,19 @@
 import React from "react";
+import "../assets/style/componentStyle/com__Headerpage.scss";
+import "../assets/style/componentStyle/global.scss";
+// import logoLara from "../assets/img/lara_header.png";
 function Header() {
   return (
-    <header class="header">
-      <div class="container">
-        <figure class="header__img__container">
-          <img src="../../assets/img/lara_header.png" alt="Logo-Lara" />
+    <header className="header">
+      <div className="container">
+        <figure className="header__img__container">
+          <img src="" alt="Logo-Lara" />
         </figure>
-        <div class="header__links">
-          <a href="" class="header__link--player">
+        <div className="header__links">
+          <a href="" className="header__link--player">
             Lara Player
           </a>
-          <a href="" class="header__link--login">
+          <a href="" className="header__link--login">
             Login
           </a>
         </div>

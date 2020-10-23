@@ -1,0 +1,38 @@
+@import "../variables.scss";
+.artist {
+  margin-top: 50em;
+  padding: 0 10%;
+}
+.artist__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.artist__info h1 {
+  color: #1d293f;
+  font-size: 3em;
+  font-weight: 400;
+}
+.artist__info p {
+  color: #525252;
+  font-size: 1em;
+  margin-top: 1em;
+  width: 25vw;
+  text-align: center;
+}
+.grid__container__artist {
+  padding: 0 10%;
+  margin-top: 5%;
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+  gap: 2em;
+}
+
+.title__song {
+  padding-top: 10px;
+  font-weight: 700;
+}
+.artist_name {
+  color: #969696;
+  font-size: 0.8em;
+}
