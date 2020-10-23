@@ -139,7 +139,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _assets_style_componentStyle_com_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/style/componentStyle/com__header.scss */ "./assets/style/componentStyle/com__header.scss");
 /* harmony import */ var _assets_style_componentStyle_com_header_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_style_componentStyle_com_header_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Moro\\Documents\\PF\\components\\Com__header.js";
+var _jsxFileName = "D:\\006 PERSONAL\\Lara\\LaraMusic\\components\\Com__header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -297,7 +297,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _assets_style_componentStyle_com_nav_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/style/componentStyle/com__nav.scss */ "./assets/style/componentStyle/com__nav.scss");
 /* harmony import */ var _assets_style_componentStyle_com_nav_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_style_componentStyle_com_nav_scss__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Moro\\Documents\\PF\\components\\Com_nav.js";
+var _jsxFileName = "D:\\006 PERSONAL\\Lara\\LaraMusic\\components\\Com_nav.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -697,7 +697,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Com_nav_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Com_nav.js */ "./components/Com_nav.js");
 /* harmony import */ var _assets_style_indexStyle_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/style/indexStyle.scss */ "./assets/style/indexStyle.scss");
 /* harmony import */ var _assets_style_indexStyle_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_style_indexStyle_scss__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\Moro\\Documents\\PF\\pages\\index.js";
+var _jsxFileName = "D:\\006 PERSONAL\\Lara\\LaraMusic\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /* import componenets */
