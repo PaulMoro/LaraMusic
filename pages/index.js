@@ -9,6 +9,8 @@ import SectionProfile from "../components/Com__SectionProfile.js"
 
 import "../assets/style/indexStyle.scss"
 
+/* api */
+
 
 
 const homeScreen = () => {

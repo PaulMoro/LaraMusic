@@ -70,7 +70,6 @@ section {
 article {
   grid-column: 2/3;
   grid-row: 2/3;
-/*   margin-top: 307px; */
   padding-left: 22px;
   background: linear-gradient(180deg, rgba(82, 33, 82, 0.06) 0%, rgba(158, 79, 158, 0.09) 26.23%);
 }
@@ -81,41 +80,6 @@ article h2 {
   margin-top: 23px;
 }
 
-.song {
-  margin-top: 13px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-#song__item{
-  margin-right: 20px;
-  width: 112px;
-  height: 154px;
-}
-
-#song__item img {
-  width: 100%;
-  height: 112px;
-}
-
-#song__item h4 {
-  font-size: 12px;
-  line-height: 16px;
-  color: #0F1E36;
-}
-
-#song__item p {
-  font-size: 10px;
-  line-height: 14px;
-  color: #0F1E36;
-  opacity: 0.48;
-}
-
-article table {
-  width: 100%;
-  padding-right: 27px;
-  font-size: 12px;
-}
 
 .music {
   color: #0F1E36;

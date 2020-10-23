@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "isomorphic-fetch": "^3.0.0",
     "next": "^9.5.5",
     "next-sass": "^1.0.3",
     "nextjs-fonts": "^0.22.0",

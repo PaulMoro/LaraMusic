@@ -238,7 +238,6 @@ section {
 article {
   grid-column: 2/3;
   grid-row: 2/3;
-/*   margin-top: 307px; */
   padding-left: 22px;
   background: linear-gradient(180deg, rgba(82, 33, 82, 0.06) 0%, rgba(158, 79, 158, 0.09) 26.23%);
 }
@@ -248,6 +247,112 @@ article h2 {
   line-height: 22px;
   margin-top: 23px;
 }
+
+.track_top {
+  padding: 9px 10px;
+  margin: 10px 0;
+  height: 50px;
+  display: flex;  
+  align-items: center;
+}
+
+.track_top h4 {
+  width: 30%;
+  text-align: start;
+  font-size: 12px;
+}
+
+.track_top_detail {
+  padding-left: 16px;
+  width: 60%;
+  display: flex;  
+  align-items: center;
+}
+
+
+.track_top_inf {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+
+
+
+
+.track_list{
+  padding: 9px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  vertical-align: middle;
+  height: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+}
+
+.track_list:hover {
+  background-color: /* $background:  */#F9F9F9;
+  box-shadow: 0 2px 5px 2px rgba(0,0,0,.04);
+}
+
+.track_cover {
+  background-image: url(https://i.scdn.co/image/e68dee8…);
+  width: 42px;
+  height: 42px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: inline-block;
+  background-size: cover;
+}
+
+.track_data {
+  display: inline-block;
+  margin: 10px 0 0 20px;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 350px;
+}
+
+.player-component {
+  float: right;
+  width: 34px;
+  height: 35px;
+  margin: 5px 4px 0 10px;
+}
+.play-button {
+  height: 33px;
+  width: 33px;
+  border-radius: 30px;
+}
+.track_list a {
+  font-size: 14px;
+  color: #ff4f5f;
+  display: inline-block;
+  margin: 10px 0 0 20px;
+  vertical-align: top;
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .song {
   margin-top: 13px;
@@ -308,7 +413,7 @@ article table th {
   text-align: left;
 }
 
-
+/* 
 footer {
   border: 1px solid green;
   grid-column: 1/3;
@@ -317,7 +422,7 @@ footer {
 
 .musicPlay {
   grid-column: 1/2;
-  background-color: #9E4F9E; /* $primary-color; */
+  background-color: #9E4F9E;  $primary-color; 
 }
 
 
@@ -325,4 +430,4 @@ footer {
 
 .player{
   grid-column: 2/3;
-}
+} */
