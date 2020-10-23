@@ -1,31 +1,47 @@
-import React, { useState, useEffect } from "react";
-
-import ListTrack from "./molecules/Mol__ListTrack"
-import ContainerSong from "./molecules/Mol__ContainerSong.js"
+import React from "react";
 
 import "../assets/style/componentStyle/com__SectionProfile.scss";
 
 const SectionProfile = () => {
   return (
     <section>
-    <div id="trending">
-      <img src="https://blog.rockthetraveller.com/wp-content/uploads/2017/03/SLIDER-10-festivales-de-musica-0-Foto.jpg" alt=""/>
-      <h3>// TRENDING</h3>
-      <h1>Akcent Feat Lidia <br/> Blble & DDY Nunes</h1>
-      <h2>- Kamelia</h2>
-      <div class="buttons">
-        <button class="buttons__one">Play ►</button>
-        <button class="buttons__two">COM</button>
-      </div>
-    </div>
-    <article>
-      <h2>Featured Tracks</h2>
-      <ContainerSong />
-      <h2>Top Tracks</h2>
-      <ListTrack />
-    </article>
-  </section>
-  );
+        <div class="userInf">
+          <div>
+            <img class="userInf__photo" src="../../assets/img/user.jpg" alt=""/>
+          </div>
+          <h2>Anna Fernandez</h2>
+          <h4>Change Password</h4>
+          <p><img src="../../assets/img/corona.png" alt=""/> Premium</p>
+        </div>
+        <div class="userForm">
+          <h1>Account</h1>
+          <p>Donec sit amet lectus mauris. Fusce ultrices in orci ac rhoncus. Duis dictum tempus neque</p>
+          <form class="infAccount" autocomplete="off">
+            <div class="infAccount__container">
+              <label class="infAccount__container__name">Name</label>
+              <input type="text" required/>
+            </div>
+            <div class="infAccount__container">
+              <label class="infAccount__container__name">User</label>
+              <input type="email" required/>
+            </div>
+            <div class="infAccount__container">
+              <label class="infAccount__container__name">Pasword</label>
+              <input type="password" required/>
+            </div>
+            <div class="infAccount__container">
+              <label class="infAccount__container__name">Brithday date</label>
+              <input type="text" required/>
+            </div>
+            <div class="infAccount__container">
+              <label class="infAccount__container__name">Country</label>
+              <input type="text" required/>
+            </div>
+          </form>
+          <button>Edit</button>
+        </div>
+      </section>
+    );
 };
 
 export default SectionProfile

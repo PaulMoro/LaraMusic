@@ -1,0 +1,105 @@
+@import "../variables.scss";
+
+section {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: block;
+  width: 100%;
+  height: 307px;
+}
+
+#trending {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 307px;
+  color: #0F1E36;
+}
+
+#trending img {
+  height: 100%;
+}
+
+#trending h3 {
+  position: absolute;
+  top: 92px;
+  left: 53px;
+  font-size: 10px;
+}
+
+#trending h1 {
+  position: absolute;
+  top: 113px;
+  left: 53px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+#trending h2 {
+  position: absolute;
+  top: 180px;
+  left: 53px;
+  font-size: 16px;
+}
+
+.buttons {
+  position: absolute;
+  top: 237px;
+  left: 53px;
+}
+
+.buttons button {
+  font-size: 16px;
+  font-weight: bold;
+  height: 22px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 8px #0F1E36;
+}
+
+.buttons__one {
+  width: 62px;
+}
+
+
+/* Articule list musical style  */
+
+article {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-left: 22px;
+  background: linear-gradient(180deg, rgba(82, 33, 82, 0.06) 0%, rgba(158, 79, 158, 0.09) 26.23%);
+}
+
+article h2 {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 23px;
+}
+
+
+.music {
+  color: #0F1E36;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.music:active {
+  background-color: #F5F5F5;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+article table th {
+  height: 40px;
+  border-spacing: 0;
+} 
+
+.music__num {
+  width: 166px;
+  padding-left: 17px;
+  text-align: left;
+}

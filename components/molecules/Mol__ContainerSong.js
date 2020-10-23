@@ -21,7 +21,7 @@ const ContainerSong = () => {
 
 
   return (
-    <div class="song">
+    <div className="song">
     {music.map((item) => (
     <div >
       <div id="song__item">

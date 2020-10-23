@@ -22,29 +22,29 @@ const ListTrack = () => {
 
   return (
     <div>
-      <div class="track_top">
-        <div class="track_top_detail">
-          <h4 class="track_top_detail#">#</h4>
-          <h4 class="track_top_detailSong">Song</h4>
-          <h4 class="track_top_detailArtist">Artist</h4>
+      <div className="track_top">
+        <div className="track_top_detail">
+          <h4 className="track_top_detail#">#</h4>
+          <h4 className="track_top_detailSong">Song</h4>
+          <h4 className="track_top_detailArtist">Artist</h4>
         </div>
-        <div class="track_top_inf">
+        <div className="track_top_inf">
           <h4>Daily Plays</h4>
           <h4>Time</h4>
-          <h4 class="track_top_infOptions">Options</h4>
+          <h4 className="track_top_infOptions">Options</h4>
         </div>
       </div>
       {music.map((item) => (
-        <div class="track_list">
-        <div class="track_list_detail">
-          <h4 class="track_top_detail#">1</h4>
-          <h4 class="track_top_detailSong">{item.permalink}</h4>
-          <h4 class="track_top_detailArtist">{item.user.username}</h4>
+        <div className="track_list">
+        <div className="track_list_detail">
+          <h4 className="track_top_detail#">1</h4>
+          <h4 className="track_top_detailSong">{item.permalink}</h4>
+          <h4 className="track_top_detailArtist">{item.user.username}</h4>
         </div>
-        <div class="track_list_inf">
+        <div className="track_list_inf">
           <h4>{item.playback_count}</h4>
           <h4>{item.duration} seg</h4>
-          <div class="track_list_infOptions">
+          <div className="track_list_infOptions">
             <img src="" alt=""/>
             <img src="" alt=""/>
             <img src="" alt=""/>
