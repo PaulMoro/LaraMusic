@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../assets/style/componentStyle/Com__HeaderProfile.scss";
+import "../assets/style/componentStyle/com__HeaderProfile.scss";
 
 const HeaderProfile = () => {
   return (

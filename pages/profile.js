@@ -2,14 +2,14 @@ import React from "react";
 
 /* import componenets */
 import HeaderProfile from "../components/Com__HeaderProfile.js"
-import NavProfile from "../components/Com_NavProfile.js"
-import SectionProfile from "../components/Com_SectionProfile.js"
-import FooterProfile from "../components/Com_FooterProfile.js"
+import NavProfile from "../components/Com__NavProfile.js"
+import SectionProfile from "../components/Com__SectionProfile.js"
+import FooterProfile from "../components/Com__FooterProfile.js"
 
 
 /* import style */
 
-import "../assets/style/globalStyle.scss"
+import "../assets/style/indexStyle.scss"
 
 
 
