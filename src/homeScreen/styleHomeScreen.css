@@ -248,6 +248,7 @@ article h2 {
   margin-top: 23px;
 }
 
+
 .track_top {
   padding: 9px 10px;
   margin: 10px 0;
@@ -256,8 +257,10 @@ article h2 {
   align-items: center;
 }
 
-.track_top h4 {
-  width: 30%;
+
+
+.track_top h4, .track_list_detail h4  {
+  padding-right: 30%;
   text-align: start;
   font-size: 12px;
 }
@@ -270,28 +273,12 @@ article h2 {
 }
 
 
-.track_top_inf {
-  width: 20%;
+.track_top_inf, .track_list_inf {
+  width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
-}
-
-
-
-
-
-.track_list{
-  padding: 9px 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  vertical-align: middle;
-  height: 60px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  display: flex;
 }
 
 .track_list:hover {
@@ -299,15 +286,45 @@ article h2 {
   box-shadow: 0 2px 5px 2px rgba(0,0,0,.04);
 }
 
-.track_cover {
-  background-image: url(https://i.scdn.co/image/e68dee8…);
-  width: 42px;
-  height: 42px;
-  border-radius: 20px;
-  overflow: hidden;
-  display: inline-block;
-  background-size: cover;
+
+
+
+.track_list{
+  padding: 9px 10px;
+  margin: 10px 0;
+  height: 50px;
+  display: flex;  
+  align-items: center;
 }
+
+
+.track_list_detail {
+  padding-left: 16px;
+  width: 60%;
+  display: flex;  
+  align-items: center;
+}
+
+.track_list_infOptions img {
+  width: 20px;
+  height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .track_data {
   display: inline-block;
