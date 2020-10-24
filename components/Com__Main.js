@@ -1,5 +1,9 @@
 import React from "react";
-import "../assets/style/componentStyle/com__nav.scss";
+import { VscRocket, VscFiles, VscAccount, VscThumbsup, VscFlame, VscFolderOpened, VscFileSubmodule } from "react-icons/vsc" 
+import { CgMusicNote } from "react-icons/cg"
+
+
+import "../assets/style/componentStyle/com__main.scss";
 
 const Main = () => {
   return (
@@ -10,61 +14,53 @@ const Main = () => {
     <div className="container">
       <ul className="list">
         <li>
-          <img src="" alt=""/>
+          <div>< VscRocket /></div>
           <p>Dicover</p>
         </li>
         <li>
-          <img src="" alt=""/>
+          <div>< CgMusicNote /></div>
           <p>Song</p>
         </li>
         <li>
-          <img src="" alt=""/>
+          <div>< VscFiles /></div>
           <p>ALbums</p>
         </li>
         <li>
-          <img src="" alt=""/>
+          <div>< VscAccount /></div>
           <p>Artists</p>
-        </li>
-        <li>
-          <img src="" alt=""/>
-          <p>YouTube</p>
         </li>
       </ul>
       <h2>My Trakcs</h2>
       <ul className="list">
         <li>
-          <img src="" alt=""/>
+          <div>< VscThumbsup /></div>
           <p>Favourite</p>
         </li>
         <li>
-          <img src="" alt=""/>
+          <div>< VscFlame /></div>
           <p>Recent History</p>
         </li>
         <li>
-          <img src="" alt=""/>
-          <p>Download Items</p>
-        </li>
-        <li>
-          <img src="" alt=""/>
+          <div>< VscFolderOpened /></div>
           <p>Local Files</p>
         </li>
       </ul>
       <h2>Play List</h2>
       <ul className="list">
         <li>
-          <img src="" alt=""/>
+          <div>< VscFileSubmodule /></div>
           <p>Bangla</p>
         </li>
         <li>
-          <img src="" alt=""/>
+          <div>< VscFileSubmodule /></div>
           <p>English</p>
         </li>
         <li>
-          <img src="" alt=""/>
+          <div>< VscFileSubmodule /></div>
           <p>My Style</p>
         </li>
         <li>
-          <img src="" alt=""/>
+          <div>< VscFileSubmodule /></div>
           <p>Hindi</p>
         </li>
       </ul>

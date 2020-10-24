@@ -1,27 +1,26 @@
 import React from "react";
+import {VscSearch, VscBell} from "react-icons/vsc"
+import { CgCrown } from "react-icons/cg"
 
 import "../assets/style/componentStyle/com__header.scss";
 
 const HeaderHome = () => {
   return (
-    <header>
+    <header id="headerHome">
       <div className="searchBar">
-        <img src="" alt="" srcset=""/>
+        <div><VscSearch /></div>
         <input type="text" name="" id=""/>
       </div>
       <ul>
         <li className="iconsTop">
-          <img src="../assets/img/radio.png" alt="radio"/>
-        </li>
-        <li className="iconsTop">
-          <img src="../assets/img/campana.png" alt="bell"/>
+          <div><VscBell /></div>
         </li>
         <li className="userInf">
           <img src="../assets/img/user.jpg" alt=""/>
           <div className="userInf__prop">
             <h4>Fulanita Roquera</h4>
-            <div className="userInf__prop--state">
-              <img src="../assets/img/corona.png" alt=""/>
+            <div className="userInf__prop__state">
+              <div>< CgCrown /></div>
               <p>Premium</p>
             </div>
           </div>

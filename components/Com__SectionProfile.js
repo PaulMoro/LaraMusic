@@ -5,16 +5,16 @@ import "../assets/style/componentStyle/com__SectionProfile.scss";
 
 const SectionProfile = () => {
   return (
-    <section>
-        <div className="userInf">
+      <section id="sectionProfile">
+          <div className="userInf">
           <div>
-            <img className="userInf__photo" src="../../assets/img/user.jpg" alt=""/>
+            <img className="userInf__photo" src="../assets/img/user.jpg" alt=""/>
           </div>
           <h2>Anna Fernandez</h2>
           <h4>Change Password</h4>
           <p>
             <div>
-            { CgCrown }
+            < CgCrown />
             </div>
             Premium
             </p>
@@ -22,7 +22,7 @@ const SectionProfile = () => {
         <div className="userForm">
           <h1>Account</h1>
           <p>Donec sit amet lectus mauris. Fusce ultrices in orci ac rhoncus. Duis dictum tempus neque</p>
-          <form className="infAccount" autocomplete="off">
+          <form className="infAccount" autoComplete="off">
             <div className="infAccount__container">
               <label className="infAccount__container__name">Name</label>
               <input type="text" required/>
@@ -46,7 +46,7 @@ const SectionProfile = () => {
           </form>
           <button>Edit</button>
         </div>
-      </section>
+    </section>
     );
 };
 

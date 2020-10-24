@@ -6,7 +6,7 @@
 }
 
 .lara {
-  background-color: $background;
+  background-color:$background;
   display: grid;
   grid-template-columns: 200px 85% ;
   grid-template-rows: 68px 100% 68px;
@@ -15,7 +15,7 @@
   height: 100vh;
 }
 
-.lara header {
+.lara #headerHome {
   grid-column: 2/3;
   grid-row: 1/2;
 }

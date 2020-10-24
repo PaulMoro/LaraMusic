@@ -34,13 +34,20 @@ main h2 {
   list-style: none;
   display: flex;
   align-self: center;
+  color: $text-main-color;
+  opacity: .5;
+}
+
+.list li:hover {
+  color: $primary-color;
+  opacity: 1;
 }
 
 .list p {
   font-size: 12px;
 }
 
-.list img{
+.list div{
   width: 30px;
   height: 30px;
 }

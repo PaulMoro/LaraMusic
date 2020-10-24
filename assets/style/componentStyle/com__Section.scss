@@ -81,25 +81,60 @@ article h2 {
 }
 
 
-.music {
-  color: #0F1E36;
-  opacity: 0.5;
-  cursor: pointer;
+.track_top {
+  padding: 9px 10px;
+  margin: 10px 0;
+  height: 50px;
+  display: flex;  
+  align-items: center;
 }
 
-.music:active {
-  background-color: #F5F5F5;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+
+
+.track_top h4, .track_list_detail h4  {
+  padding-right: 30%;
+  text-align: start;
+  font-size: 12px;
 }
 
-article table th {
-  height: 40px;
-  border-spacing: 0;
-} 
+.track_top_detail {
+  padding-left: 16px;
+  width: 60%;
+  display: flex;  
+  align-items: center;
+}
 
-.music__num {
-  width: 166px;
-  padding-left: 17px;
-  text-align: left;
+
+.track_top_inf, .track_list_inf {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.track_list:hover {
+  background-color:  $background ;
+  box-shadow: 0 2px 5px 2px rgba(0,0,0,.04);
+}
+
+.track_list{
+  padding: 9px 10px;
+  margin: 10px 0;
+  height: 50px;
+  display: flex;  
+  align-items: center;
+}
+
+
+.track_list_detail {
+  padding-left: 16px;
+  width: 60%;
+  display: flex;  
+  align-items: center;
+}
+
+.track_list_infOptions img {
+  width: 20px;
+  height: 24px;
 }
