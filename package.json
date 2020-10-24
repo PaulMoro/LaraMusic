@@ -14,6 +14,7 @@
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "next": "^9.5.5",
+    "next-images": "^1.6.0",
     "next-sass": "^1.0.3",
     "nextjs-fonts": "^0.22.0",
     "react": "^16.14.0",

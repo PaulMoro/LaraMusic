@@ -4,7 +4,7 @@ import "../assets/style/componentStyle/global.scss";
 function Footer() {
   return (
     <footer>
-      <div class="container">
+      <div className="container">
         <img src="../../assets/img/lara_footer.png" alt="LogoLara" />
         <ul>
           <li>Terms and conditions</li>
