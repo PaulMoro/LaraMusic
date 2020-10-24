@@ -31,17 +31,25 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+<<<<<<< HEAD
     "/landingPage": [
+=======
+    "/profile": [
+>>>>>>> 9acf1b6a77bc0a975288121828a48d11f62347d6
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
+<<<<<<< HEAD
       "static/chunks/pages/landingPage.js"
     ],
     "/next/dist/pages/_error": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/next/dist/pages/_error.js"
+=======
+      "static/chunks/pages/profile.js"
+>>>>>>> 9acf1b6a77bc0a975288121828a48d11f62347d6
     ]
   },
   "ampFirstPages": []

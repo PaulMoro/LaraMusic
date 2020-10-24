@@ -2,7 +2,12 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
   "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
   "/landingPage": "pages/landingPage.js",
   "/": "pages/index.js"
+=======
+  "/": "pages/index.js",
+  "/profile": "pages/profile.js"
+>>>>>>> 9acf1b6a77bc0a975288121828a48d11f62347d6
 }
