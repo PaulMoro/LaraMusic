@@ -9,13 +9,13 @@
   align-items: center;
 }
 .artist__info h1 {
-  color: #1d293f;
-  font-size: 3em;
+  color: $text-main-color;
+  font-size: 3rem;
   font-weight: 400;
 }
 .artist__info p {
-  color: #525252;
-  font-size: 1em;
+  color: $text-grey-color-hard;
+  font-size: $fs-regular;
   margin-top: 1em;
   width: 25vw;
   text-align: center;
@@ -26,17 +26,4 @@
   display: grid;
   grid-template: 1fr 1fr/ 1fr 1fr 1fr;
   gap: 2em;
-}
-
-.title__song {
-  padding-top: 10px;
-  font-weight: 700;
-}
-.artist_name {
-  color: #969696;
-  font-size: 0.8em;
-}
-.card__artist img {
-  height: 17em;
-  width: 17em;
 }

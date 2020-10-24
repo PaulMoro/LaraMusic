@@ -1,4 +1,5 @@
 import React from "react";
+import CardLaraSpec from "../components/molecules/Mol__CardLaraSpec";
 import "../assets/style/componentStyle/com__LaraSpecs.scss";
 import "../assets/style/componentStyle/global.scss";
 function LaraSpecs() {
@@ -16,18 +17,7 @@ function LaraSpecs() {
             </p>
           </div>
           <div className="lara__specs__description__cards">
-            <div className="card">
-              <img src="../../assets/img/spec-1.png" alt="" />
-              <p>We are in all devices</p>
-            </div>
-            <div className="card">
-              <img src="../../assets/img/spec-2.png" alt="" />
-              <p>Whitout advertising</p>
-            </div>
-            <div className="card">
-              <img src="../../assets/img/spec-3.png" alt="" />
-              <p>Total access</p>
-            </div>
+            <CardLaraSpec></CardLaraSpec>
           </div>
         </div>
         <div className="lara__specs__img">

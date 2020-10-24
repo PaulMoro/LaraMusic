@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../assets/style/componentStyle/com__TopArtist.scss";
+import "../../assets/style/moleculeStyle/mol__CardArtist.scss";
 function CardArtist(params) {
   const [music, setMusic] = useState([]);
   useEffect(() => {
