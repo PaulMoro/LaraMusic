@@ -1,0 +1,53 @@
+@import "../variables.scss";
+.hero {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 10%;
+  position: relative;
+  height: 600px;
+}
+.hero__info {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  right: 10%;
+  max-width: 600px;
+}
+.hero__info h1 {
+  color: $light-primary;
+  font-size: $fs-huge;
+  font-weight: $font-regular;
+  letter-spacing: 0.2px;
+}
+.hero__img {
+  position: absolute;
+  top: 2em;
+}
+.hero__info__description {
+  color: $light-primary;
+  font-weight: $font-light;
+  line-height: 2em;
+}
+.hero__info__description a {
+  text-decoration: none;
+  color: $secondary-color;
+}
+.hero__info__btn {
+  color: $primary-color;
+  border: 0.1em solid $secondary-color;
+  background-color: $secondary-color;
+  border-radius: 30px;
+  padding: 0.5em 1.5em;
+  font-weight: $font-regular;
+  text-decoration: none;
+  font-size: $fs-big;
+  position: absolute;
+  left: 30%;
+  margin-top: 1em;
+}
+.hero__info__btn:hover {
+  color: $secondary-color;
+  background-color: transparent;
+  border: 0.1em solid $secondary-color;
+}

@@ -1,0 +1,24 @@
+@import "../variables.scss";
+.header__links a {
+  text-decoration: none;
+  margin-right: 1.5rem;
+  letter-spacing: 0.2px;
+}
+.header__link--player {
+  color: $light-primary;
+  font-weight: $font-light;
+}
+.header__link--login {
+  color: $secondary-color;
+  border: 0.1em solid $secondary-color;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-weight: $font-bold;
+}
+.header__link--login:hover {
+  border-color: #dd980d;
+  color: #dd980d;
+}
+.header__link--player:hover {
+  color: rgb(214, 214, 214);
+}

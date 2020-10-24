@@ -1,7 +1,7 @@
 //Fonts
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
 
-$font: 'Source Sans Pro', sans-serif;
+$font: "Source Sans Pro", sans-serif;
 
 //Font weight
 
@@ -9,6 +9,7 @@ $font-ultra-light: 200;
 $font-light: 300;
 $font-regular: 400;
 $font-semi-bold: 600;
+$font-bold: 700;
 
 //Font size
 $fs-small: 12;
@@ -16,7 +17,6 @@ $fs-regular: 16;
 $fs-big: 24;
 $fs-extra: 36;
 $fs-huge: 58;
-
 
 //Font Size in Rem
 
@@ -28,22 +28,22 @@ $base-size: 16;
 }
 
 // use example
-//  font-size: size($fs-big); 
+//  font-size: size($fs-big);
 // output:
 // font-size: 1.5rem;
 
 //Colors
 
-$primary-color: #9E4F9E;
-$secondary-color: #FFC24B;
-$light-primary: #F7F0F6;
+$primary-color: #9e4f9e;
+$secondary-color: #ffc24b;
+$light-primary: #f7f0f6;
 $light-secondary: lighten($secondary-color, 25%);
-$background-soft: #E5E5E5;
-$background: #F9F9F9;
-$text-main-color: #1D293F;
+$background-soft: #e5e5e5;
+$background: #f9f9f9;
+$text-main-color: #1d293f;
 $text-grey-color-hard: #585858;
 $text-grey-color: #989898;
-$label-color: #3E2AD1;
+$label-color: #3e2ad1;
 
 body {
   font-family: $font;
@@ -55,17 +55,16 @@ h1 {
 }
 
 h2 {
-   font-size: size($fs-extra);
+  font-size: size($fs-extra);
   font-weight: $font-semi-bold;
 }
 
-
 h3 {
-   font-size: size($fs-big);
+  font-size: size($fs-big);
   font-weight: $font-semi-bold;
 }
 
 p {
-   font-size: size($fs-regular);
+  font-size: size($fs-regular);
   font-weight: $font-light;
 }

@@ -1,17 +1,14 @@
 import React from "react";
 
 /* import componenets */
-import HeaderProfile from "../components/Com__HeaderProfile.js"
-import NavProfile from "../components/Com__NavProfile.js"
-import SectionProfile from "../components/Com__SectionProfile.js"
-import FooterProfile from "../components/Com__FooterProfile.js"
-
+import HeaderProfile from "../components/Com__HeaderProfile.js";
+import NavProfile from "../components/Com__NavProfile.js";
+import SectionProfile from "../components/Com__SectionProfile.js";
+import FooterProfile from "../components/Com__FooterProfile.js";
 
 /* import style */
 
-import "../assets/style/indexStyle.scss"
-
-
+import "../assets/style/indexStyle.scss";
 
 const profile = () => {
   return (
@@ -24,4 +21,4 @@ const profile = () => {
   );
 };
 
-export default profile
+export default profile;
