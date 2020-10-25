@@ -30,6 +30,7 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
+<<<<<<< HEAD
     ],
 <<<<<<< HEAD
     "/landingPage": [
@@ -50,6 +51,8 @@
 =======
       "static/chunks/pages/profile.js"
 >>>>>>> 9acf1b6a77bc0a975288121828a48d11f62347d6
+=======
+>>>>>>> paul
     ]
   },
   "ampFirstPages": []

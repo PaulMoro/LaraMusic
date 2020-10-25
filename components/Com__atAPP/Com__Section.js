@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import ListTrack from "./molecules/Mol__ListTrack"
-import ContainerSong from "./molecules/Mol__ContainerSong.js"
+import ListTrack from "../molecules/Mol__ListTrack"
+import ContainerSong from "../molecules/Mol__ContainerSong.js"
 
-import "../assets/style/componentStyle/com__Section.scss";
+import "../../assets/style/componentStyle/com__Section.scss";
 
 const Section = () => {
   return (

@@ -8,7 +8,7 @@ const SectionProfile = () => {
       <section id="sectionProfile">
           <div className="userInf">
           <div>
-            <img className="userInf__photo" src="../assets/img/user.jpg" alt=""/>
+            <img className="userInf__photo" src="https://i.imgur.com/rQ73ETF.jpg" alt=""/>
           </div>
           <h2>Anna Fernandez</h2>
           <h4>Change Password</h4>
@@ -17,7 +17,7 @@ const SectionProfile = () => {
             < CgCrown />
             </div>
             Premium
-            </p>
+          </p>
         </div>
         <div className="userForm">
           <h1>Account</h1>

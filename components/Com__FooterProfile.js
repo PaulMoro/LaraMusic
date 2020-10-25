@@ -5,7 +5,7 @@ import "../assets/style/componentStyle/com__FooterProfile.scss";
 const FooterProfile = () => {
   return (
   <footer>
-    <img src="../assets/img/lara_footer.png" alt=""/>
+    <img src="https://i.imgur.com/IhzkA76.png" alt=""/>
     <ul>
       <li>Terms and conditions</li>
       <li>Legal</li>
