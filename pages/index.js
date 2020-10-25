@@ -1,9 +1,9 @@
 import React from "react";
 
 /* import componenets */
-import HeaderHome from "../components/Com__Header.js"
-import Main from "../components/Com__Main.js"
-import Section from "../components/Com__Section.js"
+import HeaderHome from "../components/Com_HomeScreen/Com__Header.js"
+import Main from "../components/Com_HomeScreen/Main.js"
+import Section from "../components/Com_HomeScreen/Com__Section.js"
 
 /* import style */
 

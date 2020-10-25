@@ -20,7 +20,8 @@
     "nextjs-fonts": "^0.22.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "sass": "^1.27.0"
+    "sass": "^1.27.0",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "react-icons": "^3.11.0",

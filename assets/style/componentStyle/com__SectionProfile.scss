@@ -40,11 +40,13 @@
 }
 
 .userInf p {
+  display: flex;
   text-align: center;
-  font-size: 12px; /* $fs-small */
+  font-size: $fs-small;
   color: #3E2AD1; /* $label-color */
   font-weight: 600; /* $font-semi-bold */
   padding-top: 33px;
+  margin-left: 40%;
 }
 
 .userInf p div {
