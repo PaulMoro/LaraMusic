@@ -18,10 +18,12 @@ import {
 	Icon,
 } from "./styles/mainStyle";
 
+import Logo from "../../assets/img/lara_header_white.png";
+
 const MainHomeScreen = () => {
 	return (
 		<Main>
-			<Img />
+			<Img src={Logo} />
 			<Container>
 				<ul>
 					<Container_item>

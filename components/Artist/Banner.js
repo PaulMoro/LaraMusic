@@ -1,5 +1,6 @@
 import React from "react";
 import elipse from "../../assets/img/Artist/Ellipse.png";
+import bannerImg from "../../assets/img/Artist/frame.png";
 
 import ArtistStyle from "./ArtistStyle";
 
@@ -8,7 +9,7 @@ export const Banner = () => {
 		<main className='main-container'>
 			<section className='banner'>
 				<div className='banner__toplist'>
-					<img className='banner__toplist__image' src='../images/frame.png' alt />
+					<img className='banner__toplist__image' src={bannerImg} alt />
 					<div className='banner__toplist__info'>
 						<div className='banner__toplist__info-description'>
 							<img src={elipse} alt />
@@ -74,12 +75,12 @@ export const Banner = () => {
 					</div>
 				</div>
 				<div className='banner__feature feature1'>
-					<img src='../images/frame.png' alt />
+					<img src={bannerImg} alt />
 					<span className='banner__feature-background' />
 					<span className='banner__feature-label' />
 				</div>
 				<div className='banner__feature feature2'>
-					<img src='../images/frame.png' alt />
+					<img src={bannerImg} alt />
 					<span className='banner__feature-background' />
 					<span className='banner__feature-label' />
 				</div>
