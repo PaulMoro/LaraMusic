@@ -1,8 +1,17 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 3.1.15
+* Fixed `package.types` path.
+
+## 3.1.14
+* Added `package.types`.
+
+## 3.1.13
+* Removed Node.js 15.0.0 with `randomFillSync` regression from `engines.node`.
+
 ## 3.1.12
-* Improve IE 11 docs.
+* Improved IE 11 docs.
 
 ## 3.1.11
 * Fixed asynchronous `customAlphabet` in browser (by @LoneRifle).

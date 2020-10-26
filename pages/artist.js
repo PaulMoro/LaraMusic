@@ -1,20 +1,18 @@
 import React from "react";
-import Header from "../components/Com__Header";
-import Main from "../components/Com_nav.js";
-import { Banner } from "../components/ArtistPlaylist/Banner";
-import { FilterArtist } from "../components/ArtistPlaylist/FilterArtist";
+//import HeaderHome from "../components/Com__atAPP/Com__Header";
+//import MainHomeScreen from "../components/Com__atAPP/Main";
+import { Banner } from "../components/Artist/Banner";
+import { FilterArtist } from "../components/Artist/FilterArtist";
 
 /* import componenets */
 
 const artist = () => {
 	return (
 		<div className='lara'>
-			<Header />
-			<Main />
-			<main>
-				<Banner />
-				<FilterArtist />
-			</main>
+			{/* <HeaderHome /> */}
+			{/* <MainHomeScreen /> */}
+			<Banner />
+
 			<footer>Hi</footer>
 		</div>
 	);
