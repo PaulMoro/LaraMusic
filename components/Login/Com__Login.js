@@ -1,6 +1,8 @@
 import React from "react";
-import { LoginForm } from "./LoginForm";
-import womanImage from "../../assets/img/musicplaylist/attractive-woman-listening-to-music-on-a-rooftop-P4NM2BH.jpg";
+
+import LoginStyle from "./LoginStyle";
+import LoginForm from "./LoginForm";
+import womanImage from "../../assets/img/Artist/loginwoman.jpg";
 
 const Login = () => {
 	return (
@@ -15,6 +17,10 @@ const Login = () => {
 					<img src={womanImage} alt='login-image' />
 				</div>
 			</section>
+
+			<style jsx LoginStyle>
+				{LoginStyle}
+			</style>
 		</main>
 	);
 };

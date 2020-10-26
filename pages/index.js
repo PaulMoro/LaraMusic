@@ -1,24 +1,18 @@
 import React from "react";
-
-/* import componenets */
-import HeaderHome from "../components/Com__atAPP/Com__Header";
-import Main from "../components/Com__atAPP/Main.js";
-import Section from "../components/Com__atAPP/Com__Section.js";
-
-/* import style */
-
-import "../assets/style/indexStyle.scss";
-
-/* api */
-
-const homeScreen = () => {
+import Header from "../components/Home/Com__HeaderPage";
+import Hero from "../components/Home/Com__Hero";
+import LaraSpecs from "../components/Home/Com__LaraSpecs";
+import TopArtist from "../components/Home/Com__TopArtist";
+import Footer from "../components/Home/Com__FooterPage";
+function LandingPage() {
 	return (
-		<div className='lara'>
-			<HeaderHome />
-			<Main />
-			<Section />
-		</div>
+		<>
+			<Header></Header>
+			<Hero></Hero>
+			<LaraSpecs></LaraSpecs>
+			<TopArtist></TopArtist>
+			<Footer></Footer>
+		</>
 	);
-};
-
-export default homeScreen;
+}
+export default LandingPage;

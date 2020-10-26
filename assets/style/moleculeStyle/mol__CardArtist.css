@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  font-size: 3.625rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title__song {
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.artist_name {
+  color: #989898;
+  font-size: 12;
+}
+
+.card__artist img {
+  height: 17em;
+  width: 17em;
+}
+/*# sourceMappingURL=mol__CardArtist.css.map */

@@ -1,8 +1,7 @@
 import css from "styled-jsx/css";
 
-//@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
-
 export default css.ArtistStyle`
+		@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
 		.flex-x,
 		.banner__toplist__info,
 		.banner__toplist__info-description,

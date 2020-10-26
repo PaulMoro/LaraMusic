@@ -1,10 +1,10 @@
 @import "../variables.scss";
 .card {
-  display: inherit;
-  flex-direction: column;
-  align-items: center;
+	display: inherit;
+	flex-direction: column;
+	align-items: center;
 }
 .card p {
-  color: $text-grey-color-hard;
-  font-weight: $font-semi-bold;
+	color: $text-grey-color-hard;
+	font-weight: $font-semi-bold;
 }

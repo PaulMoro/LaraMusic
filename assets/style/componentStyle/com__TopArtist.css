@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  font-size: 3.625rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.artist {
+  margin-top: 50em;
+  padding: 0 10%;
+}
+
+.artist__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.artist__info h1 {
+  color: #1d293f;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.artist__info p {
+  color: #585858;
+  font-size: 16;
+  margin-top: 1em;
+  width: 25vw;
+  text-align: center;
+}
+
+.grid__container__artist {
+  padding: 0 10%;
+  margin-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+  gap: 2em;
+}
+/*# sourceMappingURL=com__TopArtist.css.map */
