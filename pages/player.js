@@ -7,7 +7,7 @@ import Section from "../components/Com__atAPP/Com__Section.js";
 
 /* import style */
 
-import "../assets/style/indexStyle.scss";
+//import "../assets/style/indexStyle.scss";
 
 /* api */
 
