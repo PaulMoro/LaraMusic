@@ -5,9 +5,9 @@ import Link from "next/link";
 function HeaderLinks() {
 	return (
 		<div className='header__links'>
-			<a href='' className='header__link--player'>
+			<Link href='/player' className='header__link--player'>
 				Lara Player
-			</a>
+			</Link>
 			<Link href='/login' className='header__link--login'>
 				Login
 			</Link>

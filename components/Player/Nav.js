@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
 	VscRocket,
 	VscFiles,
@@ -22,12 +23,20 @@ const NavHomeScreen = () => {
       <div className="container">
         <ul className="list">
           <li>
-            <div>< VscRocket /></div>
-            <p>Dicover</p>
+            <Link href='/artist' className='header__link--artist'>
+              <a>
+                <div>< VscRocket /></div>
+                <p>Dicover</p>
+              </a>
+		      	</Link>
           </li>
           <li>
-            <div>< CgMusicNote /></div>
-            <p>Song</p>
+            <Link href='/artist' className='header__link--artist'>
+              <a>
+                <div>< CgMusicNote /></div>
+                <p>Song</p>
+              </a>
+		      	</Link>
           </li>
           <li>
             <div>< VscFiles /></div>
