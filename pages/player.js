@@ -1,9 +1,9 @@
 import React from "react";
 
 /* import componenets */
-import HeaderHome from "../components/Com__atAPP/Com__Header";
-import Main from "../components/Com__atAPP/Main.js";
-import Section from "../components/Com__atAPP/Com__Section.js";
+import HeaderHome from "../components/Player/Com__Header";
+import NavHomeScreen from "../components/Player/Nav.js";
+import Section from "../components/Player/Com__Section.js";
 
 /* import style */
 
@@ -15,7 +15,7 @@ const homeScreen = () => {
 	return (
 		<div className='lara'>
 			<HeaderHome />
-			<Main />
+			<NavHomeScreen />
 			<Section />
 		</div>
 	);
