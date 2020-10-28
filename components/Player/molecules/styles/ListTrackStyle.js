@@ -1,6 +1,19 @@
 import css from "styled-jsx/css";
 
 export default css.ListTrackStyle`
+.track{
+  height: 351px;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.track h2{
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .track_top {
   padding: 9px 10px;
   margin: 10px 0;

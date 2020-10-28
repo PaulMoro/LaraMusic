@@ -20,7 +20,8 @@ const ListTrack = () => {
 	};
 
 	return (
-		<>
+		<div className='track'>
+			<h2>Top Tracks</h2>
 			<div className='track_top'>
 				<div className='track_top_detail'>
 					<h4 className='track_top_detail#'>#</h4>
@@ -55,7 +56,7 @@ const ListTrack = () => {
 			<style jsx ListTrackStyle>
 				{ListTrackStyle}
 			</style>
-		</>
+		</div>
 	);
 };
 

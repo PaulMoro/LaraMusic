@@ -17,6 +17,11 @@ export default css.ContainerSongStyle`
   overflow-x: auto;
 }
 
+.song__tittle {
+  font-size: 16px;
+  line-height: 22px;
+}
+
 #song__item {
   margin-right: 20px;
   width: 112px;

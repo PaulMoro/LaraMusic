@@ -19,6 +19,7 @@ const ContainerSong = () => {
 
 	return (
 		<div className='song'>
+			<h2 className='song__tittle'>Featured Tracks</h2>
 			{music.map((item) => (
 				<div>
 					<div id='song__item'>

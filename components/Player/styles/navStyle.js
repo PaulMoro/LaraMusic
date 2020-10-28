@@ -2,6 +2,7 @@ import css from "styled-jsx/css";
 
 export default css.Nav`
 nav {
+  height: 100vh;
   grid-column: 1/2;
   grid-row: 1/3;
   padding-left: 25px;

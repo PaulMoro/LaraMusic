@@ -3,7 +3,8 @@ import React from "react";
 /* import componenets */
 import HeaderHome from "../components/Player/Com__Header";
 import NavHomeScreen from "../components/Player/Nav.js";
-import Section from "../components/Player/Com__Section.js";
+import MainPlayer from "../components/Player/MainPlayer.js";
+import index from "../assets/style/indexStyle";
 
 /* import style */
 
@@ -16,7 +17,10 @@ const homeScreen = () => {
 		<div className='lara'>
 			<HeaderHome />
 			<NavHomeScreen />
-			<Section />
+			<MainPlayer />
+			<style jsx index>
+				{index}
+			</style>
 		</div>
 	);
 };

@@ -74,7 +74,7 @@ const NavHomeScreen = () => {
         </ul>
       </div>
 
-			<style jsx ArtistStyle>
+			<style jsx navStyle>
 				{navStyle}
 			</style>
     </nav> 

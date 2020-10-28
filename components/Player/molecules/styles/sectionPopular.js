@@ -1,18 +1,6 @@
 import css from "styled-jsx/css";
 
-export default css.SectionStyle`
-section {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  display: block;
-  width: 100%;
-  height: 307px;
-}
-
+export default css.sectionPopular`
 #trending {
   position: relative;
   display: -webkit-box;
@@ -32,6 +20,7 @@ section {
 
 #trending img {
   height: 100%;
+  object-fit: cover;
 }
 
 #trending h3 {
@@ -62,5 +51,19 @@ section {
   position: absolute;
   top: 237px;
   left: 53px;
+}
+
+.buttons__one{
+  width: 62px;
+  height: 22px;
+  background: #FFFFFF;
+  border-radius: 3px;
+}
+
+.buttons__two{
+  width: 24px;
+  height: 22px;
+  background: #FFFFFF;
+  border-radius: 3px;
 }
 `;
