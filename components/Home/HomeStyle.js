@@ -24,7 +24,7 @@ export default css.HomeStyle`
   background-color: #9e4f9e;
   display: flex;
   justify-content: space-between;
-  padding: 1em 10%;
+  padding: 1rem 10%;
   position: relative;
   height: 600px;
 }
@@ -121,7 +121,7 @@ export default css.HomeStyle`
 /* Top Artist */
 
 .artist {
-  margin-top: 50em;
+  margin-top: 45rem;
   padding: 0 10%;
 }
 .artist__info {

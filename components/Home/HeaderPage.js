@@ -8,7 +8,9 @@ function Header() {
     <header className="header">
       <div className="container">
         <figure className="header__img__container">
-          <img src={logo} alt="Logo-Lara" />
+          <a href="/">
+            <img src={logo} alt="Logo-Lara" />
+          </a>
         </figure>
         <HeaderLinks />
       </div>

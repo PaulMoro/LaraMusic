@@ -5,7 +5,7 @@ import Link from "next/link";
 function HeaderLinks() {
   return (
     <div className="header__links">
-      <a href="" className="header__link--player">
+      <a href="/player" className="header__link--player">
         Lara Player
       </a>
       <a href="/login" className="header__link--login">
