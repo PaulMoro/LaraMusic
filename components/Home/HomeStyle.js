@@ -3,30 +3,6 @@ import css from "styled-jsx/css";
 export default css.HomeStyle`
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
 
-body {
-	font-family: "Source Sans Pro", sans-serif;
-}
-
-h1 {
-	font-size: 3.625rem;
-	font-weight: 600;
-}
-
-h2 {
-	font-size: 2.25rem;
-	font-weight: 600;
-}
-
-h3 {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
-p {
-	font-size: 1rem;
-	font-weight: 300;
-}
-
 .header {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -44,30 +20,6 @@ p {
 
 .header__img__container img {
 	height: 50px;
-}
-
-body {
-	font-family: "Source Sans Pro", sans-serif;
-}
-
-h1 {
-	font-size: 3.625rem;
-	font-weight: 600;
-}
-
-h2 {
-	font-size: 2.25rem;
-	font-weight: 600;
-}
-
-h3 {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
-p {
-	font-size: 1rem;
-	font-weight: 300;
 }
 
 .hero {
@@ -132,30 +84,6 @@ p {
 	color: #ffc24b;
 	background-color: transparent;
 	border: 0.1em solid #ffc24b;
-}
-
-body {
-	font-family: "Source Sans Pro", sans-serif;
-}
-
-h1 {
-	font-size: 3.625rem;
-	font-weight: 600;
-}
-
-h2 {
-	font-size: 2.25rem;
-	font-weight: 600;
-}
-
-h3 {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
-p {
-	font-size: 1rem;
-	font-weight: 300;
 }
 
 .lara__specs {
@@ -228,29 +156,6 @@ p {
 	height: 650px;
 }
 
-body {
-	font-family: "Source Sans Pro", sans-serif;
-}
-
-h1 {
-	font-size: 3.625rem;
-	font-weight: 600;
-}
-
-h2 {
-	font-size: 2.25rem;
-	font-weight: 600;
-}
-
-h3 {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
-p {
-	font-size: 1rem;
-	font-weight: 300;
-}
 
 .artist {
 	margin-top: 50em;
@@ -295,29 +200,7 @@ p {
 	gap: 2em;
 }
 
-body {
-	font-family: "Source Sans Pro", sans-serif;
-}
 
-h1 {
-	font-size: 3.625rem;
-	font-weight: 600;
-}
-
-h2 {
-	font-size: 2.25rem;
-	font-weight: 600;
-}
-
-h3 {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
-p {
-	font-size: 1rem;
-	font-weight: 300;
-}
 
 footer {
 	padding: 0 10%;

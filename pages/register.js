@@ -1,14 +1,14 @@
 import React from "react";
 
 import Header from "../components/Header/Com__HeaderPage";
-import { Login } from "../components/Login/Login";
+import { Register } from "../components/Register/Register";
 import Footer from "../components/Home/Com__FooterPage";
 
 export const login = () => {
 	return (
 		<>
 			<Header />
-			<Login />
+			<Register />
 			<Footer />
 		</>
 	);

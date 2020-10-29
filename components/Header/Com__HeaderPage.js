@@ -7,7 +7,7 @@ import { signIn, redirectIfAuthenticated } from "../../lib/auth";
 import Success from "../../components/Login/molecules/Success";
 import Error from "../../components/Login/molecules/Error";
 
-import HomeStyle from "./HomeStyle";
+import HomeStyle from "./HeaderStyle";
 import logo from "../../assets/img/Artist/logo.png";
 
 import { HeaderLinks } from "./molecules/Mol__HeaderLinks";
