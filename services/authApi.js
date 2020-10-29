@@ -3,18 +3,15 @@ import { post } from "../lib/request";
 export const authenticate = async (email, password) => {
 	try {
 		const res = await post("/api/v1/users/login/", {
-			//auth: {
 			email,
 			password,
-			//},
 		});
-		return res.data;
+		return res;
 	} catch (error) {
-		if (error.message) {
-			return error.response && error.response.status === 404
-				? "Wrong email/password"
-				: "Unknown error. Please try again";
-		}
+		console.log(error);
+		return error.response && error.response.status === 404
+			? "Wrong email/password"
+			: "Unknown error. Please try again";
 	}
 };
 
