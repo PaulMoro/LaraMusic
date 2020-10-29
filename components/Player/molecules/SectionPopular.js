@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { CgShare } from "react-icons/cg"
+import { CgShare } from "react-icons/cg";
+import axios from "axios";
 
 import sectionPopular from "./styles/sectionPopular";
 
 
 const SectionPopular = () => {
   /* call API */
+  axios.get("laramusicapi.herokuapp.com/api/v1/musictracs")
 	const [music, setMusic] = useState([]);
 	useEffect(() => {
 		obtenerDatos();
