@@ -1,8 +1,8 @@
 import React from "react";
 import HomeStyle from "./HomeStyle";
+import HeaderLinks from "./molecules/HeaderLinks";
 import logo from "../../assets/img/lara_header.png";
 
-import HeaderLinks from "./molecules/HeaderLinks";
 function Header() {
   return (
     <header className="header">
