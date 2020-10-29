@@ -24,11 +24,6 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/artist": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/artist.js"
-    ],
     "/player": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
