@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { VscSearch, VscBell } from "react-icons/vsc";
 
 import Header from "./styles/HeaderStyle";
@@ -19,10 +20,14 @@ const HeaderHome = () => {
 					</div>
 				</li>
 				<li className='userInf'>
-					<img src='https://i.imgur.com/rQ73ETF.jpg' alt='' />
-					<div className='userInf__prop'>
-						<h4>Fulanita Roquera</h4>
-					</div>
+					<Link href='/profile' className='header__link--profile'>
+						<a>
+							<img src='https://i.imgur.com/rQ73ETF.jpg' alt='user img' />
+							<div className='userInf__prop'>
+								<h4>Fulanita Roquera</h4>
+							</div>
+						</a>
+		      </Link>
 				</li>
 			</ul>
 

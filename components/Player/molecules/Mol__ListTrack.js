@@ -12,11 +12,9 @@ const ListTrack = () => {
 	}, []);
 
 	const obtenerDatos = async () => {
-		const datos = await fetch(
-			"https://api-v2.hearthis.at/feed/popular/?page=1&count=5"
-		);
-		const musica = await datos.json();
-		setMusic(musica);
+		const datos = await fetch("https://api-v2.hearthis.at/feed/popular/?page=1&count=5");
+		const music = await datos.json();
+		setMusic(music);
 	};
 
 	return (

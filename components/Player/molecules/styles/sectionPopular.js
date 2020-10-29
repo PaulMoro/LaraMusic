@@ -54,16 +54,24 @@ export default css.sectionPopular`
 }
 
 .buttons__one{
-  width: 62px;
-  height: 22px;
-  background: #FFFFFF;
+  padding: 10px;
+  margin: 3px 5px;
+  border: none;
   border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .buttons__two{
-  width: 24px;
-  height: 22px;
-  background: #FFFFFF;
+  padding: 10px;
+  margin: 3px 5px;
+  border: none;
   border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 `;

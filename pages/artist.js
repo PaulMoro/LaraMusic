@@ -1,6 +1,6 @@
 import React from "react";
 //import HeaderHome from "../components/Com__atAPP/Com__Header";
-import MainHomeScreen from "../components/_app/Main";
+import MainPlayer from "../components/Player/MainPlayer.js";
 import { Banner } from "../components/Artist/Banner";
 import { FilterArtist } from "../components/Artist/FilterArtist";
 
@@ -10,7 +10,7 @@ const artist = () => {
 	return (
 		<div className='lara'>
 			{/* <HeaderHome /> */}
-			<MainHomeScreen />
+			<MainPlayer />
 			<Banner />
 
 			<footer>Hi</footer>

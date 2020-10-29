@@ -12,7 +12,7 @@ export default css.cardArtistStyle`
 }
 
 .card__artist img {
-  height: 17em;
-  width: 17em;
+  height: 17rem;
+  width: 17rem;
 }
 `;

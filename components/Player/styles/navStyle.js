@@ -31,7 +31,7 @@ nav h2 {
   font-size: 14px;
 }
 
-.list li {
+.list li,  .list li a{
   padding: 5px 0px;
   list-style: none;
   display: flex;
