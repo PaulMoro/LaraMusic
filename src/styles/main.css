@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
-.flex-x, .header__bar, .login__container, .tabcontent__form .buttons, .tabcontent .form-item, .footer__nav, .banner__toplist__info, .banner__toplist__info-description, .banner__toplist__info-description--desc .info-group, .banner__toplist__info-list .buttons, .filter-artist__select, .filter-artist__select ul, .filter-artist__genere, .filter-artist__covers {
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+.flex-x, .header__bar, .tabcontent__form .buttons, .tabcontent .form-item, .footer__nav, .banner__toplist__info, .banner__toplist__info-description, .banner__toplist__info-description--desc .info-group, .banner__toplist__info-list .buttons, .filter-artist__select, .filter-artist__select ul, .filter-artist__genere, .filter-artist__covers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,7 +9,53 @@
           justify-content: space-between;
 }
 
-.flex-y, .login, .tabcontent__form, .tabcontent .form-group, .banner__toplist__info-description--desc, .filter-artist {
+.flex-y, .tabcontent__form, .tabcontent .form-group, .banner__toplist__info-description--desc, .filter-artist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  font-size: 3.625rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.flex-x, .header__bar, .tabcontent__form .buttons, .tabcontent .form-item, .footer__nav, .banner__toplist__info, .banner__toplist__info-description, .banner__toplist__info-description--desc .info-group, .banner__toplist__info-list .buttons, .filter-artist__select, .filter-artist__select ul, .filter-artist__genere, .filter-artist__covers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-y, .tabcontent__form, .tabcontent .form-group, .banner__toplist__info-description--desc, .filter-artist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,13 +119,9 @@ p {
 }
 
 .login {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 70vh;
+  max-height: 70vw;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .login__tabs-link button {
@@ -96,9 +139,10 @@ p {
   outline: none;
 }
 
-.login__container-image {
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+.login__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .login__container-image img {
@@ -108,13 +152,10 @@ p {
 
 .tabcontent {
   background-color: #f1e2f1;
-  width: 45vw;
-  height: 60vh;
+  height: 500px;
 }
 
 .tabcontent__form {
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -122,8 +163,6 @@ p {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 0 20px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
 }
 
 .tabcontent__form h1 {
@@ -164,6 +203,9 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 90%;
   margin: 10px 20px;
 }
@@ -179,6 +221,16 @@ p {
   border-bottom: solid 1px #1D293F;
   width: 100%;
   text-align: left;
+  padding: 5px 20px;
+}
+
+.tabcontent input:focus {
+  background-color: #f1e2f1;
+  outline: none;
+}
+
+.tabcontent input:active {
+  background-color: rgba(152, 152, 152, 0.2);
 }
 
 .tabcontent button {
@@ -217,6 +269,22 @@ p {
   padding: 0 30px;
   color: #656565;
   text-decoration: none;
+}
+
+@media screen and (max-width: 860px) {
+  .login {
+    width: 100%;
+  }
+  .tabcontent {
+    width: 100%;
+    text-align: center;
+  }
+  .tabcontent__form h1 {
+    max-width: 100%;
+  }
+  .login__container-image {
+    display: none;
+  }
 }
 
 .banner {

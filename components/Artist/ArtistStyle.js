@@ -34,30 +34,6 @@ export default css.ArtistStyle`
 			justify-content: space-between;
 		}
 
-		body {
-			font-family: "Source Sans Pro", sans-serif;
-		}
-
-		h1 {
-			font-size: 3.625rem;
-			font-weight: 600;
-		}
-
-		h2 {
-			font-size: 2.25rem;
-			font-weight: 600;
-		}
-
-		h3 {
-			font-size: 1.5rem;
-			font-weight: 600;
-		}
-
-		p {
-			font-size: 1rem;
-			font-weight: 300;
-		}
-
 		.banner {
 			display: -ms-grid;
 			display: grid;
