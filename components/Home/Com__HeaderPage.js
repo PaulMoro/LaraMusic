@@ -1,17 +1,27 @@
 import React from "react";
+import Link from "next/link";
+
+import { getCookie, removeCookie } from "../../lib/session";
+import { signIn, redirectIfAuthenticated } from "../../lib/auth";
+
+import Success from "../../components/Login/molecules/Success";
+import Error from "../../components/Login/molecules/Error";
+
 import HomeStyle from "./HomeStyle";
 import logo from "../../assets/img/Artist/logo.png";
 
-import HeaderLinks from "./molecules/Mol__HeaderLinks";
-// import logoLara from "../assets/img/lara_header.png";
-function Header() {
+import { HeaderLinks } from "./molecules/Mol__HeaderLinks";
+
+function Header(props) {
+	const url = props.HeaderLinks;
+	//const { error } = state;
 	return (
 		<header className='header'>
 			<div className='container'>
-				<figure className='header__img__container'>
+				<Link href='/' className='header__img__container'>
 					<img src={logo} alt='Logo-Lara' />
-				</figure>
-				<HeaderLinks />
+				</Link>
+				{/* <HeaderLinks authenticated={false} pathname={url.pathname} /> */}
 			</div>
 
 			<style jsx HomeStyle>
