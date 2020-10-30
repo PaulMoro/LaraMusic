@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AlbumStyles from "./AlbumStyles";
 import logoAlbum from "../../assets/img/album.png";
+import ContentAlbum from "./molecules/ContentMusic";
 
 function AboutAlbum() {
   return (
@@ -17,7 +18,9 @@ function AboutAlbum() {
           also were a huge breakthrough in the international market, topping
           radio and sales around the world.
         </p>
-        <div className="table"></div>
+        <section className="content__music">
+          <ContentAlbum></ContentAlbum>
+        </section>
         <div className="show__more">
           <p>Show More</p>
         </div>

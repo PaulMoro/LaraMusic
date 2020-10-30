@@ -80,9 +80,11 @@ export default css.AlbumStyles`
   text-align: center;
   font-weight: 600;
 }
-
-
-
+.content__music{
+  width: 60vw;
+  margin:3rem 0 ;
+  max-width:1720px;
+}
 
 
 `;
