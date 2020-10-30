@@ -1,6 +1,6 @@
 import React from "react";
 import { VscSearch, VscBell } from "react-icons/vsc";
-
+import { FiSearch } from "react-icons/fi";
 import Header from "./styles/HeaderStyle";
 
 const HeaderHome = () => {
@@ -8,7 +8,7 @@ const HeaderHome = () => {
     <header id="headerHome">
       <div className="searchBar">
         <div className="searchBar_icon">
-          <VscSearch />
+          <FiSearch />
         </div>
         <input
           type="text"

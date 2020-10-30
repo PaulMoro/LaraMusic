@@ -3,6 +3,7 @@ import css from "styled-jsx/css";
 export default css.AlbumStyles`
 /* feature */
 .feature__tracks {
+    padding-left:1rem;
   grid-column: 2/3;
   grid-row: 2/3;
 }
@@ -20,7 +21,8 @@ export default css.AlbumStyles`
 }
 
 .containerAlbum{
-  padding:.5rem 1rem;
+  padding:.5rem 0 0 0;
+
   overflow-y: scroll;
   grid-column: 2/3;
   grid-row: 2/4;
@@ -37,7 +39,7 @@ export default css.AlbumStyles`
   display: flex;
   background: linear-gradient(#faf0fa, #d6cbd6);
   position: relative;
-  left:-1.5rem;
+ 
 }
 .banner__song {
   margin-right: 2em;
@@ -50,7 +52,7 @@ export default css.AlbumStyles`
 }
 .info__album_container {
   position: absolute;
-  top: -3.5em;
+  top: -3.8em;
   left: 22rem;
 }
 .info__album_container a {
@@ -61,7 +63,7 @@ export default css.AlbumStyles`
 }
 .title__album {
   color: #0f1e36;
-  font-size: 3.5em;
+  font-size: 3.6em;
   font-weight:bold;
 }
 .authors__album {
