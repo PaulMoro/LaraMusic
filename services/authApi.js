@@ -6,7 +6,7 @@ export const authenticate = async (email, password) => {
 			email,
 			password,
 		});
-		return res;
+		return res.data;
 	} catch (error) {
 		console.log(error);
 		return error.response && error.response.status === 404

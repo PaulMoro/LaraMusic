@@ -80,7 +80,7 @@ export default class Register extends Component {
 		const email = e.target.elements.email.value;
 		const password = e.target.elements.password.value;
 		const password_confirmation = e.target.elements.password_confirmation.value;
-
+		console.log(e.target.elements.email.value);
 		const error = await signUp(
 			username,
 			first_name,
