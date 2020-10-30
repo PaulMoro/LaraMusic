@@ -76,7 +76,12 @@ header ul {
 }
 
 .userInf__prop h4{
+  cursor: pointer;
   font-size: 1rem;
+  opacity:0.5;
+}
+.userInf__prop h4:hover{
+  opacity:1;
 }
 
 `;

@@ -26,20 +26,26 @@ export default css.AlbumStyles`
   grid-row: 2/4;
 
 }
-
+.containerAlbum::-webkit-scrollbar{
+    display: none;
+}
 
 .about__album {
   margin-top: 5em;
   grid-column: 2/4;
   grid-row: 3/5;
   display: flex;
-  background-color: #eee2ee;
+  background: linear-gradient(#faf0fa, #d6cbd6);
   position: relative;
+  width:86vw;
+  max-width:1920px;
+  left:-1.5rem;
 }
 .banner__song {
   margin-right: 2em;
   position: relative;
-  top: -3.5em;
+  top: -3.5rem;
+  left:2rem;
 }
 .banner__song img {
   height: 600px;
@@ -47,12 +53,12 @@ export default css.AlbumStyles`
 .info__album_container {
   position: absolute;
   top: -3.5em;
-  left: 20em;
+  left: 22rem;
 }
 .info__album_container a {
   text-decoration: none;
   color: #969696;
-  font-weight: 700;
+  font-weight: 800;
   font-size: small;
 }
 .title__album {
