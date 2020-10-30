@@ -19,13 +19,19 @@ export default css.AlbumStyles`
   border-radius: 5px;
 }
 
+.containerAlbum{
+  padding:.5rem 1rem;
+  overflow-y: scroll;
+  grid-column: 2/3;
+  grid-row: 2/4;
 
+}
 
 
 .about__album {
-  margin-top: 1em;
-  grid-column: 2/3;
-  grid-row: 3/4;
+  margin-top: 5em;
+  grid-column: 2/4;
+  grid-row: 3/5;
   display: flex;
   background-color: #eee2ee;
   position: relative;
@@ -50,9 +56,9 @@ export default css.AlbumStyles`
   font-size: small;
 }
 .title__album {
-  margin: 10px 0;
   color: #0f1e36;
   font-size: 3.5em;
+  font-weight:bold;
 }
 .authors__album {
   color: #969696;

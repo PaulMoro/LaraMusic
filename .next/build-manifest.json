@@ -24,15 +24,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/artist": [
+    "/album": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/artist.js"
-    ],
-    "/player": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/player.js"
+      "static/chunks/pages/album.js"
     ]
   },
   "ampFirstPages": []

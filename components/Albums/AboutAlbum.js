@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import AlbumStyles from "./AlbumStyles";
+import logoAlbum from "../../assets/img/album.png";
 
 function AboutAlbum() {
   return (
     <section className="about__album">
       <div className="banner__song">
-        <img src="../../assets/img/album.png" alt="" />
+        <img src={logoAlbum} alt="" />
       </div>
       <div className="info__album_container">
         <a href="">// Album</a>
