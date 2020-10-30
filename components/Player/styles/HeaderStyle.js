@@ -1,37 +1,39 @@
 import css from "styled-jsx/css";
 
 export default css.Header`
-header {
+
+#headerHome {
   grid-column: 2/3;
   grid-row: 1/2;
   display: flex;
-  height: 68px;
-  width: 100%;
-  right: 0px;
+  justify-content:space-between;
+  
 }
 
 .searchBar {
-  height: 68px;
-  width: 50%;
   display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0 1rem;
+  background-color:transparent;
+  border-right: 1px solid rgba(15, 30, 54, 0.05);
 }
 
 .searchBar_icon{
+  height: 1rem;
   opacity: .5;
-  width: 25px;
-  height: 25px;
-  padding-left: 22px;
-  padding-top: 22px;
+  cursor:pointer;
 }
 
 .searchBar input {
+  height: 2rem;
+  padding-left: 1rem;
+  margin-left: .5rem;
+  font-size:1rem;
   color: #0F1E36;
-  font-size:22px;
-  border: 0px;
-  background-color: #F5F5F5;
-  height: 68px;
-  top: 0px;
-  padding-left: 42px;
+  background-color: transparent;
+  border-style:none;
+  opacity:.5;
 }
 
 .searchBar input:focus {
@@ -40,45 +42,40 @@ header {
 
 header ul {
   display: flex;
-  width: 50%;
+  justify-content:flex-end;
+  border-right: 1px solid rgba(15, 30, 54, 0.05);
 }
 
-header ul li {
-  list-style: none;
+.iconsTop {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+  
+}
+.iconsTop figure{
+  padding: 1.5rem 2rem;
+  height:68px;
+  border-right: 1px solid rgba(15, 30, 54, 0.05);
   border-left: 1px solid rgba(15, 30, 54, 0.05);
 }
-
-.iconsTop {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.iconsTop img {
-  height: 30px;
-}
-
 .userInf {
-  width: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 12rem;
 }
 
 .userInf img{
-  width: 34px;
-  height: 34px;
+  width: 2rem;
+  height: 2rem;
+  margin-right:.5rem;
   border-radius: 50%;
-}
-
-.userInf__prop{
-  display: inline;
-  margin-left: 9px;
+  object-fit:cover;
 }
 
 .userInf__prop h4{
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 `;
