@@ -14,9 +14,9 @@ export default css.Header`
   display: flex;
   align-items: center;
   justify-content:space-between;
-  padding: 0 1rem;
+  padding-right:20rem;
+  padding-left:1rem;
   background-color:transparent;
-  border-right: 1px solid rgba(15, 30, 54, 0.05);
 }
 
 .searchBar_icon{
@@ -27,6 +27,7 @@ export default css.Header`
 
 .searchBar input {
   height: 2rem;
+  width:30rem;
   padding-left: 1rem;
   margin-left: .5rem;
   font-size:1rem;
