@@ -12,16 +12,14 @@ import logo from "../../assets/img/Artist/logo.png";
 
 import { HeaderLinks } from "./molecules/Mol__HeaderLinks";
 
-function Header(props) {
-	const url = props.HeaderLinks;
-	//const { error } = state;
+function Header() {
 	return (
 		<header className='header'>
 			<div className='container'>
 				<Link href='/' className='header__img__container'>
 					<img src={logo} alt='Logo-Lara' />
 				</Link>
-				{/* <HeaderLinks authenticated={false} pathname={url.pathname} /> */}
+				<HeaderLinks />
 			</div>
 
 			<style jsx HomeStyle>
