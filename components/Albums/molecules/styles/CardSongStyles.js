@@ -2,6 +2,7 @@ import css from "styled-jsx/css";
 export default css.CardSongStyles`
 .card__song {
   margin-right: 2em;
+
 }
 .card__song--image{
   position: relative;
@@ -10,6 +11,7 @@ export default css.CardSongStyles`
   padding-top: 5px;
   font-size: 0.9em;
   font-weight: 700;
+  max-width:150px;
 }
 .artist_name {
   color: #969696;
@@ -17,6 +19,7 @@ export default css.CardSongStyles`
 }
 .card__song img {
   width: 150px;
+  height:150px;
   border-radius: 5px;
   object-fix:cover;
     vertical-align: top;
