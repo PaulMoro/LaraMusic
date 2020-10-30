@@ -13,16 +13,16 @@ import index from "../assets/style/indexStyle";
 /* api */
 
 const homeScreen = () => {
-	return (
-		<div className='lara'>
-			<HeaderHome />
-			<NavHomeScreen />
-			<MainPlayer />
-			<style jsx index>
-				{index}
-			</style>
-		</div>
-	);
+  return (
+    <div className="lara">
+      <HeaderHome />
+      <NavHomeScreen />
+      <MainPlayer />
+      <style jsx index>
+        {index}
+      </style>
+    </div>
+  );
 };
 
 export default homeScreen;
