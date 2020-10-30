@@ -9,7 +9,7 @@ function CardSong() {
 
   const obtenerDatos = async () => {
     const datos = await fetch(
-      "https://api-v2.hearthis.at/feed/?page=2&count=7"
+      "https://api-v2.hearthis.at/feed/?page=1&count=7"
     );
     const musica = await datos.json();
     setMusic(musica);

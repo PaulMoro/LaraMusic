@@ -37,8 +37,6 @@ export default css.AlbumStyles`
   display: flex;
   background: linear-gradient(#faf0fa, #d6cbd6);
   position: relative;
-  width:86vw;
-  max-width:1920px;
   left:-1.5rem;
 }
 .banner__song {
