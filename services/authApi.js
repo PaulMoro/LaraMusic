@@ -6,9 +6,9 @@ export const authenticate = async (email, password) => {
 			email,
 			password,
 		});
-		return res.data;
+		return res;
 	} catch (error) {
-		console.log(error);
+		console.error(error);
 		return error.response && error.response.status === 404
 			? "Wrong email/password"
 			: "Unknown error. Please try again";
