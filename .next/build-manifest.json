@@ -29,11 +29,16 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+<<<<<<< HEAD
     "/album": [
+=======
+    "/artist": [
+>>>>>>> paul
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/album.js"
     ],
+<<<<<<< HEAD
     "/login": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -43,11 +48,19 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/next/dist/pages/_error.js"
+<<<<<<< HEAD
     ],
+=======
+=======
+>>>>>>> paul
     "/player": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/player.js"
+<<<<<<< HEAD
+=======
+>>>>>>> fabian
+>>>>>>> paul
     ]
   },
   "ampFirstPages": []

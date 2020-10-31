@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { CgShare } from "react-icons/cg"
+import { CgShare } from "react-icons/cg";
+
 
 import sectionPopular from "./styles/sectionPopular";
 
 
 const SectionPopular = () => {
   /* call API */
+
 	const [music, setMusic] = useState([]);
 	useEffect(() => {
 		obtenerDatos();

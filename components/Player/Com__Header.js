@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { VscSearch, VscBell } from "react-icons/vsc";
 import { FiSearch } from "react-icons/fi";
 import Header from "./styles/HeaderStyle";

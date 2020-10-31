@@ -1,16 +1,14 @@
 import React from "react";
+import Link from "next/link";
 
 /* import componenets */
 import HeaderHome from "../components/Player/Com__Header";
 import NavHomeScreen from "../components/Player/Nav.js";
 import MainPlayer from "../components/Player/MainPlayer.js";
-import index from "../assets/style/indexStyle";
 
 /* import style */
+import index from "../assets/style/indexStyle";
 
-//import "../assets/style/indexStyle.scss";
-
-/* api */
 
 const homeScreen = () => {
   return (

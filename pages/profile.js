@@ -11,14 +11,14 @@ import FooterProfile from "../components/Com__FooterProfile.js";
 import "../assets/style/indexStyle.scss";
 
 const profile = () => {
-	return (
-		<div>
-			<HeaderProfile />
-			<NavProfile />
-			<SectionProfile />
-			<FooterProfile />
-		</div>
-	);
+  return (
+    <div>
+      <HeaderProfile />
+      <NavProfile />
+      <SectionProfile />
+      <FooterProfile />
+    </div>
+  );
 };
 
 export default profile;
