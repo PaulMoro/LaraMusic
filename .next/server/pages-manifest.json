@@ -2,11 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/player": "pages/player.js",
   "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
   "/login": "pages/login.js",
-  "/": "pages/index.js",
-  "/album": "pages/album.js",
-  "/register": "pages/register.js",
-  "/profile": "pages/profile.js"
+  "/player": "pages/player.js",
+  "/artist": "pages/artist.js",
+  "/album": "pages/album.js"
 }
