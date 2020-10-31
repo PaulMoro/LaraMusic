@@ -27,27 +27,9 @@ export default css.ContentMusicStyles`
 }
 .icon{
   cursor:pointer;
+  opacity:0.5;
 }
-.song__item{
-   position: relative;
+.icon:hover{
+  opacity:1;
 }
-.song__item p:hover{
-  display:none;
-}
-.icon__play{
-  display:none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  align-items: center;
-  justify-content: center;
-}
-.tab__music:hover .icon__play{
-/*  display: flex;*/
-  
-}
-
-
 `;
