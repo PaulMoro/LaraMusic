@@ -5,6 +5,7 @@ import { VscSearch, VscBell } from "react-icons/vsc";
 import Header from "./styles/HeaderStyle";
 
 const HeaderHome = () => {
+<<<<<<< HEAD
 	return (
 		<header id='headerHome'>
 			<div className='searchBar'>
@@ -30,12 +31,40 @@ const HeaderHome = () => {
 		      </Link>
 				</li>
 			</ul>
+=======
+  return (
+    <header id="headerHome">
+      <div className="searchBar">
+        <div className="searchBar_icon">
+          <VscSearch />
+        </div>
+        <input
+          type="text"
+          name=""
+          placeholder="Search your entertainment"
+          id=""
+        />
+      </div>
+      <ul>
+        <li className="iconsTop">
+          <figure>
+            <VscBell />
+          </figure>
+        </li>
+        <li className="userInf">
+          <img src="https://i.imgur.com/rQ73ETF.jpg" alt="" />
+          <div className="userInf__prop">
+            <h4>Fulanita Roquera</h4>
+          </div>
+        </li>
+      </ul>
+>>>>>>> fabian
 
-			<style jsx Header>
-				{Header}
-			</style>
-		</header>
-	);
+      <style jsx Header>
+        {Header}
+      </style>
+    </header>
+  );
 };
 
 export default HeaderHome;

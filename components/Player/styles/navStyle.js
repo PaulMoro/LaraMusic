@@ -5,47 +5,46 @@ nav {
   height: 100vh;
   grid-column: 1/2;
   grid-row: 1/3;
-  padding-left: 25px;
+  display:flex;
+  flex-direction:column;
   border-right: 1px solid rgba(15, 30, 54, 0.05);
 }
 
 .logo {
-  height: 100px;
   display: flex;
-  align-items: center;
+  justify-content:center;
+  margin: 1.5rem 0;
+  object-fit: cover;
+  cursor:pointer;
 }
-
-.logo  img{
-  width: 108px;
-  height: 34px;
-}
-
 .container {
-  height: 565px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-top:1rem;
 }
 
-nav h2 {
+.container h2 {
   font-size: 14px;
+  margin: 1rem 0;
 }
 
+<<<<<<< HEAD
 .list li,  .list li a{
   padding: 5px 0px;
+=======
+.item {
+>>>>>>> fabian
   list-style: none;
   display: flex;
-  align-self: center;
-  height: 45px;
+  height: 40px;
 }
-
+.item:hover{
+  color:#9e4f9e;
+  cursor:pointer;
+}
 .list p {
-  padding-left: 15px;
+  padding-left:1rem;
   font-size: 14px;
 }
 
-.list img{
-  width: 30px;
-  height: 30px;
-}
 `;

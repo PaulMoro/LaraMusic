@@ -1,19 +1,21 @@
 import { post, get } from "../lib/request";
 
 export const createUser = async (
-	name,
+	username,
+	first_name,
+	last_name,
 	email,
 	password,
 	password_confirmation
 ) => {
 	try {
 		const response = await post("/api/v1/users/signup/", {
-			user: {
-				name,
-				email,
-				password,
-				password_confirmation,
-			},
+			username,
+			first_name,
+			last_name,
+			email,
+			password,
+			password_confirmation,
 		});
 		return response;
 	} catch (error) {
