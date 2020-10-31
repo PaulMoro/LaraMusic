@@ -4,7 +4,7 @@ import FeatureTracks from "./FeatureTracks";
 import AboutAlbum from "./AboutAlbum";
 function ContentAlbum() {
   return (
-    <div className="containerAlbum">
+    <div className="containerContent">
       <FeatureTracks></FeatureTracks>
       <AboutAlbum></AboutAlbum>
       <style jsx AlbumStyles>

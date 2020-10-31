@@ -3,7 +3,8 @@ import HeaderHome from "../components/Player/Com__Header";
 // import MainHomeScreen from "../components/_app/Main";
 import { Banner } from "../components/Artist/Banner";
 import NavHomeScreen from "../components/Player/Nav.js";
-
+import Play from "../components/Play/Play";
+import ContentArtist from "../components/Artist/ContentArtist";
 import { FilterArtist } from "../components/Artist/FilterArtist";
 
 /* import componenets */
@@ -14,9 +15,9 @@ const artist = () => {
       <HeaderHome />
       <NavHomeScreen></NavHomeScreen>
       {/* <MainHomeScreen /> */}
-      <Banner />
+      <ContentArtist />
 
-      <footer>Hi</footer>
+      <Play></Play>
     </div>
   );
 };

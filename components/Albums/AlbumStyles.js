@@ -20,15 +20,13 @@ export default css.AlbumStyles`
   border-radius: 5px;
 }
 
-.containerAlbum{
+.containerContent{
   padding:.5rem 0 0 0;
-
   overflow-y: scroll;
   grid-column: 2/3;
   grid-row: 2/4;
-
 }
-.containerAlbum::-webkit-scrollbar{
+.containerContent::-webkit-scrollbar{
     display: none;
 }
 

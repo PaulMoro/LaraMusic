@@ -13,7 +13,6 @@ export default css.sectionPopular`
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
   height: 307px;
   color: #0F1E36;
 }
