@@ -2,20 +2,11 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> paul
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
-  "/": "pages/index.js",
-  "/login": "pages/login.js",
-<<<<<<< HEAD
-  "/album": "pages/album.js",
-  "/player": "pages/player.js"
-=======
-=======
   "/player": "pages/player.js",
->>>>>>> fabian
-  "/artist": "pages/artist.js"
->>>>>>> paul
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
+  "/login": "pages/login.js",
+  "/": "pages/index.js",
+  "/album": "pages/album.js",
+  "/register": "pages/register.js",
+  "/profile": "pages/profile.js"
 }

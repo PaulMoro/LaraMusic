@@ -1,22 +1,21 @@
 import React from "react";
 
 /* import componenets */
-import HeaderProfile from "../components/Com__HeaderProfile.js";
 import NavProfile from "../components/Com__NavProfile.js";
 import SectionProfile from "../components/Com__SectionProfile.js";
-import FooterProfile from "../components/Com__FooterProfile.js";
-
+import Header from "../components/Home/HeaderPage";
+import Footer from "../components/Home/FooterPage";
 /* import style */
 
-import "../assets/style/indexStyle.scss";
+import index from "../assets/style/indexStyle";
 
 const profile = () => {
   return (
     <div>
-      <HeaderProfile />
+      <Header />
       <NavProfile />
       <SectionProfile />
-      <FooterProfile />
+      <Footer />
     </div>
   );
 };
