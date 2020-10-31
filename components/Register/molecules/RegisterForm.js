@@ -26,22 +26,26 @@ export default class Register extends Component {
 				{error && <Error message={error} />}
 				<form className='form-group' onSubmit={this.handleSubmit}>
 					<div className='form-item' id='name'>
-						<label htmlFor='name'>User Name</label>
+						<label htmlFor='username'>User Name</label>
 						<input type='text' id='username' name='username' />
 					</div>
 					<div className='form-item' id='name'>
-						<label htmlFor='name'>First Name</label>
+						<label htmlFor='first_name'>First Name</label>
 						<input type='text' id='first_name' name='first_name' />
 					</div>
 					<div className='form-item' id='name'>
-						<label htmlFor='name'>Last Name</label>
+						<label htmlFor='last_name'>Last Name</label>
 						<input type='text' id='last_name' name='last_name' />
 					</div>
 					<div className='form-item' id='email'>
 						<label htmlFor='email'>User email</label>
 						<input type='email' id='email' name='email' />
 					</div>
-					<div className='form-item' id='pass'>
+					<div className='form-item' id='name'>
+						<label htmlFor='biography'>Your favourite music</label>
+						<input type='text' id='biography' name='biography' />
+					</div>
+					<div className='form-item' id='password'>
 						<label htmlFor='password'>Password</label>
 						<input id='password' type='password' name='password' />
 						<span>{`Password, 8 characters min`}</span>
@@ -61,7 +65,7 @@ export default class Register extends Component {
 					</div>
 					<small>
 						By registering you confirm that you accept the
-						<a href>Terms and Conditions and Privacy Policy</a>
+						<a href='/'>Terms and Conditions and Privacy Policy</a>
 					</small>
 					<style jsx LoginStyle>
 						{LoginStyle}
@@ -78,14 +82,17 @@ export default class Register extends Component {
 		const first_name = e.target.elements.first_name.value;
 		const last_name = e.target.elements.last_name.value;
 		const email = e.target.elements.email.value;
+		const biography = e.target.elements.biography.value;
 		const password = e.target.elements.password.value;
 		const password_confirmation = e.target.elements.password_confirmation.value;
-
+		console.log(e.target.elements.password_confirmation.value);
+		console.log(e.target.elements.password.value);
 		const error = await signUp(
 			username,
 			first_name,
 			last_name,
 			email,
+			biography,
 			password,
 			password_confirmation
 		);
