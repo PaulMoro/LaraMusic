@@ -1,7 +1,5 @@
 import React from "react";
 
-//import "../assets/style/componentStyle/com__NavProfile.scss";
-
 const NavProfile = () => {
 	return (
 		<nav>

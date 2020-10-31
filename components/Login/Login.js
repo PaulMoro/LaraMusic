@@ -1,7 +1,7 @@
 import React from "react";
 
 import LoginStyle from "./LoginStyle";
-import LoginForm from "./molecules/LoginForm";
+import { LoginForm } from "../../Hooks/LoginFormHook";
 import womanImage from "../../assets/img/Artist/loginwoman.jpg";
 
 export const Login = () => {

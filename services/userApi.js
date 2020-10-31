@@ -5,6 +5,7 @@ export const createUser = async (
 	first_name,
 	last_name,
 	email,
+	biography,
 	password,
 	password_confirmation
 ) => {
@@ -16,6 +17,7 @@ export const createUser = async (
 			email,
 			password,
 			password_confirmation,
+			profile: { biography },
 		});
 		return response;
 	} catch (error) {
