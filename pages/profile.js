@@ -8,8 +8,6 @@ import FooterProfile from "../components/Com__FooterProfile.js";
 
 /* import style */
 
-import "../assets/style/indexStyle.scss";
-
 const profile = () => {
 	return (
 		<div>

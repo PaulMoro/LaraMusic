@@ -41,7 +41,7 @@ export const RegisterForm = () => {
 			password,
 			password_confirmation
 		);
-
+		console.log(formRegisterValues);
 		if (error) {
 			setError(error);
 		}
@@ -139,61 +139,3 @@ export const RegisterForm = () => {
 		</>
 	);
 };
-
-// import React, { useState } from "react";
-// import Error from "./Error";
-// import { signUp, redirectIfAuthenticated } from "../../../lib/auth";
-
-// import LoginStyle from "../LoginStyle";
-
-// export default class Register extends Component {
-// 	constructor(props) {
-// 		super(props);
-// 		this.state = {
-// 			error: null,
-// 		};
-// 	}
-// 	static getInitialProps(ctx) {
-// 		redirectIfAuthenticated(ctx);
-
-// 		return {};
-// 	}
-
-// 	render() {
-// 		const { url } = this.props;
-// 		const { error } = this.state;
-// 		return (
-
-// 		);
-// 	}
-
-// 	handleSubmit = async (e) => {
-// 		e.preventDefault();
-
-// 		const username = e.target.elements.username.value;
-// 		const first_name = e.target.elements.first_name.value;
-// 		const last_name = e.target.elements.last_name.value;
-// 		const email = e.target.elements.email.value;
-// 		const biography = e.target.elements.biography.value;
-// 		const password = e.target.elements.password.value;
-// 		const password_confirmation = e.target.elements.password_confirmation.value;
-// 		console.log(e.target.elements.password_confirmation.value);
-// 		console.log(e.target.elements.password.value);
-// 		const error = await signUp(
-// 			username,
-// 			first_name,
-// 			last_name,
-// 			email,
-// 			biography,
-// 			password,
-// 			password_confirmation
-// 		);
-
-// 		if (error) {
-// 			this.setState({
-// 				error,
-// 			});
-// 			return false;
-// 		}
-// 	};
-// }
