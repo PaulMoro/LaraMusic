@@ -14,6 +14,11 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
+    "/": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/index.js"
+    ],
     "/_app": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -27,12 +32,16 @@
     "/album": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
+<<<<<<< HEAD
       "static/chunks/pages/album.js"
     ],
     "/artist": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/artist.js"
+=======
+      "static/chunks/pages/login.js"
+>>>>>>> jobanag
     ]
   },
   "ampFirstPages": []

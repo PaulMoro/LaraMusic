@@ -1,7 +1,8 @@
 import React from "react";
 
 import LoginStyle from "./LoginStyle";
-import { LoginForm } from "../../Hooks/LoginFormHook";
+//import { LoginForm } from "../../Hooks/LoginFormHook";
+import { LoginForm } from "./molecules/LoginForm";
 import womanImage from "../../assets/img/Artist/loginwoman.jpg";
 
 function Login() {

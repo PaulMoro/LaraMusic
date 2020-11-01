@@ -2,6 +2,11 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
   "/album": "pages/album.js",
   "/artist": "pages/artist.js"
+=======
+  "/login": "pages/login.js",
+  "/": "pages/index.js"
+>>>>>>> jobanag
 }

@@ -7,8 +7,11 @@ import Header from "../components/Home/HeaderPage";
 import Footer from "../components/Home/FooterPage";
 /* import style */
 
+<<<<<<< HEAD
 import index from "../assets/style/indexStyle";
 
+=======
+>>>>>>> jobanag
 const profile = () => {
   return (
     <div>
