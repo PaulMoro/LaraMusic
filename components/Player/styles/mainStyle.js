@@ -12,7 +12,8 @@ export default css.mainStyle`
   grid-row: 2/3;
   display: block;
   right: 0px;
-  border: 1px green solid;
+  width: 85%;
+  height: 85%;
 }
 
 article {
@@ -28,3 +29,5 @@ article h2 {
   line-height: 22px;
 }
 `;
+
+/* border: 1px green solid; */

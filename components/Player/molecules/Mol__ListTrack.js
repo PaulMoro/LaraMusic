@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import fetch from "isomorphic-fetch";
+import { VscThumbsup, VscFolderOpened } from "react-icons/vsc";
+import { GrShareOption } from "react-icons/gr";
 
 import ListTrackStyle from "./styles/ListTrackStyle";
 //import "../../assets/style/moleculStyle/mol__ListTrack.scss";
@@ -35,7 +37,7 @@ const ListTrack = () => {
 			{music.map((item) => (
 				<div className='track_list'>
 					<div className='track_list_detail'>
-						<h4 className='track_top_detail#'>1</h4>
+						<h4 className='track_top_detailNumber'>1 < VscThumbsup /></h4>
 						<h4 className='track_top_detailSong'>{item.permalink}</h4>
 						<h4 className='track_top_detailArtist'>{item.user.username}</h4>
 					</div>
@@ -43,8 +45,8 @@ const ListTrack = () => {
 						<h4>{item.playback_count}</h4>
 						<h4>{item.duration} seg</h4>
 						<div className='track_list_infOptions'>
-							<img src='' alt='' />
-							<img src='' alt='' />
+							<VscFolderOpened />
+							<GrShareOption />
 							<img src='' alt='' />
 						</div>
 					</div>

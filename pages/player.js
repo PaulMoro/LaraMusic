@@ -11,19 +11,6 @@ import index from "../assets/style/indexStyle";
 
 
 const homeScreen = () => {
-<<<<<<< HEAD
-	return (
-		<div className='lara'>
-			<HeaderHome />
-			<NavHomeScreen />
-			<MainPlayer />
-
-			<style jsx index>
-				{index}
-			</style>
-		</div>
-	);
-=======
   return (
     <div className="lara">
       <HeaderHome />
@@ -34,7 +21,6 @@ const homeScreen = () => {
       </style>
     </div>
   );
->>>>>>> fabian
 };
 
 export default homeScreen;

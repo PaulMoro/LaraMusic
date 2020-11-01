@@ -12,6 +12,7 @@ const MainPlayer = () => {
 		<main className='Container'>
 			<SectionPopular/>
 			<article>
+				<h2 className='song__tittle'>Featured Tracks</h2>
 				<ContainerSong />
 				<ListTrack />
 			</article>

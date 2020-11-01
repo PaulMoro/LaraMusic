@@ -43,6 +43,12 @@ export default css.ListTrackStyle`
           align-items: center;
 }
 
+.track_top_detailNumber{
+  display: flex;
+  justify-content: space-between;
+  width: 63px;
+}
+
 .track_top_inf, .track_list_inf {
   width: 30%;
   display: -webkit-box;
@@ -91,3 +97,9 @@ export default css.ListTrackStyle`
   height: 24px;
 }
 `;
+
+/* .track_top h4, .track_list_detail h4 {
+  padding-right: 30%;
+  text-align: start;
+  font-size: 12px;
+} */
