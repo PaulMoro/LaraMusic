@@ -2,17 +2,7 @@ import css from "styled-jsx/css";
 
 export default css.HomeStyle`
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* Header */
-
-=======
->>>>>>> jobanag
-=======
-/* Header */
-
->>>>>>> fabian
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,25 +11,10 @@ export default css.HomeStyle`
   height: 100px;
   padding: 0 10%;
 }
-
 .header__img__container img {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fabian
   height: 50px;
 }
-
 /* Hero */
-
-<<<<<<< HEAD
-=======
-	height: 50px;
-}
-
->>>>>>> jobanag
-=======
->>>>>>> fabian
 .hero {
   background-color: #9e4f9e;
   display: flex;
@@ -92,17 +67,7 @@ export default css.HomeStyle`
   background-color: transparent;
   border: 0.1em solid #ffc24b;
 }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* Lara Specs */
-
-=======
->>>>>>> jobanag
-=======
-/* Lara Specs */
-
->>>>>>> fabian
 .lara__specs {
   display: flex;
   padding: 0 10%;
@@ -135,32 +100,16 @@ export default css.HomeStyle`
   width: 30vw;
   max-width: 600px;
 }
-
 .lara__specs__img {
   position: absolute;
   left: 53%;
   margin-top: 1%;
 }
 .lara__specs__img img {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fabian
   width: 500px;
   height: 650px;
 }
-
 /* Top Artist */
-<<<<<<< HEAD
-=======
-	width: 500px;
-	height: 650px;
-}
-
->>>>>>> jobanag
-=======
->>>>>>> fabian
-
 .artist {
   margin-top: 45rem;
   padding: 0 10%;
@@ -183,35 +132,13 @@ export default css.HomeStyle`
   text-align: center;
 }
 .grid__container__artist {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fabian
   padding: 0 10%;
   margin-top: 5%;
   display: grid;
   grid-template: 1fr 1fr/ 1fr 1fr 1fr;
   gap: 2em;
 }
-
 /* Footer */
-<<<<<<< HEAD
-=======
-	padding: 0 10%;
-	margin-top: 5%;
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-rows: 1fr 1fr;
-	-ms-grid-columns: 1fr 1fr 1fr;
-	grid-template: 1fr 1fr/ 1fr 1fr 1fr;
-	gap: 2em;
-}
-
-
->>>>>>> jobanag
-=======
->>>>>>> fabian
-
 footer {
   padding: 0 10%;
   display: flex;
@@ -219,18 +146,15 @@ footer {
   justify-content: space-between;
   background-color: #f9f9f9;
 }
-
 footer img {
   height: 50px;
   margin: 21px 0px 108px 0px;
 }
-
 footer ul {
   width: 500px;
   display: flex;
   justify-content: space-evenly;
 }
-
 footer li {
   font-weight: 300;
   margin-top: 10%;
@@ -238,5 +162,4 @@ footer li {
   color: #989898;
   letter-spacing: 2px;
 }
-
 `;

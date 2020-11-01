@@ -2,9 +2,8 @@ import css from "styled-jsx/css";
 
 export default css.Nav`
 nav {
-  height: 100vh;
   grid-column: 1/2;
-  grid-row: 1/3;
+  grid-row: 1/4;
   display:flex;
   flex-direction:column;
   border-right: 1px solid rgba(15, 30, 54, 0.05);

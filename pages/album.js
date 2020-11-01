@@ -1,15 +1,15 @@
 import React from "react";
 import HeaderHome from "../components/Player/Com__Header";
 import NavHomeScreen from "../components/Player/Nav.js";
-import FeatureTracks from "../components/Albums/FeatureTracks";
-import AboutAlbum from "../components/Albums/AboutAlbum";
+import ContentAbum from "../components/Albums/ContentAbum";
+import Play from "../components/Play/Play";
 function Album() {
   return (
     <div className="lara">
       <HeaderHome></HeaderHome>
       <NavHomeScreen></NavHomeScreen>
-      <FeatureTracks></FeatureTracks>
-      <AboutAlbum></AboutAlbum>
+      <ContentAbum></ContentAbum>
+      <Play></Play>
     </div>
   );
 }

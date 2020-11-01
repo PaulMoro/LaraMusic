@@ -1,12 +1,15 @@
 import React from "react";
 import Link from "next/link";
 
+<<<<<<< HEAD
+=======
 import { getCookie, removeCookie } from "../../lib/session";
 import { signIn, redirectIfAuthenticated } from "../../lib/auth";
 
 import Success from "../../components/Login/molecules/Success";
 import Error from "../../components/Login/molecules/Error";
 
+>>>>>>> paul
 import HomeStyle from "./HomeStyle";
 import logo from "../../assets/img/Artist/logo.png";
 

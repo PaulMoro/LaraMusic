@@ -24,6 +24,19 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+<<<<<<< HEAD
+=======
+    "/album": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/album.js"
+    ],
+    "/artist": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/artist.js"
+    ],
+>>>>>>> c2e7f1900f52e9d5c0464fa4a116b680b2244339
     "/player": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",

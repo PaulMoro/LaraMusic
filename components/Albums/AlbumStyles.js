@@ -3,6 +3,7 @@ import css from "styled-jsx/css";
 export default css.AlbumStyles`
 /* feature */
 .feature__tracks {
+    padding-left:1rem;
   grid-column: 2/3;
   grid-row: 2/3;
 }
@@ -19,40 +20,49 @@ export default css.AlbumStyles`
   border-radius: 5px;
 }
 
-
-
+.containerContent{
+  padding:.5rem 0 0 0;
+  overflow-y: scroll;
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+.containerContent::-webkit-scrollbar{
+    display: none;
+}
 
 .about__album {
-  margin-top: 1em;
-  grid-column: 2/3;
-  grid-row: 3/4;
+  margin-top: 5em;
+  grid-column: 2/4;
+  grid-row: 3/5;
   display: flex;
-  background-color: #eee2ee;
+  background: linear-gradient(#faf0fa, #d6cbd6);
   position: relative;
+ 
 }
 .banner__song {
   margin-right: 2em;
   position: relative;
-  top: -3.5em;
+  top: -3.5rem;
+  left:2rem;
 }
 .banner__song img {
   height: 600px;
 }
 .info__album_container {
   position: absolute;
-  top: -3.5em;
-  left: 20em;
+  top: -3.8em;
+  left: 22rem;
 }
 .info__album_container a {
   text-decoration: none;
   color: #969696;
-  font-weight: 700;
+  font-weight: 800;
   font-size: small;
 }
 .title__album {
-  margin: 10px 0;
   color: #0f1e36;
-  font-size: 3.5em;
+  font-size: 3.6em;
+  font-weight:bold;
 }
 .authors__album {
   color: #969696;
@@ -70,9 +80,11 @@ export default css.AlbumStyles`
   text-align: center;
   font-weight: 600;
 }
-
-
-
+.content__music{
+  width: 60vw;
+  margin:3rem 0 ;
+  max-width:1720px;
+}
 
 
 `;

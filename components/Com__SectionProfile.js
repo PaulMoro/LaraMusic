@@ -1,8 +1,6 @@
 import React from "react";
 import { CgCrown } from "react-icons/cg";
 
-//import "../assets/style/componentStyle/com__SectionProfile.scss";
-
 const SectionProfile = () => {
 	return (
 		<section id='sectionProfile'>

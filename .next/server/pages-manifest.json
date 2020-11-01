@@ -2,5 +2,11 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
   "/player": "pages/player.js"
+=======
+  "/player": "pages/player.js",
+  "/artist": "pages/artist.js",
+  "/album": "pages/album.js"
+>>>>>>> c2e7f1900f52e9d5c0464fa4a116b680b2244339
 }
