@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Success from "../lib/Success";
 import Error from "../lib/Error";
-import { signIn, redirectIfAuthenticated } from "../lib/auth";
+import { Login, redirectIfAuthenticated } from "../lib/auth";
 
 import LoginStyle from "./LoginStyle";
 
@@ -15,23 +15,22 @@ export const LoginForm = (props) => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		if (email && password) {
-			signIn({ email, password });
+			Login({ email, password });
 		}
 
-		const error = await signIn(email, password);
+		const error = await Login(email, password);
 
 		if (error) {
 			setError(error);
 			return false;
 		}
 
-		const jwt = await signIn(email, password);
+		const jwt = await Login(email, password);
 
 		if (jwt) {
 			setJwt({
 				jwt: true,
 			});
-			//Aqui se debe de redirigir a la página en caso de que sea un usuario valido
 		}
 	};
 	return (
