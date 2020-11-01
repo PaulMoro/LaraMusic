@@ -33,11 +33,6 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/artist.js"
-    ],
-    "/player": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/player.js"
     ]
   },
   "ampFirstPages": []

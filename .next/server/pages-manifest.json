@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/player": "pages/player.js",
-  "/artist": "pages/artist.js",
-  "/album": "pages/album.js"
+  "/album": "pages/album.js",
+  "/artist": "pages/artist.js"
 }
