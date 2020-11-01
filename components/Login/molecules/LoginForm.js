@@ -1,83 +1,83 @@
-// import { Component } from "react";
-// import { useRouter } from "next/router";
-// import Link from "next/link";
-// import Success from "../../../lib/Success";
-// import Error from "../../../lib/Error";
-// import { getCookie, removeCookie } from "../../../lib/session";
-// import { signIn, redirectIfAuthenticated } from "../../../lib/auth";
+import React, { useState } from "react";
+import Success from "../../../lib/Success";
+import Error from "../../../lib/Error";
+import { Login, redirectIfAuthenticated } from "../../../lib/auth";
+import { useForm } from "../../../Hooks/useForm";
 
-// import LoginStyle from "../LoginStyle";
+import LoginStyle from "../LoginStyle";
 
-// export default class Login extends Component {
-// 	constructor(props) {
-// 		super(props);
-// 		this.state = {
-// 			error: null,
-// 		};
-// 	}
-// 	static getInitialProps(ctx) {
-// 		if (redirectIfAuthenticated(ctx)) {
-// 			return {};
-// 		}
+export const LoginForm = () => {
+	const [error, setError] = useState("");
+	//const [jwt, setJwt] = useState("");
+	const [formLoginValues, handleLoginInputChange] = useForm({
+		email: "pepe@example.com",
+		password: "pepepepe",
+		//jwt: "",
+	});
 
-// 		const success = getCookie("success", ctx.req);
-// 		if (success) {
-// 			removeCookie("success");
-// 		}
-// 		return {
-// 			success,
-// 		};
-// 	}
+	const { email, password } = formLoginValues;
 
-// 	render() {
-// 		const { url, success } = this.props;
-// 		const { error } = this.state;
-// 		return (
-// 			<>
-// 				{success && <Success message={success} />}
-// 				{error && <Error message={error} />}
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		if (email && password) {
+			Login({ email, password });
+		}
 
-// 				<form onSubmit={this.handleSubmit} className='form-group'>
-// 					<div className='form-item' id='email'>
-// 						<label htmlFor='email'>Email</label>
-// 						<input type='email' id='email' name='email' />
-// 					</div>
-// 					<div className='form-item' id='pass'>
-// 						<label htmlFor='password'>Password</label>
-// 						<input id='password' type='password' name='password' />
-// 					</div>
-// 					<div className='buttons'>
-// 						<button className='send' type='submit'>
-// 							Login
-// 						</button>
-// 						<button type='reset'>Forgot your Password?</button>
-// 					</div>
-// 					<small>
-// 						By registering you confirm that you accept the
-// 						<a href='/'>Terms and Conditions and Privacy Policy</a>
-// 					</small>
-// 				</form>
+		const error = await Login(email, password);
 
-// 				<style jsx LoginStyle>
-// 					{LoginStyle}
-// 				</style>
-// 			</>
-// 		);
-// 	}
+		if (error) {
+			setError(error);
+			return false;
+		}
 
-// 	handleSubmit = async (e) => {
-// 		e.preventDefault();
+		const jwt = await Login(email, password);
 
-// 		const email = e.target.elements.email.value;
-// 		const password = e.target.elements.password.value;
+		if (jwt) {
+			setJwt({
+				jwt: true,
+			});
+		}
+	};
 
-// 		const jwt = await signIn(email, password);
-
-// 		if (jwt) {
-// 			this.setState({
-// 				jwt: true,
-// 			});
-// 			// Aqui se debe de redirigir a la página en caso de que sea un usuario valido
-// 		}
-// 	};
-// }
+	return (
+		<>
+			{/* {success && <Success message={success} />} */}
+			{error && <Error message={error} />}
+			<form onSubmit={handleSubmit} className='form-group'>
+				<div className='form-item' id='email'>
+					<label htmlFor='email'>Email</label>
+					<input
+						type='email'
+						id='email'
+						name='email'
+						value={email}
+						onChange={handleLoginInputChange}
+					/>
+				</div>
+				<div className='form-item' id='pass'>
+					<label htmlFor='password'>Password</label>
+					<input
+						id='password'
+						type='password'
+						name='password'
+						value={password}
+						onChange={handleLoginInputChange}
+					/>
+				</div>
+				<div className='buttons'>
+					<button className='send' type='submit'>
+						Login
+					</button>
+					<button type='reset'>Forgot your Password?</button>
+				</div>
+				<small>
+					By registering you confirm that you accept the
+					<a href='/'>Terms and Conditions and Privacy Policy</a>
+				</small>
+			</form>
+			<style jsx LoginStyle>
+				{LoginStyle}
+			</style>
+		</>
+	);
+};
