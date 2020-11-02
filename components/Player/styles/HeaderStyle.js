@@ -75,11 +75,14 @@ header ul {
   object-fit:cover;
 }
 
-.userInf__prop h4{
+.userInf__prop a{
   cursor: pointer;
   font-size: 1rem;
+  color: #0F1E36;
   opacity:0.5;
+  text-decoration: none;
 }
+
 .userInf__prop h4:hover{
   opacity:1;
 }

@@ -25,14 +25,10 @@ const HeaderHome = () => {
           </figure>
         </li>
         <li className="userInf">
-          <Link href='/profile' className='header__link--profile'>
-            <a >
-              <img src="https://i.imgur.com/rQ73ETF.jpg" alt="" />
-              <div className="userInf__prop">
-                <h4>Fulanita Roquera</h4>
-              </div>
-            </a>
-          </Link>
+          <img src="https://i.imgur.com/rQ73ETF.jpg" alt="" />
+          <div className="userInf__prop">
+            <a href="/profile">Fulanita Roquera</a>
+          </div>
         </li>
       </ul>
 

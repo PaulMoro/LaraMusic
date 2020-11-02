@@ -1,38 +1,6 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-<<<<<<< HEAD
   "/_document": "pages/_document.js",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "/player": "pages/player.js",
-  "/": "pages/index.js"
-=======
-<<<<<<< HEAD
-  "/album": "pages/album.js",
-  "/artist": "pages/artist.js"
-=======
-  "/login": "pages/login.js",
-  "/": "pages/index.js"
->>>>>>> jobanag
->>>>>>> 2197ba54cb567e95795d5071f3b35cd6ab46e9c7
-=======
-  "/player": "pages/player.js",
-  "/profile": "pages/profile.js",
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
->>>>>>> paul
-=======
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
-  "/album": "pages/album.js",
-  "/": "pages/index.js",
-  "/login": "pages/login.js",
-  "/player": "pages/player.js",
-  "/artist": "pages/artist.js",
-  "/register": "pages/register.js",
-  "/profile": "pages/profile.js"
->>>>>>> fabian
-=======
-  "/_document": "pages/_document.js"
->>>>>>> 409ef27dab2ac29398e85329fedda9174b8b8c0d
+  "/player": "pages/player.js"
 }

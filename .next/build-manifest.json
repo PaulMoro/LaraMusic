@@ -23,68 +23,11 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
-<<<<<<< HEAD
-    ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "/player": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/player.js"
-=======
-    "/album": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-<<<<<<< HEAD
-      "static/chunks/pages/album.js"
-    ],
-    "/artist": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/artist.js"
-=======
-      "static/chunks/pages/login.js"
->>>>>>> jobanag
->>>>>>> 2197ba54cb567e95795d5071f3b35cd6ab46e9c7
-=======
-    "/next/dist/pages/_error": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/next/dist/pages/_error.js"
-    ],
-    "/login": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/login.js"
-    ],
-    "/next/dist/pages/_error": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/next/dist/pages/_error.js"
     ],
     "/player": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/player.js"
-    ],
-    "/profile": [
-<<<<<<< HEAD
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/profile.js"
->>>>>>> paul
-=======
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/profile.js"
-    ],
-    "/register": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/register.js"
->>>>>>> fabian
-=======
->>>>>>> 409ef27dab2ac29398e85329fedda9174b8b8c0d
     ]
   },
   "ampFirstPages": []
