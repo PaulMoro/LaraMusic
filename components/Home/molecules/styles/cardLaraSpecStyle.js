@@ -1,19 +1,22 @@
 import css from "styled-jsx/css";
 
 export default css.cardLaraSpecStyle`
-    .card {
-    display: inherit;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    }
 
-    .card p {
-    color: #585858;
-    font-weight: 600;
-    }
+.card {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+.card p {
+  color: #525252;
+  font-weight: 600;
+}
+.card img {
+  width: 130px;
+  height: 130px;
+}
+.card p {
+  text-align: center;
+  width: 5em;
+}
 `;

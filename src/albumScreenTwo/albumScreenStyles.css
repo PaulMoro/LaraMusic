@@ -194,7 +194,7 @@ nav h2 {
   grid-column: 2/4;
   grid-row: 3/4;
   display: flex;
-  background-color: #eee2ee;
+  background: linear-gradient(#faf0fa, #d6cbd6);
   position: relative;
 }
 .banner__song {

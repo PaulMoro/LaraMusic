@@ -1,24 +1,26 @@
 import React from "react";
+import Link from "next/link";
 
 /* import componenets */
-import HeaderHome from "../components/Com__atAPP/Com__Header";
-import Main from "../components/Com__atAPP/Main.js";
-import Section from "../components/Com__atAPP/Com__Section.js";
+import HeaderHome from "../components/Player/Com__Header";
+import NavHomeScreen from "../components/Player/Nav.js";
+import MainPlayer from "../components/Player/MainPlayer.js";
 
 /* import style */
+import index from "../assets/style/indexStyle";
 
-//import "../assets/style/indexStyle.scss";
-
-/* api */
 
 const homeScreen = () => {
-	return (
-		<div className='lara'>
-			<HeaderHome />
-			<Main />
-			<Section />
-		</div>
-	);
+  return (
+    <div className="lara">
+      <HeaderHome />
+      <NavHomeScreen />
+      <MainPlayer />
+      <style jsx index>
+        {index}
+      </style>
+    </div>
+  );
 };
 
 export default homeScreen;

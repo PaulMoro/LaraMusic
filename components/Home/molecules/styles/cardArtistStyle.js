@@ -4,6 +4,8 @@ export default css.cardArtistStyle`
 .title__song {
   padding-top: 10px;
   font-weight: 700;
+  max-width:17rem;
+  
 }
 
 .artist_name {
@@ -12,7 +14,7 @@ export default css.cardArtistStyle`
 }
 
 .card__artist img {
-  height: 17em;
-  width: 17em;
+  height: 17rem;
+  width: 17rem;
 }
 `;
