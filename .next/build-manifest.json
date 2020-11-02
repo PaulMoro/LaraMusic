@@ -29,16 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/album": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/album.js"
-    ],
-    "/artist": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/artist.js"
-    ],
     "/login": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -53,16 +43,6 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/player.js"
-    ],
-    "/profile": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/profile.js"
-    ],
-    "/register": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/register.js"
     ]
   },
   "ampFirstPages": []

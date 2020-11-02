@@ -3,11 +3,7 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
-  "/album": "pages/album.js",
   "/": "pages/index.js",
   "/login": "pages/login.js",
-  "/player": "pages/player.js",
-  "/artist": "pages/artist.js",
-  "/register": "pages/register.js",
-  "/profile": "pages/profile.js"
+  "/player": "pages/player.js"
 }
