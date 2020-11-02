@@ -52,7 +52,7 @@ export default css.LoginStyle`
 .login {
   max-height: 70vw;
   width: 700px;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .login__tabs-link button {

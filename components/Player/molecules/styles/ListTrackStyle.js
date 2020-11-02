@@ -5,10 +5,11 @@ export default css.ListTrackStyle`
   height: 351px;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  overflow: scroll;
-  overflow-x: hidden;
+  overflow-y: scroll;
 }
-
+.track::-webkit-scrollbar{
+    display: none;
+}
 .track h2{
   font-size: 16px;
   line-height: 22px;

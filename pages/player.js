@@ -5,20 +5,18 @@ import Link from "next/link";
 import HeaderHome from "../components/Player/Com__Header";
 import NavHomeScreen from "../components/Player/Nav.js";
 import MainPlayer from "../components/Player/MainPlayer.js";
-
-/* import style */
-import index from "../assets/style/indexStyle";
-
+import Play from "../components/Play/Play";
+import AlbumStyles from "../components/Albums/AlbumStyles";
 
 const homeScreen = () => {
   return (
     <div className="lara">
       <HeaderHome />
       <NavHomeScreen />
-      <MainPlayer />
-      <style jsx index>
-        {index}
-      </style>
+      <div className="containerContent">
+        <MainPlayer />
+      </div>
+      <Play></Play>
     </div>
   );
 };

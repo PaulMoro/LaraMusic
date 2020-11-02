@@ -10,6 +10,7 @@ export default css.HomeStyle`
   background-color: #9e4f9e;
   height: 100px;
   padding: 0 10%;
+  min-width:1124px;
 }
 .header__img__container img {
   height: 50px;
@@ -22,6 +23,7 @@ export default css.HomeStyle`
   padding: 1rem 10%;
   position: relative;
   height: 600px;
+    min-width:1124px;
 }
 .hero__info {
   position: absolute;
@@ -71,6 +73,7 @@ export default css.HomeStyle`
 .lara__specs {
   display: flex;
   padding: 0 10%;
+    min-width:1124px;
 }
 .description__section {
   display: flex;
@@ -113,6 +116,7 @@ export default css.HomeStyle`
 .artist {
   margin-top: 45rem;
   padding: 0 10%;
+   min-width:1124px;
 }
 .artist__info {
   display: flex;
@@ -162,4 +166,54 @@ footer li {
   color: #989898;
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 1024px) {
+.hero__info {
+  top: 40%;
+  left: 55%;
+  width:500px;
+}
+.lara__specs__img{
+  left:60%;
+}
+.grid__container__artist{
+  padding:0;
+}
+
+}
+@media screen and (max-width: 768px) {
+
+.lara__specs__img{
+  left:75%;
+}
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+  .hero__info {
+  left: 50%;
+  width:500px;
+}
+.description__title {
+}
+.lara__specs__img{
+  left:170%;
+  margin-top:2%;
+}
+.description__section{
+width:500px;
+}
+.description__p{
+  
+  width:500px;
+}
+.artist{
+}
+.artist__info p {
+  width:350px;
+}
+}
+
 `;

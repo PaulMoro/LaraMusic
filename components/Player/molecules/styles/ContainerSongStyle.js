@@ -2,6 +2,8 @@ import css from "styled-jsx/css";
 
 export default css.ContainerSongStyle`
 .song {
+      grid-column: 2/3;
+  grid-row: 2/3;
   height: 200px;
   margin-top: 13px;
   display: -webkit-box;

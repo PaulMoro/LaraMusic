@@ -85,6 +85,14 @@ export default css.AlbumStyles`
   margin:3rem 0 ;
   max-width:1720px;
 }
+@media screen and (max-width: 415px) {
+
+
+}
+@media screen and (max-width: 1024px) {
+
+
+}
 
 
 `;
