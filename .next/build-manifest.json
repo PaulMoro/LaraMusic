@@ -34,6 +34,11 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/next/dist/pages/_error.js"
     ],
+    "/player": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/player.js"
+    ],
     "/wellcome": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
