@@ -10,13 +10,13 @@ export const RegisterForm = () => {
 	const [error, setError] = useState("");
 
 	const [formRegisterValues, handleRegisterInputChange] = useForm({
-		username: "jobana",
-		first_name: "jobana",
-		last_name: "garavito",
-		email: "ana@example.com",
-		biography: "rock",
-		password: "ana123456",
-		password_confirmation: "ana123456",
+		username: "",
+		first_name: "",
+		last_name: "",
+		email: "",
+		biography: "",
+		password: "",
+		password_confirmation: "",
 	});
 
 	const {

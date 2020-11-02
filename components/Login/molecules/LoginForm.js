@@ -10,8 +10,8 @@ export const LoginForm = () => {
 	const [error, setError] = useState("");
 	//const [jwt, setJwt] = useState("");
 	const [formLoginValues, handleLoginInputChange] = useForm({
-		email: "pepe@example.com",
-		password: "pepepepe",
+		email: "",
+		password: "",
 		//jwt: "",
 	});
 
