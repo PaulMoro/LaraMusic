@@ -23,28 +23,36 @@ const NavHomeScreen = () => {
       <div className="container">
         <ul className="list">
           <li className="item">
-            <div>
-              <VscRocket />
-            </div>
-            <p>Dicover</p>
+            <Link href='/player' className='header__link--player'>
+              <a>
+                <div>< VscRocket /></div>
+                <strong>Dicover</strong>
+              </a>
+		      	</Link>
           </li>
           <li className="item">
-            <div>
-              <CgMusicNote />
-            </div>
-            <p>Song</p>
+            <Link href='/artist' className='header__link--artist'>
+              <a>
+                <div>< CgMusicNote /></div>
+                <strong>Song</strong>
+              </a>
+		      	</Link>
           </li>
           <li className="item">
-            <div>
-              <VscFiles />
-            </div>
-            <p>ALbums</p>
+            <Link href='/album' className='header__link--album'>
+              <a>
+                <div>< VscFiles /></div>
+                <strong>ALbums</strong>
+              </a>
+		      	</Link>
           </li>
           <li className="item">
-            <div>
-              <VscAccount />
-            </div>
-            <p>Artists</p>
+            <Link href='/artist' className='header__link--artist'>
+              <a>
+                <div>< VscAccount /></div>
+                <strong>Artists</strong>
+              </a>
+		      	</Link>
           </li>
         </ul>
         <h2>My Trakcs</h2>
@@ -53,19 +61,19 @@ const NavHomeScreen = () => {
             <div>
               <VscThumbsup />
             </div>
-            <p>Favourite</p>
+            <strong>Favourite</strong>
           </li>
           <li className="item">
             <div>
               <VscFlame />
             </div>
-            <p>Recent History</p>
+            <strong>Recent History</strong>
           </li>
           <li className="item">
             <div>
               <VscFolderOpened />
             </div>
-            <p>Local Files</p>
+            <strong>Local Files</strong>
           </li>
         </ul>
         <h2>Play List</h2>
@@ -74,25 +82,25 @@ const NavHomeScreen = () => {
             <div>
               <VscFileSubmodule />
             </div>
-            <p>Bangla</p>
+            <strong>Bangla</strong>
           </li>
           <li className="item">
             <div>
               <VscFileSubmodule />
             </div>
-            <p>English</p>
+            <strong>English</strong>
           </li>
           <li className="item">
             <div>
               <VscFileSubmodule />
             </div>
-            <p>My Style</p>
+            <strong>My Style</strong>
           </li>
           <li className="item">
             <div>
               <VscFileSubmodule />
             </div>
-            <p>Hindi</p>
+            <strong>Hindi</strong>
           </li>
         </ul>
       </div>

@@ -20,10 +20,10 @@ const SectionPopular = () => {
   };
 
   return (
-    <div>
+    <>
       {music.map((item) => (
         <section id="trending">
-          <img src={item.artwork_url} alt="" />
+          <img src={item.artwork_url} />
           <h3>// TRENDING</h3>
           <h1>{item.title}</h1>
           <h2>- {item.user.username}</h2>
@@ -39,7 +39,7 @@ const SectionPopular = () => {
           </style>
         </section>
       ))}
-    </div>
+    </>
   );
 };
 

@@ -7,6 +7,14 @@ import Header from "../components/Home/HeaderPage";
 import Footer from "../components/Home/FooterPage";
 /* import style */
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import index from "../assets/style/indexStyle";
+
+=======
+>>>>>>> jobanag
+>>>>>>> paul
 const profile = () => {
   return (
     <div>

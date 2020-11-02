@@ -73,4 +73,12 @@ export default css.sectionPopular`
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+
+trending__color {
+  background-color: #9e4f9e;
+  opacity: 1;
+  position: absolute;
+  top: 113px;
+  left: 53px;
+}
 `;
