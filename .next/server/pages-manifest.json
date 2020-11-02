@@ -2,6 +2,16 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
   "/player": "pages/player.js",
   "/": "pages/index.js"
+=======
+<<<<<<< HEAD
+  "/album": "pages/album.js",
+  "/artist": "pages/artist.js"
+=======
+  "/login": "pages/login.js",
+  "/": "pages/index.js"
+>>>>>>> jobanag
+>>>>>>> 2197ba54cb567e95795d5071f3b35cd6ab46e9c7
 }

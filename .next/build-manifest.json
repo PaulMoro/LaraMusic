@@ -29,10 +29,26 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+<<<<<<< HEAD
     "/player": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/player.js"
+=======
+    "/album": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+<<<<<<< HEAD
+      "static/chunks/pages/album.js"
+    ],
+    "/artist": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/artist.js"
+=======
+      "static/chunks/pages/login.js"
+>>>>>>> jobanag
+>>>>>>> 2197ba54cb567e95795d5071f3b35cd6ab46e9c7
     ]
   },
   "ampFirstPages": []
