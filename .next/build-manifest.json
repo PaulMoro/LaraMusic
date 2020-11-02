@@ -14,11 +14,6 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -28,6 +23,7 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
+<<<<<<< HEAD
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -87,6 +83,8 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/register.js"
 >>>>>>> fabian
+=======
+>>>>>>> 409ef27dab2ac29398e85329fedda9174b8b8c0d
     ]
   },
   "ampFirstPages": []

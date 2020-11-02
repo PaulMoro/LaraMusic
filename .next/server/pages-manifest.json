@@ -1,6 +1,7 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+<<<<<<< HEAD
   "/_document": "pages/_document.js",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -31,4 +32,7 @@
   "/register": "pages/register.js",
   "/profile": "pages/profile.js"
 >>>>>>> fabian
+=======
+  "/_document": "pages/_document.js"
+>>>>>>> 409ef27dab2ac29398e85329fedda9174b8b8c0d
 }
