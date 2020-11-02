@@ -2,11 +2,12 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-<<<<<<< HEAD
   "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
-  "/player": "pages/player.js"
-=======
+  "/album": "pages/album.js",
+  "/": "pages/index.js",
   "/login": "pages/login.js",
-  "/wellcome": "pages/wellcome.js"
->>>>>>> paul
+  "/player": "pages/player.js",
+  "/artist": "pages/artist.js",
+  "/register": "pages/register.js",
+  "/profile": "pages/profile.js"
 }
