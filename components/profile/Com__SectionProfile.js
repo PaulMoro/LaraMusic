@@ -1,5 +1,4 @@
 import React from "react";
-import { CgCrown } from "react-icons/cg";
 import Com__SectionProfileStyle from "./style/Com__SectionProfileStyle";
 
 const SectionProfile = () => {
@@ -15,12 +14,6 @@ const SectionProfile = () => {
 				</div>
 				<h2>Anna Fernandez</h2>
 				<h4>Change Password</h4>
-				<p>
-					<div>
-						<CgCrown />
-					</div>
-					Premium
-				</p>
 			</div>
 			<div className='userForm'>
 				<h1>Account</h1>
