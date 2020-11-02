@@ -1,5 +1,6 @@
 import React from "react";
 import { CgCrown } from "react-icons/cg";
+import Com__SectionProfileStyle from "./style/Com__SectionProfileStyle";
 
 const SectionProfile = () => {
 	return (
@@ -51,6 +52,9 @@ const SectionProfile = () => {
 				</form>
 				<button>Edit</button>
 			</div>
+			<style jsx Com__SectionProfileStyle>
+				{Com__SectionProfileStyle}
+			</style>
 		</section>
 	);
 };

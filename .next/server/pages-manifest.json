@@ -3,6 +3,7 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "/player": "pages/player.js",
   "/": "pages/index.js"
 =======
@@ -14,4 +15,9 @@
   "/": "pages/index.js"
 >>>>>>> jobanag
 >>>>>>> 2197ba54cb567e95795d5071f3b35cd6ab46e9c7
+=======
+  "/player": "pages/player.js",
+  "/profile": "pages/profile.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
+>>>>>>> paul
 }

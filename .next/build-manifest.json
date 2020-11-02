@@ -30,6 +30,7 @@
       "static/chunks/pages/_error.js"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "/player": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -49,6 +50,22 @@
       "static/chunks/pages/login.js"
 >>>>>>> jobanag
 >>>>>>> 2197ba54cb567e95795d5071f3b35cd6ab46e9c7
+=======
+    "/next/dist/pages/_error": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/next/dist/pages/_error.js"
+    ],
+    "/player": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/player.js"
+    ],
+    "/profile": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/profile.js"
+>>>>>>> paul
     ]
   },
   "ampFirstPages": []

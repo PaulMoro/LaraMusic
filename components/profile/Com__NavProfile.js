@@ -1,4 +1,5 @@
 import React from "react";
+import Com__NavProfileStyle from "./style/Com__NavProfileStyle";
 
 const NavProfile = () => {
 	return (
@@ -15,6 +16,9 @@ const NavProfile = () => {
 					Password
 				</a>
 			</div>
+			<style jsx Com__NavProfileStyle>
+        {Com__NavProfileStyle}
+      </style>
 		</nav>
 	);
 };
