@@ -19,7 +19,6 @@ const ContainerSong = () => {
     setMusic(music);
   };
 
-<<<<<<< HEAD
 	return (
 		<div className='song'>
 
@@ -32,20 +31,6 @@ const ContainerSong = () => {
 					</div>
 				</div>
 			))}
-=======
-  return (
-    <div className="song">
-      <h2 className="song__tittle">Featured Tracks</h2>
-      {music.map((item) => (
-        <div>
-          <div id="song__item">
-            <img src={item.artwork_url} alt="" />
-            <h4>{item.title}</h4>
-            <p>{item.user.username}</p>
-          </div>
-        </div>
-      ))}
->>>>>>> c2e7f1900f52e9d5c0464fa4a116b680b2244339
 
       <style jsx ContainerSongStyle>
         {ContainerSongStyle}

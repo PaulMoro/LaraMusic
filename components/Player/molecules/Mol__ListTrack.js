@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import fetch from "isomorphic-fetch";
-import { VscThumbsup, VscFolderOpened } from "react-icons/vsc";
-import { GrShareOption } from "react-icons/gr";
+import { VscEllipsis, VscThumbsup } from "react-icons/vsc";
+import { GrAddCircle } from "react-icons/gr";
+import { CgPlayButtonO } from "react-icons/cg";
 
 import ListTrackStyle from "./styles/ListTrackStyle";
 //import "../../assets/style/moleculStyle/mol__ListTrack.scss";
@@ -35,22 +36,25 @@ const ListTrack = () => {
 				</div>
 			</div>
 			{music.map((item) => (
-				<div className='track_list'>
-					<div className='track_list_detail'>
-						<h4 className='track_top_detailNumber'>1 < VscThumbsup /></h4>
-						<h4 className='track_top_detailSong'>{item.permalink}</h4>
-						<h4 className='track_top_detailArtist'>{item.user.username}</h4>
-					</div>
-					<div className='track_list_inf'>
-						<h4>{item.playback_count}</h4>
-						<h4>{item.duration} seg</h4>
-						<div className='track_list_infOptions'>
-							<VscFolderOpened />
-							<GrShareOption />
-							<img src='' alt='' />
-						</div>
-					</div>
+				<div className="tab__music">
+        <p>1</p>
+        <div className="icon">
+          <CgPlayButtonO></CgPlayButtonO>
+        </div>
+        <div className="icon">
+          <VscThumbsup></VscThumbsup>
+        </div>
+        <div className="icon">
+          <GrAddCircle></GrAddCircle>
+        </div>
+        <p>Title Song</p>
+        <p>{item.playback_count}</p>
+        <p>{item.duration}</p>
+        <div className="icon">
+          <VscEllipsis></VscEllipsis>
+        </div>
 				</div>
+      
 			))}
 
 			<style jsx ListTrackStyle>

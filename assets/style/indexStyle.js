@@ -13,7 +13,7 @@ export default css.index`
   grid-template-columns: 200px 100% ;
   grid-template-rows: 68px 100% 68px;
   font-family: $font;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 `;
