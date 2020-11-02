@@ -9,12 +9,6 @@ const NavProfile = () => {
 				<a href='#' className='menu_actual'>
 					Account
 				</a>
-				<a href='#' className='menu_noActual'>
-					Your plan
-				</a>
-				<a href='#' className='menu_noActual'>
-					Password
-				</a>
 			</div>
 			<style jsx Com__NavProfileStyle>
         {Com__NavProfileStyle}
