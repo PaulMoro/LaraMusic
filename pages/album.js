@@ -4,7 +4,6 @@ import NavHomeScreen from "../components/Player/Nav.js";
 import ContentAbum from "../components/Albums/ContentAbum";
 import Play from "../components/Play/Play";
 function Album() {
-
   return (
     <div className="lara">
       <HeaderHome></HeaderHome>
@@ -13,6 +12,5 @@ function Album() {
       <Play></Play>
     </div>
   );
-
 }
 export default Album;

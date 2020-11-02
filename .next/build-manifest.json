@@ -56,16 +56,37 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/next/dist/pages/_error.js"
     ],
+    "/login": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/login.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/next/dist/pages/_error.js"
+    ],
     "/player": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/player.js"
     ],
     "/profile": [
+<<<<<<< HEAD
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/profile.js"
 >>>>>>> paul
+=======
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/profile.js"
+    ],
+    "/register": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/register.js"
+>>>>>>> fabian
     ]
   },
   "ampFirstPages": []
