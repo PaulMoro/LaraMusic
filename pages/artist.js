@@ -15,11 +15,7 @@ const artist = () => {
       <HeaderHome />
       <NavHomeScreen></NavHomeScreen>
       {/* <MainHomeScreen /> */}
-<<<<<<< HEAD
-      <Banner />
-=======
       <ContentArtist />
->>>>>>> c2e7f1900f52e9d5c0464fa4a116b680b2244339
 
       <Play></Play>
     </div>
