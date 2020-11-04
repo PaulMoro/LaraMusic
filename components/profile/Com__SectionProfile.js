@@ -3,7 +3,8 @@ import Com__SectionProfileStyle from "./style/Com__SectionProfileStyle";
 import { useAuth } from "../../contexts/AuthContext";
 
 const SectionProfile = () => {
-	const { user } = useAuth();
+	const { user = {} } = useAuth();
+	//const { profile: { musiclist = [] } = {} } = user;
 
 	return (
 		<section id='sectionProfile'>
@@ -11,7 +12,7 @@ const SectionProfile = () => {
 				<div>
 					<img
 						className='userInf__photo'
-						src=''
+						src='/'
 						// src={user.profile.picture}
 						alt={user.username}
 					/>
@@ -22,8 +23,7 @@ const SectionProfile = () => {
 			<div className='userForm'>
 				<h1>Account</h1>
 				<p>
-					Donec sit amet lectus mauris. Fusce ultrices in orci ac rhoncus. Duis
-					dictum tempus neque
+					Update your personal data for receive more and best music recomendations
 				</p>
 				<form className='infAccount' autoComplete='off'>
 					<div className='infAccount__container'>
@@ -42,12 +42,8 @@ const SectionProfile = () => {
 						<label className='infAccount__container__name'>
 							Your Favourite Music
 						</label>
-						<input placeholder={user.profile} type='text' required />
+						<input placeholder={user.profile.biography} type='text' required />
 					</div>
-					{/* <div className='infAccount__container'>
-						<label className='infAccount__container__name'>Country</label>
-						<input placeholder={user.first_name} type='text' required />
-					</div> */}
 				</form>
 				<button>Edit</button>
 			</div>

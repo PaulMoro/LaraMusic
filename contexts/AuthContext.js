@@ -10,20 +10,20 @@ const AuthContext = createContext({});
 export const AuthProvider = ({ children }) => {
 	const [user, setUser] = useState({});
 	const [loading, setLoading] = useState(true);
-	const router = useRouter();
+	const [isLogged, setIsLogged] = useState(false);
+	//const router = useRouter();
 
 	useEffect(() => {
 		const userData = localStorage.getItem("userData");
 		const jwt = localStorage.getItem("jwt");
+		setUser(JSON.parse(userData));
+		setIsLogged(true);
 
-		if (!(user || loading)) {
-			router.push("/login");
-		}
-		if (jwt) {
-			setUser(JSON.parse(userData));
+		if (!(isLogged || loading)) {
+			redirect("/login");
 		}
 		setLoading(false);
-	}, [[user, loading]]);
+	}, [isLogged, loading]);
 
 	const Login = async (email, password) => {
 		const jwt = localStorage.getItem("jwt");
@@ -32,7 +32,6 @@ export const AuthProvider = ({ children }) => {
 
 		if (jwt) {
 			var access = JSON.parse(jwt);
-			console.log(access);
 		}
 
 		const error = validateCredentials(email, password);
