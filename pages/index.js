@@ -4,14 +4,15 @@ import Hero from "../components/Home/Hero";
 import LaraSpecs from "../components/Home/LaraSpecs";
 import TopArtist from "../components/Home/TopArtist";
 import Footer from "../components/Home/FooterPage";
-function LandingPage() {
+function LandingPage(props) {
+	const { authenticated } = props;
 	return (
 		<>
-			<Header></Header>
-			<Hero></Hero>
-			<LaraSpecs></LaraSpecs>
-			<TopArtist></TopArtist>
-			<Footer></Footer>
+			<Header authenticated={false} />
+			<Hero />
+			<LaraSpecs />
+			<TopArtist />
+			<Footer />
 		</>
 	);
 }

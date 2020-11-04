@@ -2,14 +2,16 @@ import React, { useState, useEffect } from "react";
 import HomeStyle from "../Home/HomeStyle";
 import WellcomeImg from "../../assets/img/wellcome.jpg";
 import Link from "next/link";
+import { useAuth } from "../../contexts/AuthContext";
 
 export const Wellcome = () => {
-	const [user, setUser] = useState({});
-	let userData = "";
-	useEffect(() => {
-		userData = localStorage.getItem("userData");
-		setUser(JSON.parse(userData));
-	}, []);
+	const { user, loading } = useAuth();
+	// const [user, setUser] = useState({});
+	// let userData = "";
+	// useEffect(() => {
+	// 	userData = localStorage.getItem("userData");
+	// 	setUser(JSON.parse(userData));
+	// }, []);
 
 	return (
 		<section className='hero'>

@@ -4,10 +4,11 @@ import Header from "../components/Header/HeaderPage";
 import { Register } from "../components/Register/Register";
 import Footer from "../components/Home/FooterPage";
 
-export const login = () => {
+export const login = (props) => {
+	const { authenticated } = props;
 	return (
 		<>
-			<Header />
+			<Header authenticated={false} />
 			<Register />
 			<Footer />
 		</>
