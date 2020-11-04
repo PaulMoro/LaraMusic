@@ -1,4 +1,6 @@
 import React from "react";
+
+import userImage from "../../assets/img/usuario.svg";
 import Com__NavProfileStyle from "./style/Com__NavProfileStyle";
 
 const NavProfile = () => {
@@ -6,13 +8,13 @@ const NavProfile = () => {
 		<nav>
 			<h2>Profile settings</h2>
 			<div className='menu'>
-				<a href='#' className='menu_actual'>
+				<a href={userImage} className='menu_actual'>
 					Account
 				</a>
 			</div>
 			<style jsx Com__NavProfileStyle>
-        {Com__NavProfileStyle}
-      </style>
+				{Com__NavProfileStyle}
+			</style>
 		</nav>
 	);
 };

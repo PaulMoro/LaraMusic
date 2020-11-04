@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { useAuth } from "../../contexts/AuthContext";
 
+import userImage from "../../assets/img/usuario.svg";
 import HomeStyle from "./HeaderStyle";
 import logo from "../../assets/img/Artist/logo.png";
 
@@ -30,11 +31,11 @@ function Header() {
 						</Link>
 					)}
 					{user && (
-						<Link href='/profile'>
+						<Link href='/profile' className='header__link--login'>
 							<div className='perfil'>
-								<img src='../../assets/img/user.jpg' alt='' />
+								<img src={userImage} alt={user.username} />
 								<div>
-									<h4>Anna Fernandez</h4>
+									<h4>{user.username}</h4>
 									<button onClick={signOut}> Logout </button>
 								</div>
 							</div>

@@ -1,6 +1,8 @@
 import React from "react";
-import Com__SectionProfileStyle from "./style/Com__SectionProfileStyle";
 import { useAuth } from "../../contexts/AuthContext";
+
+import userImage from "../../assets/img/usuario.svg";
+import Com__SectionProfileStyle from "./style/Com__SectionProfileStyle";
 
 const SectionProfile = () => {
 	const { user = {} } = useAuth();
@@ -10,12 +12,7 @@ const SectionProfile = () => {
 		<section id='sectionProfile'>
 			<div className='userInf'>
 				<div>
-					<img
-						className='userInf__photo'
-						src='/'
-						// src={user.profile.picture}
-						alt={user.username}
-					/>
+					<img className='userInf__photo' src={userImage} alt={user.username} />
 				</div>
 				<h2>{user.username} </h2>
 				<h4>Change Password</h4>
@@ -42,7 +39,7 @@ const SectionProfile = () => {
 						<label className='infAccount__container__name'>
 							Your Favourite Music
 						</label>
-						<input placeholder={user.profile.biography} type='text' required />
+						<input placeholder={user.username} type='text' required />
 					</div>
 				</form>
 				<button>Edit</button>
