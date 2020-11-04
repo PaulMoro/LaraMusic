@@ -6,12 +6,6 @@ import { useAuth } from "../../contexts/AuthContext";
 
 export const Wellcome = () => {
 	const { user, loading } = useAuth();
-	// const [user, setUser] = useState({});
-	// let userData = "";
-	// useEffect(() => {
-	// 	userData = localStorage.getItem("userData");
-	// 	setUser(JSON.parse(userData));
-	// }, []);
 
 	return (
 		<section className='hero'>
