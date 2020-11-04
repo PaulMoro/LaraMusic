@@ -7,19 +7,17 @@ import Play from "../components/Play/Play";
 import ContentArtist from "../components/Artist/ContentArtist";
 import { FilterArtist } from "../components/Artist/FilterArtist";
 
-/* import componenets */
-
 const artist = () => {
-  return (
-    <div className="lara">
-      <HeaderHome />
-      <NavHomeScreen></NavHomeScreen>
-      {/* <MainHomeScreen /> */}
-      <ContentArtist />
+	return (
+		<div className='lara'>
+			<HeaderHome />
+			<NavHomeScreen></NavHomeScreen>
+			{/* <MainHomeScreen /> */}
+			<ContentArtist />
 
-      <Play></Play>
-    </div>
-  );
+			<Play></Play>
+		</div>
+	);
 };
 
 export default artist;
