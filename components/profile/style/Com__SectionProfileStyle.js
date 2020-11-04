@@ -1,30 +1,6 @@
 import css from "styled-jsx/css";
 
 export default css.Com__SectionProfileStyle`
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
-body {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-h1 {
-  font-size: 3.625rem;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 2.25rem;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 300;
-}
 
 #sectionProfile {
   margin: 35px 12% 0 12%;

@@ -47,4 +47,35 @@ export default css.HomeStyle`
     .header__link--player:hover {
     color: #d6d6d6;
 }
+
+.perfil {
+  padding: 28px 12% 0px 0px; 
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perfil img {
+  padding: 0;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+}
+
+.perfil h4 {
+  font-size: 16px; /* $fs-regular */
+  color: #F9F9F9; /* $background */
+}
+
+.perfil button {
+  font-size: 12px; /* $fs-small */
+  color: #FFC24B; /* $secondary-color */
+  font-weight: 600; /* $font-semi-bold */
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+}
+
 `;

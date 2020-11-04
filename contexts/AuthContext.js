@@ -16,15 +16,13 @@ export const AuthProvider = ({ children }) => {
 		const userData = localStorage.getItem("userData");
 		const jwt = localStorage.getItem("jwt");
 
-		if (jwt) {
-			if (user) setUser(JSON.parse(userData));
+		if (!(user || loading)) {
+			router.push("/login");
 		}
-
+		if (jwt) {
+			setUser(JSON.parse(userData));
+		}
 		setLoading(false);
-
-		// 	if (!(user || loading)) {
-		// 		router.push("/login");
-		// 	}
 	}, [[user, loading]]);
 
 	const Login = async (email, password) => {

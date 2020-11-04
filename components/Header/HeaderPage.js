@@ -31,10 +31,15 @@ function Header() {
 					)}
 					{user && (
 						<Link href='/profile'>
-							<a className='header__link--login'>My Profile</a>
+							<div className='perfil'>
+								<img src='../../assets/img/user.jpg' alt='' />
+								<div>
+									<h4>Anna Fernandez</h4>
+									<button onClick={signOut}> Logout </button>
+								</div>
+							</div>
 						</Link>
 					)}
-					{user && <button onClick={signOut}> Logout </button>}
 				</div>
 			</div>
 
