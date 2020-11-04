@@ -23,36 +23,36 @@ const NavHomeScreen = () => {
       <div className="container">
         <ul className="list">
           <li className="item">
-            <Link href='/player' className='header__link--player'>
-              <a>
-                <div>< VscRocket /></div>
-                <strong>Dicover</strong>
-              </a>
-		      	</Link>
+            <a href="/player" className="header__link--player">
+              <div>
+                <VscRocket />
+              </div>
+              <strong>Dicover</strong>
+            </a>
           </li>
           <li className="item">
-            <Link href='/artist' className='header__link--artist'>
-              <a>
-                <div>< CgMusicNote /></div>
-                <strong>Song</strong>
-              </a>
-		      	</Link>
+            <a href="/artist" className="header__link--artist">
+              <div>
+                <CgMusicNote />
+              </div>
+              <strong>Song</strong>
+            </a>
           </li>
           <li className="item">
-            <Link href='/album' className='header__link--album'>
-              <a>
-                <div>< VscFiles /></div>
-                <strong>ALbums</strong>
-              </a>
-		      	</Link>
+            <a href="/album" className="header__link--album">
+              <div>
+                <VscFiles />
+              </div>
+              <strong>ALbums</strong>
+            </a>
           </li>
           <li className="item">
-            <Link href='/artist' className='header__link--artist'>
-              <a>
-                <div>< VscAccount /></div>
-                <strong>Artists</strong>
-              </a>
-		      	</Link>
+            <a href="/artist" className="header__link--artist">
+              <div>
+                <VscAccount />
+              </div>
+              <strong>Artists</strong>
+            </a>
           </li>
         </ul>
         <h2>My Trakcs</h2>

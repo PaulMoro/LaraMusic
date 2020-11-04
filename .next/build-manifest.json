@@ -29,6 +29,7 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+<<<<<<< HEAD
     "/next/dist/pages/_error": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -43,6 +44,12 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/wellcome.js"
+=======
+    "/login": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/login.js"
+>>>>>>> fabian
     ]
   },
   "ampFirstPages": []
