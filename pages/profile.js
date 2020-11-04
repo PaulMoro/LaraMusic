@@ -6,11 +6,10 @@ import NavProfile from "../components/profile/Com__NavProfile.js";
 import SectionProfile from "../components/profile/Com__SectionProfile.js";
 import Footer from "../components/Home/FooterPage";
 
-const profile = (props) => {
-	const { authenticated } = props;
+const profile = () => {
 	return (
 		<div>
-			<Header authenticated={authenticated} />
+			<Header />
 			<NavProfile />
 			<SectionProfile />
 			<Footer />

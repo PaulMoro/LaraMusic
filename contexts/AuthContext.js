@@ -3,14 +3,14 @@ import React, { createContext, useState, useContext, useEffect } from "react";
 import redirect from "../lib/redirect";
 import { authenticate } from "../services/authApi";
 import { validateCredentials } from "../lib/validation";
-import { Loading } from "../components/Loading/";
+import { useRouter } from "next/router";
 
 const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
 	const [user, setUser] = useState({});
 	const [loading, setLoading] = useState(true);
-	//let userData = "";
+	const router = useRouter();
 
 	useEffect(() => {
 		const userData = localStorage.getItem("userData");
@@ -19,8 +19,13 @@ export const AuthProvider = ({ children }) => {
 		if (jwt) {
 			if (user) setUser(JSON.parse(userData));
 		}
+
 		setLoading(false);
-	}, []);
+
+		// 	if (!(user || loading)) {
+		// 		router.push("/login");
+		// 	}
+	}, [[user, loading]]);
 
 	const Login = async (email, password) => {
 		const jwt = localStorage.getItem("jwt");
@@ -51,18 +56,6 @@ export const AuthProvider = ({ children }) => {
 		}
 	};
 
-	// const logout = (email, password) => {
-	// 	localStorage.removeItem("jwt");
-	// 	//Cookies.remove("token");
-	// 	setUser(null);
-	// 	delete api.defaults.headers.Authorization;
-	// 	window.location.pathname = "/login";
-	// };
-
-	// export const getJwt = (ctx) => {
-	// 	localStorage.getItem("jwt");
-	// };
-
 	return (
 		<AuthContext.Provider
 			value={{ isAuthenticated: !!user, user, Login, loading, signOut }}
@@ -70,38 +63,6 @@ export const AuthProvider = ({ children }) => {
 			{children}
 		</AuthContext.Provider>
 	);
-};
-
-export const ProtectRoute = ({ children }) => {
-	const { isAuth, isLoading } = useAuth();
-
-	useEffect(() => {
-		const jwt = localStorage.getItem("jwt");
-
-		if (jwt) {
-			if (isAuth) setUser(JSON.parse(userData));
-		}
-		setLoading(false);
-	}, []);
-
-	if (jwt) isAuthenticated = (ctx) => !!jwt(ctx);
-
-	const redirectIfAuthenticated = (ctx) => {
-		if (isAuthenticated(ctx)) {
-			redirect("/welcome", ctx);
-			return true;
-		}
-		return false;
-	};
-
-	const redirectIfNotAuthenticated = (ctx) => {
-		if (!isAuthenticated(ctx)) {
-			redirect("/", ctx);
-			return true;
-		}
-		return false;
-	};
-	return children;
 };
 
 export const useAuth = () => useContext(AuthContext);

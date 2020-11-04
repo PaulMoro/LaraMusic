@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useAuth } from "../../contexts/AuthContext";
 
 export const Wellcome = () => {
-	const { user, loading } = useAuth();
+	const { user } = useAuth();
 
 	return (
 		<section className='hero'>
