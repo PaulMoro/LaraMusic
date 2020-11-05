@@ -24,9 +24,9 @@ const HeaderHome = () => {
 					</figure>
 				</li>
 				<li className='userInf'>
-					<img src={userImage} alt={user ? `${user.username}` : username} />
+					<img src={userImage} alt={user ? `${user.username}` : "username"} />
 					<div className='userInf__prop'>
-						<a href='/profile'>{user ? `${user.username}` : username}</a>
+						<a href='/profile'>{user ? `${user.username}` : "username"}</a>
 					</div>
 				</li>
 			</ul>
