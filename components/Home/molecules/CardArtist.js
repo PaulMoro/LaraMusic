@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import cardArtistStyle from "./styles/CardArtistStyle";
+import cardArtistStyle from "./styles/cardArtistStyle";
 
 function CardArtist(params) {
   const [music, setMusic] = useState([]);

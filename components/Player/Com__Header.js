@@ -27,7 +27,7 @@ const HeaderHome = () => {
         <li className="userInf">
           <img src="https://i.imgur.com/rQ73ETF.jpg" alt="" />
           <div className="userInf__prop">
-            <h4>Fulanita Roquera</h4>
+            <a href="/profile">Fulanita Roquera</a>
           </div>
         </li>
       </ul>

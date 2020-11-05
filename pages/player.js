@@ -8,17 +8,18 @@ import MainPlayer from "../components/Player/MainPlayer.js";
 import Play from "../components/Play/Play";
 import AlbumStyles from "../components/Albums/AlbumStyles";
 
-const homeScreen = () => {
-  return (
-    <div className="lara">
-      <HeaderHome />
-      <NavHomeScreen />
-      <div className="containerContent">
-        <MainPlayer />
-      </div>
-      <Play></Play>
-    </div>
-  );
+const homeScreen = (props) => {
+	const { authenticated } = props;
+	return (
+		<div className='lara'>
+			<HeaderHome authenticated={authenticated} />
+			<NavHomeScreen />
+			<div className='containerContent'>
+				<MainPlayer />
+			</div>
+			<Play></Play>
+		</div>
+	);
 };
 
 export default homeScreen;

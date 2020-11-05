@@ -1,6 +1,6 @@
 import React from "react";
 import LoginStyle from "./LoginStyle";
-import { RegisterForm } from "./molecules/rf";
+import { RegisterForm } from "./molecules/RegisterForm";
 
 export const Register = () => {
 	return (

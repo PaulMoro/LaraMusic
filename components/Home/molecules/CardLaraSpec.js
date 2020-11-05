@@ -1,5 +1,5 @@
 import React from "react";
-import cardLaraSpecStyle from "./styles/CardLaraSpecStyle";
+import cardLaraSpecStyle from "./styles/cardLaraSpecStyle";
 import Spec1 from "../../../assets/img/spec-1.png";
 import Spec2 from "../../../assets/img/spec-2.png";
 import Spec3 from "../../../assets/img/spec-3.png";

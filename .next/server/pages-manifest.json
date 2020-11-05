@@ -3,5 +3,9 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/login": "pages/login.js",
+<<<<<<< HEAD
   "/": "pages/index.js"
+=======
+  "/register": "pages/register.js"
+>>>>>>> jobana
 }

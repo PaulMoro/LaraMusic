@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import Success from "../../../lib/Success";
 import Error from "../../../lib/Error";
-import { Login, redirectIfAuthenticated } from "../../../lib/auth";
+//import { Login, redirectIfAuthenticated } from "../../../lib/auth";
 import { useForm } from "../../../Hooks/useForm";
+import { useAuth } from "../../../contexts/AuthContext";
 
 import LoginStyle from "../LoginStyle";
 
 export const LoginForm = () => {
 	const [error, setError] = useState("");
-	//const [jwt, setJwt] = useState("");
+	const { Login } = useAuth();
 	const [formLoginValues, handleLoginInputChange] = useForm({
-		email: "pepe@example.com",
-		password: "pepepepe",
-		//jwt: "",
+		email: "",
+		password: "",
 	});
 
 	const { email, password } = formLoginValues;

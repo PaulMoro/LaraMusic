@@ -1,23 +1,20 @@
 import React from "react";
 
 /* import componenets */
-import NavProfile from "../components/Com__NavProfile.js";
-import SectionProfile from "../components/Com__SectionProfile.js";
-import Header from "../components/Home/HeaderPage";
+import Header from "../components/Header/HeaderPage";
+import NavProfile from "../components/profile/Com__NavProfile.js";
+import SectionProfile from "../components/profile/Com__SectionProfile.js";
 import Footer from "../components/Home/FooterPage";
-/* import style */
-
-import index from "../assets/style/indexStyle";
 
 const profile = () => {
-  return (
-    <div>
-      <Header />
-      <NavProfile />
-      <SectionProfile />
-      <Footer />
-    </div>
-  );
+	return (
+		<div>
+			<Header />
+			<NavProfile />
+			<SectionProfile />
+			<Footer />
+		</div>
+	);
 };
 
 export default profile;
