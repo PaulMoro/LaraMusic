@@ -18,8 +18,10 @@ import navStyle from "./styles/navStyle";
 
 const NavHomeScreen = () => {
 	const { user } = useAuth();
-	console.log(user);
-	//const { profile: { musiclist = [] } = {} } = user;
+
+	const { profile: { musiclists = [] } = {} } = user;
+
+	console.log(musiclists);
 	return (
 		<nav>
 			<Link href='/player' className='logo'>
@@ -91,7 +93,15 @@ const NavHomeScreen = () => {
 				</ul>
 				<h2>Play List</h2>
 				<ul className='list'>
-					<li className='item'>
+					<li className='item' key={musiclists.id}>
+						{musiclists.map((item) => (
+							<div>
+								<VscFileSubmodule />
+								<p>{item.title}</p>
+							</div>
+						))}
+					</li>
+					{/* <li className='item'>
 						<div>
 							<VscFileSubmodule />
 						</div>
@@ -114,7 +124,7 @@ const NavHomeScreen = () => {
 							<VscFileSubmodule />
 						</div>
 						<strong>Hindi</strong>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 

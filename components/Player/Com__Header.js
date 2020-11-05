@@ -23,14 +23,12 @@ const HeaderHome = () => {
 						<VscBell />
 					</figure>
 				</li>
-				{user && (
-					<li className='userInf'>
-						<img src={userImage} alt={user.username} />
-						<div className='userInf__prop'>
-							<a href='/profile'>{user.username}</a>
-						</div>
-					</li>
-				)}
+				<li className='userInf'>
+					<img src={userImage} alt={user ? `${user.username}` : username} />
+					<div className='userInf__prop'>
+						<a href='/profile'>{user ? `${user.username}` : username}</a>
+					</div>
+				</li>
 			</ul>
 
 			<style jsx Header>
