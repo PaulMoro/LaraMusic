@@ -2,7 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/album": "pages/album.js",
-  "/listplayer": "pages/listplayer.js",
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
+  "/player": "pages/player.js",
+  "/": "pages/index.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
+  "/listplayer": "pages/listplayer.js"
 }

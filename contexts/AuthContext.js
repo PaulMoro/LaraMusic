@@ -44,12 +44,20 @@ export const AuthProvider = ({ children }) => {
 		} else return null;
 	};
 
-	const signOut = (ctx = {}) => {
-		if (process.browser) {
-			localStorage.removeItem("userData");
-			redirect("/", ctx);
-		}
+	const signOut = (user) => {
+		localStorage.removeItem("userData");
+		setUser(null);
+		//delete api.defaults.headers.Authorization;
+		redirect("/player");
+		//window.location.pathname = "/";
 	};
+
+	// const signOut = (ctx = {}) => {
+	// 	if (process.browser) {
+	// 		localStorage.removeItem("userData");
+	// 		redirect("/", ctx);
+	// 	}
+	// };
 
 	return (
 		<AuthContext.Provider

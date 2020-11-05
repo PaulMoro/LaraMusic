@@ -11,17 +11,16 @@ const FromList = () => {
 	const { user } = useAuth();
 
 	const Tracks = user.profile.musiclists[0].musictracks;
-	console.log(Tracks);
 
 	const { profile: { musiclists: { musictracks = {} } } = {} } = user;
 
 	console.log(musictracks);
 
 	/* call API */
-	const [music, setMusic] = useState([]);
-	useEffect(() => {
-		obtenerDatos();
-	}, []);
+	// const [music, setMusic] = useState([]);
+	// useEffect(() => {
+	// 	obtenerDatos();
+	// }, []);
 
 	// const obtenerDatos = async () => {
 	// 	const datos = await fetch(
@@ -38,7 +37,6 @@ const FromList = () => {
 
 	return (
 		<div className='track'>
-			hola
 			<h2>Top Tracks</h2>
 			<div className='track_top'>
 				<div className='track_top_detail'>
@@ -47,31 +45,35 @@ const FromList = () => {
 					<h4 className='track_top_detailArtist'>Artist</h4>
 				</div>
 				<div className='track_top_inf'>
-					<h4>Daily Plays</h4>
+					<h4>Album</h4>
 					<h4>Time</h4>
 					<h4 className='track_top_infOptions'>Options</h4>
 				</div>
 			</div>
-			{Tracks.map((item) => (
-				<div className='tab__music'>
-					<p>{Tracks.id}</p>
-					<div className='icon'>
-						<CgPlayButtonO></CgPlayButtonO>
+			{user &&
+				Tracks.map((item) => (
+					<div className='tab__music'>
+						<p>{item.id}</p>
+						<div className='icon'>
+							<CgPlayButtonO></CgPlayButtonO>
+						</div>
+
+						<p>{item.title}</p>
+						<p>{item.album}</p>
+						<p>{item.record_company}</p>
+						<p>{item.gender}</p>
+						<p>{item.views}</p>
+						<div className='icon'>
+							<VscEllipsis></VscEllipsis>
+						</div>
+						<div className='icon'>
+							<VscThumbsup></VscThumbsup>
+						</div>
+						<div className='icon'>
+							<GrAddCircle></GrAddCircle>
+						</div>
 					</div>
-					<div className='icon'>
-						<VscThumbsup></VscThumbsup>
-					</div>
-					<div className='icon'>
-						<GrAddCircle></GrAddCircle>
-					</div>
-					<p>{item.title.substr(1, 7)}</p>
-					<p>{item.playback_count}</p>
-					<p>{time_convert(item.duration)}</p>
-					<div className='icon'>
-						<VscEllipsis></VscEllipsis>
-					</div>
-				</div>
-			))}
+				))}
 			<style jsx ListTrackStyle>
 				{ListTrackStyle}
 			</style>
