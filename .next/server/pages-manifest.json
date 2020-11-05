@@ -2,8 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/player": "pages/player.js",
-  "/": "pages/index.js",
   "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
-  "/listplayer": "pages/listplayer.js"
+  "/listplayer": "pages/listplayer.js",
+  "/": "pages/index.js",
+  "/player": "pages/player.js"
 }

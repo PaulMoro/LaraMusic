@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { useAuth } from "../../contexts/AuthContext";
 
@@ -17,6 +18,7 @@ import navStyle from "./styles/navStyle";
 
 const NavHomeScreen = () => {
 	const { user } = useAuth();
+
 	const { profile: { musiclists = [] } = {} } = user;
 
 	return (
@@ -90,16 +92,20 @@ const NavHomeScreen = () => {
 				</ul>
 				<h2>Play List</h2>
 				<ul className='list'>
-					<li className='item' key='id'>
-						{musiclists.map((item) => (
-							<Link href='/listplayer'>
-								<div>
-									<VscFileSubmodule />
-									<p>{item.title}</p>
-								</div>
-							</Link>
-						))}
-					</li>
+					{user && (
+						<li className='item' key='id'>
+							<div>
+								{musiclists.map((item) => (
+									<Link href='/listplayer'>
+										<div>
+											<VscFileSubmodule />
+											<p>{item.title}</p>
+										</div>
+									</Link>
+								))}
+							</div>
+						</li>
+					)}
 				</ul>
 			</div>
 
