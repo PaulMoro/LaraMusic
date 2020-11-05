@@ -37,5 +37,19 @@ color:white;
     display:flex;
     width:100%;
 }
+@media screen and (max-width: 1023px) {
 
+}
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 480px) {
+    .info__song{
+       grid-row: 13/14;
+    }
+    .player{                
+        grid-row: 13/14;
+    }
+}
+@media screen and (max-width: 3200px) {}
 `;

@@ -55,5 +55,13 @@ nav {
   padding-left:1rem;
   font-size: 14px;
 }
-
+@media screen and (max-width: 1023px) {
+  nav{
+ grid-row:1/span 5;
+ border:!px solid red;
+  }
+}
+@media screen and (max-width: 767px) {}
+@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {}
 `;
