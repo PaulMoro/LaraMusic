@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Home/HeaderPage";
+import Header from "../components/Header/HeaderPage";
 import Hero from "../components/Home/Hero";
 import LaraSpecs from "../components/Home/LaraSpecs";
 import TopArtist from "../components/Home/TopArtist";
