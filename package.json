@@ -25,13 +25,14 @@
     "prop-types": "^15.5.10",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-h5-audio-player": "^3.4.1",
     "sass": "^1.27.0",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "react-icons": "^3.11.0",
     "css-loader": "^5.0.0",
     "mini-css-extract-plugin": "^1.0.0",
+    "react-icons": "^3.11.0",
     "sass-loader": "^10.0.3"
   }
 }

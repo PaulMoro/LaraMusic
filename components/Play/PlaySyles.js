@@ -1,4 +1,4 @@
-import css from "styled-jsx/css";
+import css from 'styled-jsx/css';
 
 export default css.PlayStyles`
 .info__song{
@@ -8,6 +8,7 @@ export default css.PlayStyles`
     display:flex;
     align-items:center;
     justify-content:center;
+    width: 200px;
 }
 
 .info__song img {
@@ -26,6 +27,15 @@ color:white;
     grid-column:2/3;
     grid-row:4/5;
     background-color:#0F1E36;
+    width: 100%;
+}
+.songPlayer{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    width:100%;
 }
 @media screen and (max-width: 1023px) {
 
