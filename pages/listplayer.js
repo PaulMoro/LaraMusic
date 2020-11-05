@@ -4,7 +4,7 @@ import Link from "next/link";
 /* import componenets */
 import HeaderHome from "../components/Player/Com__Header";
 import NavHomeScreen from "../components/Player/Nav.js";
-import MainPlayer from "../components/Player/MainPlayer.js";
+import ListPlayer from "../components/Player/MainPlayer.js";
 import Play from "../components/Play/Play";
 import AlbumStyles from "../components/Albums/AlbumStyles";
 
@@ -14,7 +14,7 @@ const homeScreen = () => {
 			<HeaderHome />
 			<NavHomeScreen />
 			<div className='containerContent'>
-				<MainPlayer />
+				<ListPlayer />
 			</div>
 			<Play></Play>
 		</div>

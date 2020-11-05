@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { useAuth } from "../../contexts/AuthContext";
 
@@ -18,10 +18,11 @@ import navStyle from "./styles/navStyle";
 
 const NavHomeScreen = () => {
 	const { user } = useAuth();
-
 	const { profile: { musiclists = [] } = {} } = user;
 
-	console.log(musiclists);
+	//const Tracks = user.profile.musiclists[0].musictracks;
+	//console.log(Tracks);
+
 	return (
 		<nav>
 			<Link href='/player' className='logo'>
@@ -35,7 +36,7 @@ const NavHomeScreen = () => {
 								<div>
 									<VscRocket />
 								</div>
-								<strong>Dicover</strong>
+								<strong>Discover</strong>
 							</a>
 						</Link>
 					</li>
@@ -95,10 +96,12 @@ const NavHomeScreen = () => {
 				<ul className='list'>
 					<li className='item' key={musiclists.id}>
 						{musiclists.map((item) => (
-							<div>
-								<VscFileSubmodule />
-								<p>{item.title}</p>
-							</div>
+							<Link href='/listplayer'>
+								<div>
+									<VscFileSubmodule />
+									<p>{item.title}</p>
+								</div>
+							</Link>
 						))}
 					</li>
 					{/* <li className='item'>
