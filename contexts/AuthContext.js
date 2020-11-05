@@ -48,7 +48,7 @@ export const AuthProvider = ({ children }) => {
 		localStorage.removeItem("userData");
 		setUser(null);
 		//delete api.defaults.headers.Authorization;
-		redirect("/player");
+		redirect("/");
 		//window.location.pathname = "/";
 	};
 
