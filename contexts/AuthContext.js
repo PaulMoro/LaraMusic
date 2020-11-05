@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
 
 	const signOut = (ctx = {}) => {
 		if (process.browser) {
-			localStorage.clear();
+			localStorage.removeItem("userData");
 			redirect("/", ctx);
 		}
 	};
