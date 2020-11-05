@@ -1,65 +1,21 @@
-import React, { createContext, useState, useContext, useEffect } from "react";
+import React, { createContext, useState, useContext } from 'react';
 
-import redirect from "../lib/redirect";
-import { authenticate } from "../services/authApi";
-import { validateCredentials } from "../lib/validation";
-import { useRouter } from "next/router";
+const PlayerContext = createContext({});
 
-const AuthContext = createContext({});
+export const PlayerProvider = ({ children }) => {
+  const [song, setSong] = useState({});
 
-export const AuthProvider = ({ children }) => {
-	const [user, setUser] = useState({});
-	const [loading, setLoading] = useState(true);
-	const [isLogged, setIsLogged] = useState(false);
-	//const router = useRouter();
+  const setPlayingSong = (songID) => {
+    setSong(songID);
+    console.log(songID);
+    return song;
+  };
 
-	useEffect(() => {
-		const userData = localStorage.getItem("userData");
-		const jwt = localStorage.getItem("jwt");
-		setUser(JSON.parse(userData));
-		setIsLogged(true);
-
-		if (!(isLogged || loading)) {
-			redirect("/login");
-		}
-		setLoading(false);
-	}, [isLogged, loading]);
-
-	const Login = async (email, password) => {
-		const jwt = localStorage.getItem("jwt");
-		const userData = localStorage.getItem("userData");
-		const cleanUserData = JSON.parse(userData);
-
-		if (jwt) {
-			var access = JSON.parse(jwt);
-		}
-
-		const error = validateCredentials(email, password);
-		if (error) {
-			return error;
-		}
-
-		const res = await authenticate(email, password);
-
-		if (access) {
-			redirect("/player");
-		} else return null;
-	};
-
-	const signOut = (ctx = {}) => {
-		if (process.browser) {
-			localStorage.clear();
-			redirect("/", ctx);
-		}
-	};
-
-	return (
-		<AuthContext.Provider
-			value={{ isAuthenticated: !!user, user, Login, loading, signOut }}
-		>
-			{children}
-		</AuthContext.Provider>
-	);
+  return (
+    <PlayerContext.Provider value={{ setPlayingSong: song }}>
+      {children}
+    </PlayerContext.Provider>
+  );
 };
 
-export const useAuth = () => useContext(AuthContext);
+export const usePlayer = () => useContext(PlayerContext);

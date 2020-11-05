@@ -1,5 +1,6 @@
 // import App from 'next/app'
 import { AuthProvider } from '../contexts/AuthContext';
+import { PlayerProvider } from '../contexts/PlayerContext';
 import '../assets/style/componentStyle/global.scss';
 import Play from '../components/Play/Play';
 import { useRouter } from 'next/router';
@@ -9,10 +10,12 @@ function MyApp({ Component, pageProps }) {
   console.log(router.pathname);
   return (
     <AuthProvider>
-      <>
-        <Component {...pageProps} />
-        <Play></Play>
-      </>
+      <PlayerProvider>
+        <>
+          <Component {...pageProps} />
+          <Play></Play>
+        </>
+      </PlayerProvider>
     </AuthProvider>
   );
 }

@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { usePlayer } from '../../../contexts/PlayerContext';
 import axios from 'axios';
 import CardSongStyles from './styles/CardSongStyles';
 import playbutton from '../../../assets/img/play.svg';
 import { getPlaylist } from '../../../lib/spotifyRequest';
+
 function CardSong() {
+  const { setPlayingSong } = usePlayer();
+
   const [music, setMusic] = useState([]);
   useEffect(() => {
     obtenerDatos();
@@ -19,13 +23,23 @@ function CardSong() {
     setMusic(musica);
   };
 
+  // const onPlay = (id) => {
+  //   // console.log(id);
+  //   setPlayingSong({ id });
+  // };
+
   return (
     <>
       {music.map((item) => (
         <div className='card__song' key={item.track.id}>
           <div className='card__song--image'>
             <img src={item.track.album.images[0].url} alt='' />
-            <span className='card__overlay'>
+            <span
+              className='card__overlay'
+              onClick={() => {
+                onPlay(item.track.id);
+              }}
+            >
               <img src={playbutton}></img>
             </span>
           </div>
