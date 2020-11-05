@@ -3,7 +3,6 @@ import React, { createContext, useState, useContext, useEffect } from "react";
 import redirect from "../lib/redirect";
 import { authenticate } from "../services/authApi";
 import { validateCredentials } from "../lib/validation";
-import { useRouter } from "next/router";
 
 const AuthContext = createContext({});
 
@@ -11,7 +10,6 @@ export const AuthProvider = ({ children }) => {
 	const [user, setUser] = useState({});
 	const [loading, setLoading] = useState(true);
 	const [isLogged, setIsLogged] = useState(false);
-	//const router = useRouter();
 
 	useEffect(() => {
 		const userData = localStorage.getItem("userData");
@@ -48,7 +46,7 @@ export const AuthProvider = ({ children }) => {
 
 	const signOut = (ctx = {}) => {
 		if (process.browser) {
-			localStorage.clear();
+			localStorage.removeItem("userData");
 			redirect("/", ctx);
 		}
 	};

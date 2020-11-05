@@ -14,6 +14,7 @@ export default css.AlbumStyles`
 .card__list {
   display: flex;
   margin-top: 10px;
+    flex-wrap:wrap;
 }
 .card__list img {
   width: 150px;
@@ -85,13 +86,15 @@ export default css.AlbumStyles`
   margin:3rem 0 ;
   max-width:1720px;
 }
-@media screen and (max-width: 415px) {
-
+@media screen and (max-width: 1023px) {
 
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
 
-
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 320px) {
 }
 
 
