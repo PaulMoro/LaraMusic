@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _this = undefined,
-    _jsxFileName = "D:\\LaraMusic\\LaraMusic\\contexts\\AuthContext.js",
+    _jsxFileName = "C:\\Users\\Moro\\Documents\\zz\\LaraMusic\\contexts\\AuthContext.js",
     _s = $RefreshSig$(),
     _s2 = $RefreshSig$();
 
@@ -10817,7 +10817,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_style_componentStyle_global_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/style/componentStyle/global.scss */ "./assets/style/componentStyle/global.scss");
 /* harmony import */ var _assets_style_componentStyle_global_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_style_componentStyle_global_scss__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "D:\\LaraMusic\\LaraMusic\\pages\\_app.js";
+var _jsxFileName = "C:\\Users\\Moro\\Documents\\zz\\LaraMusic\\pages\\_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 // import App from 'next/app'
@@ -11036,7 +11036,7 @@ var authenticate = /*#__PURE__*/function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./");
-module.exports = __webpack_require__(/*! D:\LaraMusic\LaraMusic\node_modules\next\dist\client\router.js */"./node_modules/next/dist/client/router.js");
+module.exports = __webpack_require__(/*! C:\Users\Moro\Documents\zz\LaraMusic\node_modules\next\dist\client\router.js */"./node_modules/next/dist/client/router.js");
 
 
 /***/ })
