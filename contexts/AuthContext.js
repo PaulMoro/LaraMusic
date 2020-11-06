@@ -38,7 +38,7 @@ export const AuthProvider = ({ children }) => {
 		}
 
 		const res = await authenticate(email, password);
-
+		setIsLogged(true);
 		if (access) {
 			redirect("/player");
 		} else return null;
