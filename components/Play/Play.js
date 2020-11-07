@@ -42,7 +42,6 @@ function Play() {
   function checkIfIsVisible(path, lisOfPages) {
     const visible = lisOfPages.includes(path);
     setIsVisible(visible);
-    console.log('>>>', { visible });
   }
   const router = useRouter();
   const visibleIn = ['/player', '/artist', '/album'];
@@ -51,7 +50,6 @@ function Play() {
     checkIfIsVisible(router.pathname, visibleIn);
   }, [router.pathname]);
 
-  console.log('>>>', { isVisible });
   if (!isVisible) {
     return null;
   }
