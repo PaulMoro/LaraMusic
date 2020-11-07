@@ -12,8 +12,9 @@ nav {
 .logo {
   display: flex;
   justify-content:center;
-  margin: 1.5rem 0;
-  object-fit: cover;
+  margin: 1rem 0;
+  height:40px;
+  padding: 0 2rem;
   cursor:pointer;
 }
 .container {
@@ -34,7 +35,7 @@ nav {
   height: 40px;
   color: #0F1E36;
   cursor:pointer;
-  opacity: 0.5;
+  opacity:0.9;
 }
 
 .list li a{
@@ -46,7 +47,10 @@ nav {
   mix-blend-mode: normal;
 }
 
-
+strong{
+    font-weight:300;
+    text-transform: capitalize;
+}
 .list li a:visited{
   text-decoration: none;
 } 
@@ -55,12 +59,7 @@ nav {
   padding-left:1rem;
   font-size: 14px;
 }
-@media screen and (max-width: 1023px) {
-  nav{
- grid-row:1/span 5;
- border:!px solid red;
-  }
-}
+@media screen and (max-width: 1023px) {}
 @media screen and (max-width: 767px) {}
 @media screen and (max-width: 480px) {}
 @media screen and (max-width: 480px) {}

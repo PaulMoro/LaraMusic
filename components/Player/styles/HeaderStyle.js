@@ -79,11 +79,12 @@ header ul {
   cursor: pointer;
   font-size: 1rem;
   color: #0F1E36;
-  opacity:0.5;
+  opacity:0.7;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
-.userInf__prop h4:hover{
+.userInf__prop a:hover{
   opacity:1;
 }
 
