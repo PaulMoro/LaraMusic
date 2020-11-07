@@ -38,7 +38,7 @@ export const AuthProvider = ({ children }) => {
 		}
 
 		const res = await authenticate(email, password);
-
+		setIsLogged(true);
 		if (access) {
 			redirect("/player");
 		} else return null;
@@ -48,7 +48,7 @@ export const AuthProvider = ({ children }) => {
 		localStorage.removeItem("userData");
 		setUser(null);
 		//delete api.defaults.headers.Authorization;
-		redirect("/player");
+		redirect("/");
 		//window.location.pathname = "/";
 	};
 
