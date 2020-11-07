@@ -32,4 +32,27 @@ export default css.ContentMusicStyles`
 .icon:hover{
   opacity:1;
 }
+
+.tab__music__title,
+.tab__music__plays,
+.tab__music__time, 
+.tab__music__icon {
+  padding-left: 2%; 
+}
+.tab__music__title{
+   width: 250px;
+   padding:0;
+   text-align:left;
+}
+.tab__music__icon {
+  padding-left: 7%;
+}
+
+
+.tab__music__icons{
+  width: 30%;
+  display:flex;
+  justify-content:space-between;
+}
+
 `;

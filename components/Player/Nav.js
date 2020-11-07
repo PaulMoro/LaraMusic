@@ -89,10 +89,10 @@ const NavHomeScreen = () => {
         <h2>Play List</h2>
         <ul className="list">
           {user && (
-            <li className="item" key="id">
+            <li className="item">
               <div>
                 {musicLists.map((item) => (
-                  <Link href="/listplayer">
+                  <Link href="/listplayer" key={item.id}>
                     <a>
                       <VscFileSubmodule />
                       <strong>{item.title}</strong>
