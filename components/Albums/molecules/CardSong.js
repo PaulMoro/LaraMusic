@@ -7,6 +7,7 @@ import { getPlaylist } from '../../../lib/spotifyRequest';
 
 function CardSong() {
   const { setPlayingSong } = usePlayer();
+  // console.log(PlayingSong);
 
   const [music, setMusic] = useState([]);
   useEffect(() => {
@@ -23,10 +24,10 @@ function CardSong() {
     setMusic(musica);
   };
 
-  // const onPlay = (id) => {
-  //   // console.log(id);
-  //   setPlayingSong({ id });
-  // };
+  const onPlay = (id) => {
+    // console.log(id);
+    setPlayingSong(id);
+  };
 
   return (
     <>

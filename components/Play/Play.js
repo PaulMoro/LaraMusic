@@ -1,31 +1,60 @@
 import React, { useState, useEffect } from 'react';
 import PlayStyles from './PlaySyles';
+import { usePlayer } from '../../contexts/PlayerContext';
 import ImageSong from '../../assets/img/song2.png';
 import SongPlayer from '../SongPlayer/SongPlayer';
 import { getPlaylist, getSong } from '../../lib/spotifyRequest';
+import { useRouter } from 'next/router';
+
 function Play() {
+  const { songId } = usePlayer();
+  const [isVisible, setIsVisible] = useState();
+
   const [song, setSong] = useState({
     songName: '',
     songArtist: '',
     songUrl: '',
     songImage: '',
+    id: '',
   });
 
-  useEffect((songID) => {
-    const getToken = async () => {
-      const playlist = await getPlaylist('37i9dQZF1DX5BAPG29mHS8');
-      const songID = playlist.tracks.items[0].track.id;
-      const song = await getSong(songID);
-      setSong({
-        songName: song.name,
-        songArtist: song.artists[0].name,
-        songUrl: song.preview_url,
-        songImage: song.album.images[0].url,
-      });
-    };
-    getToken();
-  }, []);
+  const setSongState = async (songId) => {
+    if (Object.keys(songId).length > 0) {
+      const song = await getSong(songId);
+      if (song.preview_url) {
+        setSong({
+          songName: song.name,
+          songArtist: song.artists[0].name,
+          songUrl: song.preview_url,
+          songImage: song.album.images[0].url,
+          id: songId,
+        });
+      } else {
+        console.error('Error, this song do not haver a url preview');
+      }
+    }
+  };
 
+  if (songId !== song.id) {
+    setSongState(songId);
+  }
+
+  function checkIfIsVisible(path, lisOfPages) {
+    const visible = lisOfPages.includes(path);
+    setIsVisible(visible);
+    console.log('>>>', { visible });
+  }
+  const router = useRouter();
+  const visibleIn = ['/player', '/artist', '/album'];
+
+  useEffect(() => {
+    checkIfIsVisible(router.pathname, visibleIn);
+  }, [router.pathname]);
+
+  console.log('>>>', { isVisible });
+  if (!isVisible) {
+    return null;
+  }
   return (
     <div className='songPlayer'>
       <div className='info__song'>
