@@ -30,34 +30,31 @@ const ListTrack = () => {
   return (
     <div className="track">
       <h2>Top Tracks</h2>
-      <div className="track_top">
-        <div className="track_top_detail">
-          <h4 className="track_top_detail#">#</h4>
-          <h4 className="track_top_detailSong">Song</h4>
-          <h4 className="track_top_detailArtist">Artist</h4>
-        </div>
-        <div className="track_top_inf">
-          <h4>Daily Plays</h4>
-          <h4>Time</h4>
-          <h4 className="track_top_infOptions">Options</h4>
-        </div>
+      <div className="tab__top">
+          <p className="tab__top__number">#</p>
+          <p className="tab__top__tittel">tittel</p>
+          <p className="tab__top__plays">Daily plays</p>
+          <p className="tab__top__time">Time</p>
+          <p className="tab__top__option">Options</p>
       </div>
       {music.map((item) => (
         <div className="tab__music">
-          <p>1</p>
-          <div className="icon">
-            <CgPlayButtonO></CgPlayButtonO>
+          <div className="tab__music__icons">
+            <p>1</p>
+            <div className="icon">
+              <CgPlayButtonO></CgPlayButtonO>
+            </div>
+            <div className="icon">
+              <VscThumbsup></VscThumbsup>
+            </div>
+            <div className="icon">
+              <GrAddCircle></GrAddCircle>
+            </div>
           </div>
-          <div className="icon">
-            <VscThumbsup></VscThumbsup>
-          </div>
-          <div className="icon">
-            <GrAddCircle></GrAddCircle>
-          </div>
-          <p>{item.title.substr(1, 7)}</p>
-          <p>{item.playback_count}</p>
-          <p>{time_convert(item.duration)}</p>
-          <div className="icon">
+          <p className="tab__music__tittel">{item.title.substr(0, 12)}</p>
+          <p className="tab__music__plays">{item.playback_count}</p>
+          <p className="tab__music__time">{time_convert(item.duration)}</p>
+          <div className="tab__music__icon">
             <VscEllipsis></VscEllipsis>
           </div>
         </div>

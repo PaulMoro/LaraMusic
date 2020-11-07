@@ -11,63 +11,46 @@ export default css.ListTrackStyle`
     display: none;
 }
 .track h2{
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.track_top {
-  padding: 9px 10px;
-  margin: 10px 0;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.track_top h4, .track_list_detail h4 {
-  padding-right: 30%;
-  text-align: start;
-  font-size: 12px;
-}
-
-.track_top_detail {
   padding-left: 16px;
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-size: 1.3rem;
+  line-height: 22px;
+  font-weight: bold;
 }
 
-.track_top_detailNumber{
+.tab__top {
   display: flex;
-  justify-content: space-between;
-  width: 63px;
+  padding: 1rem 1rem;
 }
 
-.track_top_inf, .track_list_inf {
+.tab__top p {
+  font-weight: bold;
+  opacity:0.7;
+}
+
+.tab__top__number {
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px;
+}
+
+.tab__top__tittel,
+.tab__music__tittel,
+.tab__top__plays,
+.tab__music__plays,
+.tab__top__time, 
+.tab__music__time, 
+.tab__top__option, 
+.tab__music__icon {
+  width: 20%;
+  padding-left: 5%; 
+}
+
+.tab__music__icon {
+  padding-left: 7%;
 }
 
 
 .tab__music{
   display:flex;
-  justify-content:space-between;
+
   padding: 1rem 1rem;
 }
 
@@ -85,6 +68,13 @@ export default css.ListTrackStyle`
   border-radius: 3px;
   cursor:context-menu;
 }
+
+.tab__music__icons{
+  width: 30%;
+  display:flex;
+  justify-content:space-between;
+}
+
 .icon{
   cursor:pointer;
   opacity:0.5;

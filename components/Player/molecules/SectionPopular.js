@@ -33,7 +33,6 @@ const SectionPopular = () => {
               <CgShare />
             </button>
           </div>
-
           <style jsx sectionPopular>
             {sectionPopular}
           </style>

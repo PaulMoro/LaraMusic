@@ -15,11 +15,14 @@ export default css.sectionPopular`
           justify-content: space-between;
   height: 307px;
   color: #0F1E36;
+  background-color: rgba(156, 79, 156, 0.7);
 }
 
 #trending img {
   height: 100%;
   object-fit: cover;
+  width: 60%;
+  margin-left: 40%;
 }
 
 #trending h3 {
@@ -37,6 +40,7 @@ export default css.sectionPopular`
   font-weight: bold;
   font-size: 28px;
   line-height: 30px;
+  width: 35%;
 }
 
 #trending h2 {
@@ -74,11 +78,4 @@ export default css.sectionPopular`
   transition: 0.5s ease;
 }
 
-trending__color {
-  background-color: #9e4f9e;
-  opacity: 1;
-  position: absolute;
-  top: 113px;
-  left: 53px;
-}
 `;
