@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
 import Link from "next/link";
 import { useAuth } from "../../contexts/AuthContext";
-
+import { CgMusicNote } from "react-icons/cg";
+import logo from "../../assets/img/Artist/logo-footer.png";
+import playerStyles from "./PlayerStyles";
 import {
   VscRocket,
   VscFiles,
@@ -11,10 +12,6 @@ import {
   VscFolderOpened,
   VscFileSubmodule,
 } from "react-icons/vsc";
-import { CgMusicNote } from "react-icons/cg";
-import logo from "../../assets/img/Artist/logo-footer.png";
-
-import navStyle from "./styles/navStyle";
 
 const NavHomeScreen = () => {
   const { user } = useAuth();
@@ -107,9 +104,8 @@ const NavHomeScreen = () => {
           )}
         </ul>
       </div>
-
-      <style jsx navStyle>
-        {navStyle}
+      <style jsx playerStyles>
+        {playerStyles}
       </style>
     </nav>
   );
