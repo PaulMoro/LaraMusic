@@ -8,40 +8,47 @@ export default css.HomeStyle`
   background-color: #9e4f9e;
   height: 100px;
   padding: 0 10%;
-  min-width:1124px;
+  min-width: 1124px;
 }
-.header__img__container img {
+.header__img  {
   height: 50px;
+  cursor:pointer;
 }
 
 .perfil {
-  padding: 28px 12% 0px 0px; 
-  width: 180px;
-  height: 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .perfil img {
-  padding: 0;
-  width: 43px;
-  height: 43px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  object-fit: cover;
+}
+.perfil__img {
+  margin-right: 0.5rem;
 }
 
-.perfil h4 {
-  font-size: 16px; /* $fs-regular */
-  color: #F9F9F9; /* $background */
+.perfil h3 {
+  font-size: 1rem;
+  color: #f9f9f9;
+  text-transform: capitalize;
+  cursor: context-menu;
 }
 
 .perfil button {
-  font-size: 12px; /* $fs-small */
-  color: #FFC24B; /* $secondary-color */
-  font-weight: 600; /* $font-semi-bold */
+  font-size: 12px;
+  color: #ffc24b;
+  font-weight: 300;
   background-color: transparent;
   border: none;
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header__links {
+  display: flex;
+  align-items: center;
 }
 .header__links a {
   text-decoration: none;
@@ -66,4 +73,13 @@ export default css.HomeStyle`
 .header__link--player:hover {
   color: rgb(214, 214, 214);
 }
+@media screen and (max-width: 1023px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 480px) {
+}
+
 `;
