@@ -21,20 +21,26 @@ export default css.HomeStyle`
 }
 
 .perfil img {
-  width: 50px;
-  height: 50px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
 }
 .perfil__img {
   margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .perfil h3 {
   font-size: 1rem;
   color: #f9f9f9;
+  font-weight:400;
   text-transform: capitalize;
   cursor: context-menu;
+}
+.perfil h3:hover{
+  opacity:0.8;
+  cursor:pointer;
 }
 
 .perfil button {
@@ -44,7 +50,11 @@ export default css.HomeStyle`
   background-color: transparent;
   border: none;
   text-decoration: none;
-  cursor: pointer;
+}
+.perfil button:hover{
+  opacity:0.8;
+  cursor:pointer;
+  text-decoration: underline;
 }
 .header__links {
   display: flex;

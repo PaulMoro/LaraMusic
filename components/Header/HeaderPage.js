@@ -37,7 +37,7 @@ function Header() {
                 </figure>
                 <div className="perfil__user--info">
                   <h3>{user.username}</h3>
-                  <button onClick={signOut}> Logout </button>
+                  <button onClick={signOut}> Log Out </button>
                 </div>
               </div>
             </Link>
