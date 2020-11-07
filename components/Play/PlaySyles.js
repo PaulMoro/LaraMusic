@@ -8,7 +8,7 @@ export default css.PlayStyles`
     display:flex;
     align-items:center;
     justify-content:center;
-    width: 200px;
+    min-width: 200px;
 }
 
 .info__song img {
