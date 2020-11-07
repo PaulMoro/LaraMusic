@@ -2,7 +2,7 @@ import React from "react";
 import { VscBell } from "react-icons/vsc";
 import { FiSearch } from "react-icons/fi";
 import { useAuth } from "../../contexts/AuthContext";
-import userImage from "../../assets/img/usuario.svg";
+import userImage from "../../assets/img/user.jpg";
 import playerStyles from "./PlayerStyles";
 
 const HeaderHome = () => {

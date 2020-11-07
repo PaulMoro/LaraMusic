@@ -2,19 +2,7 @@ import css from "styled-jsx/css";
 
 export default css.HomeStyle`
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #9e4f9e;
-  height: 100px;
-  padding: 0 10%;
-  min-width:1124px;
-}
-.header__img__container img {
-  height: 50px;
-}
+
 /* Hero */
 .hero {
   background-color: #9e4f9e;

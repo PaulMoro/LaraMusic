@@ -16,7 +16,9 @@
   justify-content: inherit;
   flex-wrap: inherit;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .lara {
   background-color: $background;
   display: grid;

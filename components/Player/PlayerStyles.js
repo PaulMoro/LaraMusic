@@ -5,6 +5,7 @@ export default css.PlayerStyles`
   grid-row: 1/2;
   display: flex;
   justify-content: space-between;
+  border-bottom:1px solid rgba(15, 30, 54, 0.05);
 }
 
 .searchBar {
