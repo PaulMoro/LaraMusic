@@ -1,20 +1,25 @@
 import React from "react";
-import LoginStyle from "./LoginStyle";
+import RegisterStyle from "./RegisterStyle";
 import { RegisterForm } from "./molecules/RegisterForm";
+import registerImage from "../../assets/img/register.jpg";
 
 export const Register = () => {
-  return (
-    <main className="login">
-      <section id="create-account" className="tabcontent account">
-        <div className="tabcontent__form">
-          <h1>Music Online, your everlast playlist</h1>
-          <p>Play your favorite music from everywhere </p>
-          <RegisterForm />
-        </div>
-      </section>
-      <style jsx LoginStyle>
-        {LoginStyle}
-      </style>
-    </main>
-  );
+	return (
+		<main className='login'>
+			<div className='container'>
+				<section id='create-account' className='tabcontent login__container'>
+					<div className='tabcontent__form'>
+						<h1>Register for listen now!</h1>
+						<RegisterForm />
+					</div>
+					<div className='login__container-image'>
+						<img src={registerImage} alt='register-image' />
+					</div>
+				</section>
+			</div>
+			<style jsx RegisterStyle>
+				{RegisterStyle}
+			</style>
+		</main>
+	);
 };

@@ -1,58 +1,22 @@
 import css from "styled-jsx/css";
 
-export default css.LoginStyle`
+export default css.RegisterStyle`
+
 .flex-x, .header__bar, .tabcontent__form .buttons, .tabcontent .form-item, .footer__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .flex-y, .tabcontent__form, .tabcontent .form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header__bar {
-  background-color: #9E4F9E;
-  padding: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__bar-logo {
-  width: 200px;
-  height: 5vh;
-}
-
-.header__bar nav a {
-  text-decoration: none;
-  color: white;
-}
-
-.header__bar nav .login-link {
-  border: solid 1px #FFC24B;
-  border-radius: 28px;
-  padding: 5px 20px;
-  color: #FFC24B;
-  margin-left: 20px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .login {
   max-height: 70vw;
   width: 700px;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .login__tabs-link button {
@@ -75,10 +39,13 @@ export default css.LoginStyle`
   display: -ms-flexbox;
   display: flex;
 }
-
+.login__container-image{
+  width:600px;
+}
 .login__container-image img {
   width: 100%;
   height: 100%;
+  object-fit:cover;
 }
 
 .tabcontent {
@@ -87,12 +54,8 @@ export default css.LoginStyle`
 }
 
 .tabcontent__form {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: flex-start;
+  justify-content: space-evenly;
   padding: 0 20px;
 }
 
@@ -101,13 +64,14 @@ export default css.LoginStyle`
   line-height: 2.25rem;
   letter-spacing: -1px;
   font-weight: 400;
-  max-width: 80%;
+  max-width: 100%;
   color: #656565;
   margin: 10px 0;
 }
 
 .tabcontent__form p {
   font-size: 0.75rem;
+  color: #656565;
 }
 
 .tabcontent__form .buttons {
@@ -144,6 +108,7 @@ export default css.LoginStyle`
 .tabcontent label {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.75rem;
+  margin-right:1rem;
 }
 
 .tabcontent input {
@@ -187,20 +152,6 @@ export default css.LoginStyle`
   text-decoration: none;
 }
 
-.footer__nav {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  background-color: rgba(152, 152, 152, 0.2);
-  padding: 20px;
-  height: 10vh;
-}
-
-.footer__nav a {
-  padding: 0 30px;
-  color: #656565;
-  text-decoration: none;
-}
 
 @media screen and (max-width: 860px) {
   .login {
