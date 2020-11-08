@@ -42,7 +42,11 @@ export default css.ListTrackStyle`
   width: 20%;
   padding-left: 5%; 
 }
-
+.tab__music__titlel{
+   width: 350px;
+   padding:0;
+   text-align:left;
+}
 .tab__music__icon {
   padding-left: 7%;
 }

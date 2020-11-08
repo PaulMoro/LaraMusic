@@ -4,6 +4,7 @@ import { GrAddCircle } from "react-icons/gr";
 import { CgPlayButtonO } from "react-icons/cg";
 import { getPlaylist } from "../../../lib/spotifyRequest";
 import ContentMusicStyles from "./styles/ContentMusicStyles";
+import { MillisToMinute } from "../../../lib/formatMinute";
 
 function ContentMusic() {
   const [music, setMusic] = useState([]);
@@ -18,12 +19,6 @@ function ContentMusic() {
     const musica = playlist.items;
     setMusic(musica);
   };
-
-  function millisToMinutesAndSeconds(millis) {
-    var minutes = Math.floor(millis / 60000);
-    var seconds = ((millis % 60000) / 1000).toFixed(0);
-    return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-  }
 
   return (
     <>
@@ -46,7 +41,7 @@ function ContentMusic() {
             {item.track.duration_ms.toFixed(0)}
           </p>
           <p className="tab__music__time">
-            {millisToMinutesAndSeconds(item.track.duration_ms)}
+            {MillisToMinute(item.track.duration_ms)}
           </p>
           <div className="tab__music__icon">
             <VscEllipsis></VscEllipsis>
