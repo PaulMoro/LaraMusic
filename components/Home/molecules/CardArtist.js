@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import cardArtistStyle from './styles/cardArtistStyle';
-import { getPlaylist } from '../../../lib/spotifyRequest';
+import React, { useEffect, useState } from "react";
+import cardArtistStyle from "./styles/cardArtistStyle";
+import { getPlaylist } from "../../../lib/spotifyRequest";
 
-function CardArtist(params) {
+function CardArtist() {
   const [music, setMusic] = useState([]);
   useEffect(() => {
     obtenerDatos();
@@ -11,25 +10,19 @@ function CardArtist(params) {
 
   const obtenerDatos = async () => {
     const playlist = await getPlaylist(
-      '37i9dQZF1DX5BAPG29mHS8/tracks?offset=0&limit=6'
+      "37i9dQZF1DX5BAPG29mHS8/tracks?offset=0&limit=6"
     );
-
     const musica = playlist.items;
-    // console.log(musica);
     setMusic(musica);
   };
-
-  useEffect(() => {
-    obtenerDatos();
-  }, []);
 
   return (
     <>
       {music.map((item) => (
-        <div className='card__artist' key={item.track.id}>
-          <img src={item.track.album.images[0].url} alt='' />
-          <p className='title__song'>{item.track.album.name}</p>
-          <p className='artist_name'>{item.track.album.artists[0].name}</p>
+        <div className="card__artist" key={item.track.id}>
+          <img src={item.track.album.images[0].url} alt="" />
+          <p className="title__song">{item.track.album.name}</p>
+          <p className="artist_name">{item.track.album.artists[0].name}</p>
         </div>
       ))}
 

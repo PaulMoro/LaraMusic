@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import AlbumStyles from "./AlbumStyles";
 import CardSong from "./molecules/CardSong";
 function FeatureTracks() {

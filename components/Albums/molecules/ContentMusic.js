@@ -3,8 +3,8 @@ import { VscEllipsis, VscThumbsup } from "react-icons/vsc";
 import { GrAddCircle } from "react-icons/gr";
 import { CgPlayButtonO } from "react-icons/cg";
 import { getPlaylist } from "../../../lib/spotifyRequest";
-import ContentMusicStyles from "./styles/ContentMusicStyles";
 import { MillisToMinute } from "../../../lib/formatMinute";
+import ContentMusicStyles from "./styles/ContentMusicStyles";
 
 function ContentMusic() {
   const [music, setMusic] = useState([]);
