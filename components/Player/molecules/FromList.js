@@ -18,39 +18,37 @@ const FromList = () => {
   return (
     <div className="track">
       <h2>Top Tracks</h2>
-      <div className="track_top">
-        <div className="track_top_detail">
-          <h4 className="track_top_detail#">#</h4>
-          <h4 className="track_top_detailSong">Song</h4>
-          <h4 className="track_top_detailArtist">Artist</h4>
-        </div>
-        <div className="track_top_inf">
-          <h4>Album</h4>
-          <h4>Time</h4>
-          <h4 className="track_top_infOptions">Options</h4>
-        </div>
+      <div className="tab__top">
+        <h4 className="tab__top__number#">#</h4>
+        <h4 className="tab__top__tittel">Song</h4>
+        <h4 className="tab__top__plays">Artist</h4>
+        <h4 className="tab__top__time">Album</h4>
+        <h4 className="tab__top__option">Time</h4>
+        <h4 className="tab__top__option">Options</h4>
       </div>
       {user &&
         Tracks.map((item) => (
           <div className="tab__music">
-            <p>{item.id}</p>
-            <div className="icon">
-              <CgPlayButtonO></CgPlayButtonO>
+            <div className="tab__music__icons">
+              <p>{item.id}</p>
+              <div className="icon">
+                <CgPlayButtonO></CgPlayButtonO>
+              </div>
+              <div className="icon">
+                <VscThumbsup></VscThumbsup>
+              </div>
+              <div className="icon">
+                <GrAddCircle></GrAddCircle>
+              </div>
             </div>
 
-            <p>{item.title}</p>
-            <p>{item.album}</p>
-            <p>{item.record_company}</p>
+            <p className="tab__music__tittel">{item.title}</p>
+            <p className="tab__music__plays">{item.album}</p>
+            <p className="tab__music__time">{item.record_company}</p>
             <p>{item.gender}</p>
             <p>{item.views}</p>
-            <div className="icon">
+            <div className="tab__music__icon">
               <VscEllipsis></VscEllipsis>
-            </div>
-            <div className="icon">
-              <VscThumbsup></VscThumbsup>
-            </div>
-            <div className="icon">
-              <GrAddCircle></GrAddCircle>
             </div>
           </div>
         ))}

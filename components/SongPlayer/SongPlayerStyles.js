@@ -25,7 +25,10 @@ color:white;
 .player{
     grid-column:2/3;
     grid-row:4/5;
+}
+.player__audio{
     background-color:#0F1E36;
+
 }
 
 `;
