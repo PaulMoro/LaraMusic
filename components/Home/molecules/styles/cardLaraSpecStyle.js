@@ -19,4 +19,30 @@ export default css.cardLaraSpecStyle`
   text-align: center;
   width: 5em;
 }
+@media screen and (max-width: 1023px) {
+
+}
+@media screen and (max-width: 768px) {
+  .card p {
+    font-size:1.1rem;
+}
+}
+@media screen and (max-width: 480px) {
+  .card img {
+  width: 150px;
+  height: 150px;
+}
+  .card p {
+    font-size:1.5rem;
+}
+}
+@media screen and (max-width: 320px) {
+    .card img {
+  width: 170px;
+  height: 170px;
+}
+  .card p {
+    font-size:1.8rem;
+}
+}
 `;

@@ -84,12 +84,19 @@ export default css.HomeStyle`
   color: rgb(214, 214, 214);
 }
 @media screen and (max-width: 1023px) {
+
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 480px) {
+  .header__links a{
+    font-size:1.2rem;
+  }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
+    .header__links a{
+    font-size:1.4rem;
+  }
 }
 
 `;
