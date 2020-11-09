@@ -16,7 +16,9 @@
   justify-content: inherit;
   flex-wrap: inherit;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .lara {
   background-color: $background;
   display: grid;
@@ -31,8 +33,11 @@
   .lara {
     height: 100%;
   }
+  .container {
+    padding: 0 1em;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 480px) {
 }

@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-import Success from "../../../lib/Success";
 import Error from "../../../lib/Error";
-import { signUp, redirectIfAuthenticated } from "../../../lib/auth";
+import { signUp } from "../../../lib/userApi";
 import { useForm } from "../../../Hooks/useForm";
 
-import LoginStyle from "../LoginStyle";
+import RegisterStyle from "../RegisterStyle";
 
 export const RegisterForm = () => {
 	const [error, setError] = useState("");
 
 	const [formRegisterValues, handleRegisterInputChange] = useForm({
-		username: "",
 		first_name: "",
 		last_name: "",
+		username: "",
 		email: "",
 		biography: "",
 		password: "",
@@ -20,9 +19,9 @@ export const RegisterForm = () => {
 	});
 
 	const {
-		username,
 		first_name,
 		last_name,
+		username,
 		email,
 		biography,
 		password,
@@ -33,15 +32,15 @@ export const RegisterForm = () => {
 		e.preventDefault();
 
 		const error = await signUp(
-			username,
 			first_name,
 			last_name,
+			username,
+
 			email,
 			biography,
 			password,
 			password_confirmation
 		);
-		console.log(formRegisterValues);
 		if (error) {
 			setError(error);
 		}
@@ -53,17 +52,7 @@ export const RegisterForm = () => {
 			{error && <Error message={error} />}
 			<form className='form-group' onSubmit={handleSubmit}>
 				<div className='form-item' id='name'>
-					<label htmlFor='username'>User Name</label>
-					<input
-						type='text'
-						id='username'
-						name='username'
-						value={username}
-						onChange={handleRegisterInputChange}
-					/>
-				</div>
-				<div className='form-item' id='name'>
-					<label htmlFor='first_name'>First Name</label>
+					<label htmlFor='first_name'>Your first name</label>
 					<input
 						type='text'
 						id='first_name'
@@ -73,7 +62,7 @@ export const RegisterForm = () => {
 					/>
 				</div>
 				<div className='form-item' id='name'>
-					<label htmlFor='last_name'>Last Name</label>
+					<label htmlFor='last_name'>Your last name</label>
 					<input
 						type='text'
 						id='last_name'
@@ -82,8 +71,18 @@ export const RegisterForm = () => {
 						onChange={handleRegisterInputChange}
 					/>
 				</div>
+				<div className='form-item' id='name'>
+					<label htmlFor='username'>How do you want be named?</label>
+					<input
+						type='text'
+						id='username'
+						name='username'
+						value={username}
+						onChange={handleRegisterInputChange}
+					/>
+				</div>
 				<div className='form-item' id='email'>
-					<label htmlFor='email'>User email</label>
+					<label htmlFor='email'>Your email</label>
 					<input
 						type='email'
 						id='email'
@@ -92,8 +91,8 @@ export const RegisterForm = () => {
 						onChange={handleRegisterInputChange}
 					/>
 				</div>
-				<div className='form-item' id='name'>
-					<label htmlFor='biography'>Your favourite music</label>
+				<div className='form-item' id='biography'>
+					<label htmlFor='biography'>What is your favorite music?</label>
 					<input
 						type='text'
 						id='biography'
@@ -102,6 +101,7 @@ export const RegisterForm = () => {
 						onChange={handleRegisterInputChange}
 					/>
 				</div>
+
 				<div className='form-item' id='password'>
 					<label htmlFor='password'>Password</label>
 					<input
@@ -114,7 +114,7 @@ export const RegisterForm = () => {
 					<span>{`Password, 8 characters min`}</span>
 				</div>
 				<div className='form-item' id='pass'>
-					<label htmlFor='password_confirmation'>Password Confirmation</label>
+					<label htmlFor='password_confirmation'>Please confirm your password</label>
 					<input
 						id='password_confirmation'
 						type='password'
@@ -132,10 +132,10 @@ export const RegisterForm = () => {
 					By registering you confirm that you accept the
 					<a href='/'>Terms and Conditions and Privacy Policy</a>
 				</small>
-				<style jsx LoginStyle>
-					{LoginStyle}
-				</style>
 			</form>
+			<style jsx RegisterStyle>
+				{RegisterStyle}
+			</style>
 		</>
 	);
 };

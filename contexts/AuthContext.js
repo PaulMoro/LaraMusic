@@ -1,27 +1,26 @@
 import React, { createContext, useState, useContext, useEffect } from "react";
 
-import redirect from "../lib/redirect";
-import { authenticate } from "../services/authApi";
+import { authenticate } from "../lib/authApi";
 import { validateCredentials } from "../lib/validation";
+import { useRouter } from "next/router";
 
 const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
 	const [user, setUser] = useState({});
-	const [loading, setLoading] = useState(true);
 	const [isLogged, setIsLogged] = useState(false);
+	const router = useRouter();
 
 	useEffect(() => {
 		const userData = localStorage.getItem("userData");
-		const jwt = localStorage.getItem("jwt");
 		setUser(JSON.parse(userData));
-		setIsLogged(true);
+		setIsLogged(!!userData);
+		router.prefetch("/player");
 
-		if (!(isLogged || loading)) {
-			redirect("/login");
+		if (!isLogged && router.pathname === "/player") {
+			router.push("/login");
 		}
-		setLoading(false);
-	}, [isLogged, loading]);
+	}, [isLogged, router.pathname]);
 
 	const Login = async (email, password) => {
 		const jwt = localStorage.getItem("jwt");
@@ -40,28 +39,19 @@ export const AuthProvider = ({ children }) => {
 		const res = await authenticate(email, password);
 		setIsLogged(true);
 		if (access) {
-			redirect("/player");
+			router.push("/player");
 		} else return null;
 	};
 
 	const signOut = (user) => {
 		localStorage.removeItem("userData");
 		setUser(null);
-		//delete api.defaults.headers.Authorization;
-		redirect("/");
-		//window.location.pathname = "/";
+		router.push("/");
 	};
-
-	// const signOut = (ctx = {}) => {
-	// 	if (process.browser) {
-	// 		localStorage.removeItem("userData");
-	// 		redirect("/", ctx);
-	// 	}
-	// };
 
 	return (
 		<AuthContext.Provider
-			value={{ isAuthenticated: !!user, user, Login, loading, signOut }}
+			value={{ isAuthenticated: !!user, user, Login, signOut }}
 		>
 			{children}
 		</AuthContext.Provider>

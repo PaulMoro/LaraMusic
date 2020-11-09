@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { usePlayer } from '../../../contexts/PlayerContext';
-import axios from 'axios';
 import CardSongStyles from './styles/CardSongStyles';
 import playbutton from '../../../assets/img/play.svg';
 import { getPlaylistCleaned } from '../../../lib/spotifyRequest';
 
 function CardSong() {
   const { setPlayingSong } = usePlayer();
-  // console.log(PlayingSong);
-
   const [music, setMusic] = useState([]);
   useEffect(() => {
     obtenerDatos();

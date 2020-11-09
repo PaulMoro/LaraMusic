@@ -2,11 +2,10 @@ import React from "react";
 import Link from "next/link";
 
 /* import componenets */
-import HeaderHome from "../components/Player/Com__Header";
+import HeaderHome from "../components/Player/Header";
 import NavHomeScreen from "../components/Player/Nav.js";
 import ListPlayer from "../components/Player/ListPlayer";
 import Play from "../components/Play/Play";
-import AlbumStyles from "../components/Albums/AlbumStyles";
 
 const homeScreen = () => {
   return (

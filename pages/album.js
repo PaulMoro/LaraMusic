@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderHome from "../components/Player/Com__Header";
+import HeaderHome from "../components/Player/Header";
 import NavHomeScreen from "../components/Player/Nav.js";
 import ContentAbum from "../components/Albums/ContentAbum";
 import Play from "../components/Play/Play";

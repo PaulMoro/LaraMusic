@@ -1,25 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import cardArtistStyle from './styles/cardArtistStyle';
 import { getPlaylistWithLimit } from '../../../lib/spotifyRequest';
 
-function CardArtist(params) {
+function CardArtist() {
   const [music, setMusic] = useState([]);
   useEffect(() => {
     obtenerDatos();
   }, []);
 
   const obtenerDatos = async () => {
-    const playlist = await getPlaylist('37i9dQZF1DX5BAPG29mHS8/', 6);
+    const playlist = await getPlaylistWithLimit('37i9dQZF1DX5BAPG29mHS8/', 6);
 
     const musica = playlist.items;
-    // console.log(musica);
     setMusic(musica);
   };
-
-  useEffect(() => {
-    obtenerDatos();
-  }, []);
 
   return (
     <>

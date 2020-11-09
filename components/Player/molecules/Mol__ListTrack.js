@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { usePlayer } from '../../../contexts/PlayerContext';
-
-import fetch from 'isomorphic-fetch';
 import { VscEllipsis, VscThumbsup } from 'react-icons/vsc';
 import { FaRegThumbsUp } from 'react-icons/fa';
 import { GrAddCircle } from 'react-icons/gr';

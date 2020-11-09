@@ -1,52 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { VscEllipsis, VscThumbsup } from 'react-icons/vsc';
-import { GrAddCircle } from 'react-icons/gr';
-import ContentMusicStyles from './styles/ContentMusicStyles';
-import { CgPlayButtonO } from 'react-icons/cg';
-import { getPlaylist } from '../../../lib/spotifyRequest';
+import React, { useState, useEffect } from "react";
+import { VscEllipsis, VscThumbsup } from "react-icons/vsc";
+import { GrAddCircle } from "react-icons/gr";
+import { CgPlayButtonO } from "react-icons/cg";
+import { getPlaylist } from "../../../lib/spotifyRequest";
+import { MillisToMinute } from "../../../lib/formatMinute";
+import ContentMusicStyles from "./styles/ContentMusicStyles";
 
 function ContentMusic() {
-  const id = 1;
   const [music, setMusic] = useState([]);
   useEffect(() => {
     obtenerDatos();
   }, []);
-  const API_HOST = 'https://api.spotify.com/v1/playlists/';
 
   const obtenerDatos = async () => {
     const playlist = await getPlaylist(
-      '37i9dQZF1DX5BAPG29mHS8/tracks?offset=0&limit=7'
+      "37i9dQZF1DX5BAPG29mHS8/tracks?offset=0&limit=7"
     );
-
     const musica = playlist.items;
-    // console.log(musica);
     setMusic(musica);
   };
-  function time_convert(num) {
-    var hours = Math.floor(num / 60);
-    var minutes = num % 60;
-    return hours + ':' + minutes;
-  }
 
   return (
     <>
       {music.map((item) => (
-        <div className='tab__music' key={item.track.id}>
-          <p>1</p>
-          <div className='icon'>
-            <CgPlayButtonO></CgPlayButtonO>
+        <div className="tab__music" key={item.track.id}>
+          <div className="tab__music__icons">
+            <p>1</p>
+            <div className="icon">
+              <CgPlayButtonO></CgPlayButtonO>
+            </div>
+            <div className="icon">
+              <VscThumbsup></VscThumbsup>
+            </div>
+            <div className="icon">
+              <GrAddCircle></GrAddCircle>
+            </div>
           </div>
-          <div className='icon'>
-            <VscThumbsup></VscThumbsup>
-          </div>
-          <div className='icon'>
-            <GrAddCircle></GrAddCircle>
-          </div>
-          <p>{item.track.album.name}</p>
-          <p>{item.track.album.name}</p>
-          <p>{time_convert(item.track.album.name)}</p>
-          <div className='icon'>
+          <p className="tab__music__title">{item.track.album.name}</p>
+          <p className="tab__music__plays">
+            {item.track.duration_ms.toFixed(0)}
+          </p>
+          <p className="tab__music__time">
+            {MillisToMinute(item.track.duration_ms)}
+          </p>
+          <div className="tab__music__icon">
             <VscEllipsis></VscEllipsis>
           </div>
         </div>

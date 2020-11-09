@@ -1,22 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { CgShare } from "react-icons/cg";
-
+import { getSongs } from "../../../lib/hearthisRequest";
 import sectionPopular from "./styles/sectionPopular";
 
 const SectionPopular = () => {
-  /* call API */
-
   const [music, setMusic] = useState([]);
   useEffect(() => {
     obtenerDatos();
   }, []);
 
   const obtenerDatos = async () => {
-    const datos = await fetch(
-      "https://api-v2.hearthis.at/feed/?page=1&count=1"
-    );
-    const music = await datos.json();
-    setMusic(music);
+    const songs = await getSongs(1);
+    setMusic(songs.data);
   };
 
   return (
