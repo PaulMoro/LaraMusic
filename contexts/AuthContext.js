@@ -1,6 +1,5 @@
 import React, { createContext, useState, useContext, useEffect } from "react";
 
-import redirect from "../lib/redirect";
 import { authenticate } from "../lib/authApi";
 import { validateCredentials } from "../lib/validation";
 import { useRouter } from "next/router";
@@ -16,9 +15,10 @@ export const AuthProvider = ({ children }) => {
 		const userData = localStorage.getItem("userData");
 		setUser(JSON.parse(userData));
 		setIsLogged(!!userData);
+		router.prefetch("/player");
 
-		if (!isLogged && router.pathname !== ("/", "/register")) {
-			redirect("/login");
+		if (!isLogged && router.pathname === "/player") {
+			router.push("/login");
 		}
 	}, [isLogged, router.pathname]);
 
@@ -39,14 +39,14 @@ export const AuthProvider = ({ children }) => {
 		const res = await authenticate(email, password);
 		setIsLogged(true);
 		if (access) {
-			redirect("/player");
+			router.push("/player");
 		} else return null;
 	};
 
 	const signOut = (user) => {
 		localStorage.removeItem("userData");
 		setUser(null);
-		redirect("/");
+		router.push("/");
 	};
 
 	return (

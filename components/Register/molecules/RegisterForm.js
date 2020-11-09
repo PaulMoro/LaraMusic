@@ -9,19 +9,21 @@ export const RegisterForm = () => {
 	const [error, setError] = useState("");
 
 	const [formRegisterValues, handleRegisterInputChange] = useForm({
-		username: "",
 		first_name: "",
 		last_name: "",
+		username: "",
 		email: "",
+		biography: "",
 		password: "",
 		password_confirmation: "",
 	});
 
 	const {
-		username,
 		first_name,
 		last_name,
+		username,
 		email,
+		biography,
 		password,
 		password_confirmation,
 	} = formRegisterValues;
@@ -30,14 +32,15 @@ export const RegisterForm = () => {
 		e.preventDefault();
 
 		const error = await signUp(
-			username,
 			first_name,
 			last_name,
+			username,
+
 			email,
+			biography,
 			password,
 			password_confirmation
 		);
-		console.log(formRegisterValues);
 		if (error) {
 			setError(error);
 		}
@@ -88,6 +91,17 @@ export const RegisterForm = () => {
 						onChange={handleRegisterInputChange}
 					/>
 				</div>
+				<div className='form-item' id='biography'>
+					<label htmlFor='biography'>What is your favorite music?</label>
+					<input
+						type='text'
+						id='biography'
+						name='biography'
+						value={biography}
+						onChange={handleRegisterInputChange}
+					/>
+				</div>
+
 				<div className='form-item' id='password'>
 					<label htmlFor='password'>Password</label>
 					<input
