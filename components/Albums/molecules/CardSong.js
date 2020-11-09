@@ -3,7 +3,7 @@ import { usePlayer } from '../../../contexts/PlayerContext';
 import axios from 'axios';
 import CardSongStyles from './styles/CardSongStyles';
 import playbutton from '../../../assets/img/play.svg';
-import { getPlaylist } from '../../../lib/spotifyRequest';
+import { getPlaylistCleaned } from '../../../lib/spotifyRequest';
 
 function CardSong() {
   const { setPlayingSong } = usePlayer();
@@ -15,37 +15,35 @@ function CardSong() {
   }, []);
 
   const obtenerDatos = async () => {
-    const playlist = await getPlaylist(
-      '37i9dQZF1DX5BAPG29mHS8/tracks?offset=0&limit=7'
-    );
+    const playlist = await getPlaylistCleaned('37i9dQZF1DX5BAPG29mHS8', 7);
 
-    const musica = playlist.items;
-    // console.log(musica);
+    const musica = playlist;
+    console.log(musica);
     setMusic(musica);
   };
 
-  const onPlay = (id) => {
+  const onPlay = (song) => {
     // console.log(id);
-    setPlayingSong(id);
+    setPlayingSong(song);
   };
 
   return (
     <>
       {music.map((item) => (
-        <div className='card__song' key={item.track.id}>
+        <div className='card__song' key={item.songId}>
           <div className='card__song--image'>
-            <img src={item.track.album.images[0].url} alt='' />
+            <img src={item.songImage} alt='' />
             <span
               className='card__overlay'
               onClick={() => {
-                onPlay(item.track.id);
+                onPlay(item);
               }}
             >
               <img src={playbutton}></img>
             </span>
           </div>
-          <p className='title__song'>{item.track.album.name}</p>
-          <p className='artist_name'>{item.track.album.artists[0].name}</p>
+          <p className='title__song'>{item.songName}</p>
+          <p className='artist_name'>{item.songArtist}</p>
         </div>
       ))}
       <style jsx CardSongStyles>

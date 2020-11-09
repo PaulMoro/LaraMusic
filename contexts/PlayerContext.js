@@ -3,16 +3,15 @@ import React, { createContext, useState, useContext } from 'react';
 const PlayerContext = createContext({});
 
 export const PlayerProvider = ({ children }) => {
-  const [songId, setSongId] = useState({});
+  const [song, setSong] = useState({});
 
-  const setPlayingSong = async (songID) => {
-    setSongId(songID);
-    console.log(songID);
-    return songId;
+  const setPlayingSong = async (newSong) => {
+    setSong(newSong);
+    return newSong;
   };
 
   return (
-    <PlayerContext.Provider value={{ setPlayingSong, songId }}>
+    <PlayerContext.Provider value={{ setPlayingSong, song }}>
       {children}
     </PlayerContext.Provider>
   );

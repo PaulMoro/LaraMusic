@@ -7,36 +7,24 @@ import { getPlaylist, getSong } from '../../lib/spotifyRequest';
 import { useRouter } from 'next/router';
 
 function Play() {
-  const { songId } = usePlayer();
+  const { song } = usePlayer();
   const [isVisible, setIsVisible] = useState();
 
-  const [song, setSong] = useState({
+  const [currentSong, setCurrentSong] = useState({
     songName: '',
     songArtist: '',
     songUrl: '',
     songImage: '',
     id: '',
+    songDuration: '',
   });
 
-  const setSongState = async (songId) => {
-    if (Object.keys(songId).length > 0) {
-      const song = await getSong(songId);
-      if (song.preview_url) {
-        setSong({
-          songName: song.name,
-          songArtist: song.artists[0].name,
-          songUrl: song.preview_url,
-          songImage: song.album.images[0].url,
-          id: songId,
-        });
-      } else {
-        console.error('Error, this song do not haver a url preview');
-      }
-    }
+  const setSongState = async (song) => {
+    setCurrentSong(song);
   };
 
-  if (songId !== song.id) {
-    setSongState(songId);
+  if (song !== currentSong) {
+    setSongState(song);
   }
 
   function checkIfIsVisible(path, lisOfPages) {
