@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-import { useAuth } from "../../../contexts/AuthContext";
+import { useAuth } from "../../contexts/AuthContext";
 
 import WellcomeImg from "../../../assets/img/wellcome.jpg";
 
-import HomeStyle from "../src/Home/HomeStyle";
+import HomeStyle from "../Style/Home/HomeStyle";
 
 export const Welcome = () => {
 	const { user } = useAuth();
