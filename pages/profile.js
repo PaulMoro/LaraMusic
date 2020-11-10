@@ -1,10 +1,10 @@
 import React from "react";
 
-/* import componenets */
-import Header from "../components/Header/HeaderPage";
-import NavProfile from "../components/profile/Com__NavProfile.js";
-import SectionProfile from "../components/profile/Com__SectionProfile.js";
-import Footer from "../components/Home/FooterPage";
+
+import Header from "../src/components/Header/HeaderPage";
+import NavProfile from "../src/components/Profile/Com__NavProfile.js";
+import SectionProfile from "../src/components/Profile/Com__SectionProfile.js";
+import Footer from "../src/components/Home/FooterPage";
 
 const profile = () => {
 	return (
