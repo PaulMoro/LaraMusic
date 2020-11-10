@@ -3,17 +3,16 @@ import React from "react";
 import HeaderHome from "../src/components/Player/Header";
 import NavHomeScreen from "../src/components/Player/Nav.js";
 import Play from "../src/components/Play/Play";
-import ContentArtist from "../src/components/Artist/ContentArtist";
+import ContentAbum from "../src/components/Albums/ContentAbum";
 
-const artist = () => {
+function Album() {
   return (
     <div className="lara">
-      <HeaderHome />
+      <HeaderHome></HeaderHome>
       <NavHomeScreen></NavHomeScreen>
-      <ContentArtist />
+      <ContentAbum></ContentAbum>
       <Play></Play>
     </div>
   );
-};
-
-export default artist;
+}
+export default Album;
