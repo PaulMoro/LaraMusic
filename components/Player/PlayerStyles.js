@@ -141,9 +141,17 @@ strong {
   text-decoration: none;
 }
 
+
+
 .list strong {
   padding-left: 1rem;
   font-size: 14px;
+}
+
+personal-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (max-width: 1023px) {
 }
