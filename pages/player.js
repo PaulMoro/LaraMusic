@@ -1,7 +1,8 @@
 import React from "react";
-import HeaderHome from "../components/Player/Header";
-import NavHomeScreen from "../components/Player/Nav.js";
-import MainPlayer from "../components/Player/MainPlayer.js";
+
+import HeaderHome from "../src/components/Player/Header";
+import NavHomeScreen from "../src/components/Player/Nav.js";
+import MainPlayer from "../src/components/Player/MainPlayer.js";
 
 const homeScreen = (props) => {
   const { authenticated } = props;
