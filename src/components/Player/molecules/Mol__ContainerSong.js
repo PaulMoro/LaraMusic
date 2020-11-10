@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-
 import { getSongs } from "../../../lib/hearthisRequest";
-
 import ContainerSongStyle from "../../Style/Player/molecules/ContainerSongStyle";
 
 const ContainerSong = () => {

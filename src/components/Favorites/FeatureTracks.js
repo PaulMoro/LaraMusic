@@ -1,7 +1,5 @@
 import React from "react";
-
 import CardSong from "./molecules/CardSong";
-
 import AlbumStyles from "../Style/Albums/AlbumStyles";
 
 function FeatureTracks() {

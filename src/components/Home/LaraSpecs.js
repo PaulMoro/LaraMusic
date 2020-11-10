@@ -1,8 +1,6 @@
 import React from "react";
-
 import CardLaraSpec from "./molecules/CardLaraSpec";
 import FeatureImg from "../../../assets/img/hero-cell.png";
-
 import HomeStyle from "../Style/Home/HomeStyle";
 
 function LaraSpecs() {

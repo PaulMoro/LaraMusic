@@ -1,7 +1,5 @@
 import React from "react";
-
 import userImage from "../../../assets/img/usuario.svg";
-
 import Com__NavProfileStyle from "../Style/Profile/Com__NavProfileStyle";
 
 const NavProfile = () => {

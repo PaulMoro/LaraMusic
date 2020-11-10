@@ -1,7 +1,5 @@
 import React from "react";
-
 import { Banner } from "./Banner";
-
 import AlbumStyles from "../Style/Albums/AlbumStyles";
 
 function ContentArtist() {

@@ -1,7 +1,5 @@
 import React from "react";
-
 import CardArtist from "./molecules/CardArtist";
-
 import HomeStyle from "../Style/Home/HomeStyle";
 
 function TopArtist() {

@@ -1,8 +1,6 @@
 import React from "react";
-
 import FeatureTracks from "./FeatureTracks";
 import AboutAlbum from "./AboutAlbum";
-
 import AlbumStyles from "../Style/Albums/AlbumStyles";
 
 function ContentAlbum() {

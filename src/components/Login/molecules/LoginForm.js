@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-
 import Error from "../../../lib/Error";
 import { useForm } from "../../../Hooks/useForm";
 import { useAuth } from "../../../contexts/AuthContext";
-
 import LoginStyle from "../../Style/Login/LoginStyle";
 
 export const LoginForm = () => {

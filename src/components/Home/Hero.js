@@ -1,7 +1,5 @@
 import React from "react";
-
 import HeroImg from "../../../assets/img/hero-image.png";
-
 import HomeStyle from "../Style/Home/HomeStyle";
 
 function Hero() {

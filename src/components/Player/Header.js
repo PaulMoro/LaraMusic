@@ -1,12 +1,8 @@
 import React from "react";
-
 import { useAuth } from "../../contexts/AuthContext";
-
 import { VscBell } from "react-icons/vsc";
 import { FiSearch } from "react-icons/fi";
-
-import userImage from "../../../assets/img/user.jpg";
-
+import userImage from "../../../assets/img/profile-user-player.svg";
 import playerStyles from "../Style/Player/PlayerStyles";
 
 const HeaderHome = () => {

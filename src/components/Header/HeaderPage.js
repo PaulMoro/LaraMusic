@@ -1,11 +1,8 @@
 import React from "react";
 import Link from "next/link";
-
 import { useAuth } from "../../contexts/AuthContext";
-
-import userImage from "../../../assets/img/user.jpg";
+import userImage from "../../../assets/img/profile-user.svg";
 import logo from "../../../assets/img/Artist/logo.png";
-
 import HomeStyle from "../Style/Header/HeaderStyle";
 
 function Header() {

@@ -1,5 +1,4 @@
 import React from "react";
-
 import ArtistStyle from "../Style/Artist/ArtistStyle";
 
 export const FilterArtist = () => {
