@@ -1,9 +1,6 @@
 import React from "react";
-
 import { useAuth } from "../../contexts/AuthContext";
-
 import userImage from "../../../assets/img/user.jpg";
-
 import Com__SectionProfileStyle from "../Style/Profile/Com__SectionProfileStyle";
 
 const SectionProfile = () => {

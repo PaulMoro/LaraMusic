@@ -1,10 +1,7 @@
 import React from "react";
 import Link from "next/link";
-
 import { useAuth } from "../../../contexts/AuthContext";
-
 import WellcomeImg from "../../../assets/img/wellcome.jpg";
-
 import HomeStyle from "../src/Home/HomeStyle";
 
 export const Welcome = () => {

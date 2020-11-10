@@ -1,5 +1,4 @@
 import React from "react";
-
 import HeaderHome from "../src/components/Player/Header";
 import NavHomeScreen from "../src/components/Player/Nav.js";
 import MainPlayer from "../src/components/Player/MainPlayer.js";

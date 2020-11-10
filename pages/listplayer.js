@@ -1,6 +1,4 @@
 import React from "react";
-import Link from "next/link";
-
 import HeaderHome from "../src/components/Player/Header";
 import NavHomeScreen from "../src/components/Player/Nav.js";
 import ListPlayer from "../src/components/Player/ListPlayer";

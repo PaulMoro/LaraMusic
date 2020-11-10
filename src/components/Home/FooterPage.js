@@ -1,7 +1,5 @@
 import React from "react";
-
 import logoFooter from "../../../assets/img/lara_footer.png";
-
 import HomeStyle from "../Style/Home/HomeStyle";
 
 function Footer() {

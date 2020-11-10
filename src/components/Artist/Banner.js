@@ -1,9 +1,6 @@
 import React from "react";
-
 import elipse from "../../../assets/img/Artist/Ellipse.png";
-
 import bannerImg from "../../../assets/img/Artist/frame.png";
-
 import ArtistStyle from "../Style/Artist/ArtistStyle";
 
 export const Banner = () => {
