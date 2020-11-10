@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import Hero from "../src/components/Home/Hero";
 import LaraSpecs from "../src/components/Home/LaraSpecs";
@@ -5,6 +6,16 @@ import TopArtist from "../src/components/Home/TopArtist";
 import Footer from "../src/components/Home/FooterPage";
 import Header from "../src/components/Header/HeaderPage";
 
+=======
+import React from 'react';
+
+import Hero from '../src/components/Home/Hero';
+import LaraSpecs from '../src/components/Home/LaraSpecs';
+import TopArtist from '../src/components/Home/TopArtist';
+import Footer from '../src/components/Home/FooterPage';
+import Header from '../src/components/Header/HeaderPage';
+
+>>>>>>> c25de439dbb9cb8929e92b57901f4a504869a1c0
 function LandingPage() {
   return (
     <>
