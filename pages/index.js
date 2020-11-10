@@ -1,9 +1,11 @@
-import React from "react";
-import Header from "../components/Header/HeaderPage";
-import Hero from "../components/Home/Hero";
-import LaraSpecs from "../components/Home/LaraSpecs";
-import TopArtist from "../components/Home/TopArtist";
-import Footer from "../components/Home/FooterPage";
+import React from 'react';
+
+import Hero from '../src/components/Home/Hero';
+import LaraSpecs from '../src/components/Home/LaraSpecs';
+import TopArtist from '../src/components/Home/TopArtist';
+import Footer from '../src/components/Home/FooterPage';
+import Header from '../src/components/Header/HeaderPage';
+
 function LandingPage() {
   return (
     <>
