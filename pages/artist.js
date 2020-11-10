@@ -1,8 +1,9 @@
 import React from "react";
-import HeaderHome from "../components/Player/Header";
-import NavHomeScreen from "../components/Player/Nav.js";
-import Play from "../components/Play/Play";
-import ContentArtist from "../components/Artist/ContentArtist";
+
+import HeaderHome from "../src/components/Player/Header";
+import NavHomeScreen from "../src/components/Player/Nav.js";
+import Play from "../src/components/Play/Play";
+import ContentArtist from "../src/components/Artist/ContentArtist";
 
 const artist = () => {
   return (

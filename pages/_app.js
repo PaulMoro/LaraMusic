@@ -2,7 +2,7 @@
 import { AuthProvider } from '../contexts/AuthContext';
 import { PlayerProvider } from '../contexts/PlayerContext';
 import '../assets/style/componentStyle/global.scss';
-import Play from '../components/Play/Play';
+import Play from '../src/components/Play/Play';
 
 function MyApp({ Component, pageProps }) {
   return (

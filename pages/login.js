@@ -1,8 +1,8 @@
 import React from "react";
 
-import Header from "../components/Header/HeaderPage";
-import Login from "../components/Login/Login";
-import Footer from "../components/Home/FooterPage";
+import Header from "../src/components/Header/HeaderPage";
+import Login from "../src/components/Login/Login";
+import Footer from "../src/components/Home/FooterPage";
 
 export const login = () => {
 	return (
