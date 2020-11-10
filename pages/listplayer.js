@@ -2,7 +2,6 @@
 import React from 'react';
 import Link from 'next/link';
 /* import componenets */
-import HeaderHome from '../components/Player/Header';
 import NavHomeScreen from '../components/Player/Nav.js';
 // import ListPlayer from "../components/Player/ListPlayer";
 import Play from '../components/Play/Play';
