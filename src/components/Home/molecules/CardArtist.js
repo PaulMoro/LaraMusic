@@ -9,9 +9,9 @@ function CardArtist() {
   }, []);
 
   const obtenerDatos = async () => {
-    const playlist = await getPlaylistWithLimit("37i9dQZF1DX5BAPG29mHS8/", 6);
+    const playlist = await getPlaylistWithLimit("37i9dQZF1DX5BAPG29mHS8", 6);
 
-    const musica = playlist.items;
+    const musica = playlist;
     setMusic(musica);
   };
 
