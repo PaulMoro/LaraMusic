@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderHome from "../src/components/Player/Header";
-import NavHomeScreen from "../src/components/Player/Nav.js";
+import NavHomeScreen from "../src/components/Player/Nav";
 import MainPlayer from "../src/components/Player/MainPlayer.js";
 
 const homeScreen = (props) => {
