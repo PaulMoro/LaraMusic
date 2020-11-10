@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+
 import { usePlayer } from '../../../contexts/PlayerContext';
 import { getPlaylistCleaned } from '../../../lib/spotifyRequest';
 
-import CardSongStyles from '../../Style/Albums/molecules/CardSongStyles';
 import playbutton from '../../../../assets/img/play.svg';
+
+import CardSongStyles from '../../Style/Albums/molecules/CardSongStyles';
 
 function CardSong() {
   const { setPlayingSong } = usePlayer();

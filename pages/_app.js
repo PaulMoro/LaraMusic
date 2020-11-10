@@ -1,7 +1,8 @@
 // import App from 'next/app'
-import { AuthProvider } from '../contexts/AuthContext';
-import { PlayerProvider } from '../contexts/PlayerContext';
-import '../assets/style/componentStyle/global.scss';
+import { AuthProvider } from '../src/contexts/AuthContext';
+import { PlayerProvider } from '../src/contexts/PlayerContext';
+
+import '../src/components/Style/global.scss';
 import Play from '../src/components/Play/Play';
 
 function MyApp({ Component, pageProps }) {

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-import { CgShare } from "react-icons/cg";
-
 import { getSongs } from "../../../lib/hearthisRequest";
+
+import { CgShare } from "react-icons/cg";
 
 import sectionPopular from "../../Style/Player/molecules/sectionPopular";
 

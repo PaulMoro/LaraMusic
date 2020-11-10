@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 import { usePlayer } from '../../../contexts/PlayerContext';
+import { getPlaylist } from '../../../lib/hearThisAtRequest';
 
 import { VscEllipsis, VscThumbsup } from 'react-icons/vsc';
 import { FaRegThumbsUp } from 'react-icons/fa';
 import { GrAddCircle } from 'react-icons/gr';
 import { CgPlayButtonO } from 'react-icons/cg';
-
-import { getPlaylist } from '../../../lib/hearThisAtRequest';
 
 import ListTrackStyle from '../../Style/Player/molecules/ListTrackStyle';
 

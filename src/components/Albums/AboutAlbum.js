@@ -1,6 +1,7 @@
 import React from "react";
 
 import ContentAlbum from "./molecules/ContentMusic";
+
 import logoAlbum from "../../../assets/img/album.png";
 
 import AlbumStyles from "../Style/Albums/AlbumStyles";
