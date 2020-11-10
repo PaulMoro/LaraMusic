@@ -1,12 +1,12 @@
-import React from "react";
-import { useRouter } from "next/router";
-import { useAuth } from "../../contexts/AuthContext";
+import React from 'react';
+import { useRouter } from 'next/router';
+import { useAuth } from '../../contexts/AuthContext';
 
 /* import componenets */
-import HeaderHome from "../../components/Player/Com__Header";
-import NavHomeScreen from "../../components/Player/Nav.js";
-import ListPlayer from "../../components/Player/ListPlayer";
-import Play from "../../components/Play/Play";
+// import HeaderHome from '../../components/Player/Com__Header';
+import NavHomeScreen from '../../components/Player/Nav.js';
+// import ListPlayer from '../../components/Player/ListPlayer';
+import Play from '../../components/Play/Play';
 
 // export const getServerSideProps = async ({ params }) => {
 // 	const { user } = useAuth();
@@ -20,19 +20,17 @@ import Play from "../../components/Play/Play";
 // };
 
 const playlist = (props) => {
-	const router = useRouter();
-	console.log(router);
+  const router = useRouter();
+  console.log(router);
 
-	return (
-		<div className='lara'>
-			<HeaderHome />
-			<NavHomeScreen />
-			<div className='containerContent'>
-				<ListPlayer />
-			</div>
-			<Play></Play>
-		</div>
-	);
+  return (
+    <div className='lara'>
+      {/* <HeaderHome /> */}
+      <NavHomeScreen />
+      <div className='containerContent'>{/* <ListPlayer /> */}</div>
+      <Play></Play>
+    </div>
+  );
 };
 
 export default playlist;
