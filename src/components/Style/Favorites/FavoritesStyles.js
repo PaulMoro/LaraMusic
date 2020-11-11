@@ -5,7 +5,8 @@ export default css.FavoritesStyles`
 .feature__tracks {
   padding-left: 1rem;
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 3/4;
+  border: 1px solid red;
 }
 .feature_tracks_title h1 {
   font-size: 1.3rem;
@@ -25,7 +26,7 @@ export default css.FavoritesStyles`
   padding: 0.5rem 0 0 0;
   overflow-y: scroll;
   grid-column: 2/3;
-  grid-row: 2/4;
+  grid-row: 2/5;
 }
 .containerContent::-webkit-scrollbar {
   display: none;
@@ -33,8 +34,9 @@ export default css.FavoritesStyles`
 
 .about__album {
   margin-top: 5em;
-  grid-column: 2/4;
-  grid-row: 3/5;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  border: 1px solid red;
   display: flex;
   background: linear-gradient(#faf0fa, #d6cbd6);
   position: relative;
@@ -178,6 +180,30 @@ export default css.FavoritesStyles`
 }
 .card__song--image img:hover {
   opacity: 1;
+}
+#trending{
+  grid-column:2/3;
+  gird-row:2/3;
+  border:1px solid red;
+}
+#trending img{
+width:100%
+}
+
+@media screen and (max-width: 1024px) {
+.containerContent {
+
+  grid-column: 1/3;
+  border:1px solid red;
+}
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 416px) {
 }
 
 
