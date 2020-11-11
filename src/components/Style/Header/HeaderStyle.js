@@ -93,8 +93,14 @@ export default css.HomeStyle`
   }
 }
 @media screen and (max-width: 480px) {
+  .header__img {
+    height:35px;
+  }
+  .header__links a{
+    margin-right:1rem;
+  }
     .header__links a{
-    font-size:1.4rem;
+    font-size:1.1rem;
   }
 }
 

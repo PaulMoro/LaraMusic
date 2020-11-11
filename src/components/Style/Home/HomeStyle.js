@@ -103,7 +103,7 @@ export default css.HomeStyle`
 }
 /* Top Artist */
 .artist {
-  margin-top: 15rem;
+  margin-top: 4rem;
   padding: 0 10%;
 }
 .artist__info {
@@ -211,7 +211,7 @@ footer li {
     margin-left: 2rem;
   }
   .lara__specs{
-    height:550px;
+    height:450px;
   }
     .lara__specs__description{
     margin-top:2rem;
@@ -349,19 +349,25 @@ footer li {
   .hero__info__description {
     font-size: 1.7rem;
   }
+  .description__title{
+    font-size: 3rem;
+
+  }
   .description__p {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    // width:0;
   }
   .lara__specs__img {
     margin: 0 5rem;
   }
-  .lara__specs__description__cards {
-    // width: 200vw;
-    padding: 0;
-    // margin: 5rem 3rem;
+
+  .lara__specs__img {
+    padding: 0 5rem;
+    width:0;
+  
   }
-  .artist__info p {
-    width: 60%;
+  .artist__info h1 {
+   text-align:center;
   }
 }
 
