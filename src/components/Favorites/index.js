@@ -5,6 +5,7 @@ import { VscThumbsup } from "react-icons/vsc";
 import { GrAddCircle } from "react-icons/gr";
 import { CgPlayButtonO } from "react-icons/cg";
 import logoAlbum from "../../../assets/img/album.png";
+import bannerFavorite from "../../../assets/img/imagen-favoritos1.jpg";
 import FavoritesTracks from "./FavoritesTracks";
 import FavoritesStyles from "../Style/Favorites/FavoritesStyles";
 
@@ -19,6 +20,9 @@ const Favorites = () => {
 			?.musictracks ?? [];
 	return (
 		<div className='containerContent'>
+			<div id='trending'>
+				<img src={bannerFavorite} alt='favorites-list-image' />
+			</div>
 			<FavoritesTracks />
 			<section className='about__album'>
 				<div className='banner__song'>
@@ -29,7 +33,7 @@ const Favorites = () => {
 					<h1 className='title__album'>List Name: {title}</h1>
 					<h2 className='authors__album'>Enjoy your Favorite`s selection!</h2>
 
-					<section className='content__music'>
+					<div className='content__music'>
 						{tracks.map((item) => (
 							<div className='tab__music' key={item.id}>
 								<div className='tab__music__icons'>
@@ -49,7 +53,7 @@ const Favorites = () => {
 								</div>
 							</div>
 						))}
-					</section>
+					</div>
 					{/* <div className='show__more'>
 						<p>Show More</p>
 					</div> */}
