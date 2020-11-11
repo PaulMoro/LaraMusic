@@ -370,5 +370,39 @@ footer li {
    text-align:center;
   }
 }
+@media screen and (max-width: 320px) {
 
+  .hero__info h1{
+  font-size:2rem;
+}
+.hero__info p{
+  font-size:1.5rem;
+
+}
+    .lara__specs__img {
+    padding: 0 1.5rem;
+    width:0;
+  
+  }
+  .lara__specs__description__cards {
+    flex-direction:column;
+  }
+  .description__title{
+    font-size: 2rem;
+
+  }
+  .description__p {
+    font-size: 1.5rem;
+  }
+    footer ul li {
+  font-size:.7rem;
+}
+.artist__info h1{
+  font-size:2rem;
+
+}
+.artist__info p{
+  font-size:1.2rem;
+}
+}
 `;
