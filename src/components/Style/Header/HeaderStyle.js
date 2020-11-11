@@ -103,7 +103,7 @@ export default css.HomeStyle`
     font-size:1.1rem;
   }
 }
-@media screen and (max-width: 416spx) {
+@media screen and (max-width: 416px) {
    .header__img {
     height:25px;
     margin:0;
@@ -117,7 +117,8 @@ export default css.HomeStyle`
     width:30px;
   }
   .header__links a{
-    font-size:.7rem;
+    font-size:.9rem;
+    text-align:center;
   }
 }
 `;
