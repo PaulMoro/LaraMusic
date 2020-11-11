@@ -2,7 +2,7 @@ import css from "styled-jsx/css";
 
 export default css.ContainerSongStyle`
 .song {
-      grid-column: 2/3;
+  grid-column: 2/3;
   grid-row: 2/3;
   height: 200px;
   margin-top: 13px;
@@ -10,10 +10,10 @@ export default css.ContainerSongStyle`
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   overflow: scroll;
   overflow-y: hidden;
   overflow-x: auto;
@@ -38,13 +38,14 @@ export default css.ContainerSongStyle`
 #song__item h4 {
   font-size: 12px;
   line-height: 16px;
-  color: #0F1E36;
+  color: #0f1e36;
 }
 
 #song__item p {
   font-size: 10px;
   line-height: 14px;
-  color: #0F1E36;
+  color: #0f1e36;
   opacity: 0.48;
 }
+
 `;

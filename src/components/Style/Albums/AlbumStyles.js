@@ -3,7 +3,7 @@ import css from "styled-jsx/css";
 export default css.AlbumStyles`
 /* feature */
 .feature__tracks {
-    padding-left:1rem;
+  padding-left: 1rem;
   grid-column: 2/3;
   grid-row: 2/3;
 }
@@ -14,21 +14,21 @@ export default css.AlbumStyles`
 .card__list {
   display: flex;
   margin-top: 10px;
-    flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 .card__list img {
   width: 150px;
   border-radius: 5px;
 }
 
-.containerContent{
-  padding:.5rem 0 0 0;
+.containerContent {
+  padding: 0.5rem 0 0 0;
   overflow-y: scroll;
   grid-column: 2/3;
   grid-row: 2/4;
 }
-.containerContent::-webkit-scrollbar{
-    display: none;
+.containerContent::-webkit-scrollbar {
+  display: none;
 }
 
 .about__album {
@@ -38,13 +38,12 @@ export default css.AlbumStyles`
   display: flex;
   background: linear-gradient(#faf0fa, #d6cbd6);
   position: relative;
- 
 }
 .banner__song {
   margin-right: 2em;
   position: relative;
   top: -3.5rem;
-  left:2rem;
+  left: 2rem;
 }
 .banner__song img {
   height: 600px;
@@ -63,7 +62,7 @@ export default css.AlbumStyles`
 .title__album {
   color: #0f1e36;
   font-size: 3.6em;
-  font-weight:bold;
+  font-weight: bold;
 }
 .authors__album {
   color: #969696;
@@ -81,16 +80,14 @@ export default css.AlbumStyles`
   text-align: center;
   font-weight: 600;
 }
-.content__music{
+.content__music {
   width: 60vw;
-  margin:3rem 0 ;
-  max-width:1720px;
+  margin: 3rem 0;
+  max-width: 1720px;
 }
 @media screen and (max-width: 1023px) {
-
 }
 @media screen and (max-width: 767px) {
-
 }
 @media screen and (max-width: 480px) {
 }

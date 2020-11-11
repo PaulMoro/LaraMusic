@@ -1,7 +1,6 @@
 import css from "styled-jsx/css";
 
 export default css.Com__NavProfileStyle`
-
 nav {
   width: 100%;
   height: 150px;
@@ -33,4 +32,5 @@ nav h2 {
   text-decoration: none;
   color: #989898;
 }
+
 `;

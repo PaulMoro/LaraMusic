@@ -3,7 +3,7 @@ import css from "styled-jsx/css";
 export default css.FavoritesStyles`
 /* feature */
 .feature__tracks {
-    padding-left:1rem;
+  padding-left: 1rem;
   grid-column: 2/3;
   grid-row: 2/3;
 }
@@ -14,21 +14,21 @@ export default css.FavoritesStyles`
 .card__list {
   display: flex;
   margin-top: 10px;
-    flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 .card__list img {
   width: 150px;
   border-radius: 5px;
 }
 
-.containerContent{
-  padding:.5rem 0 0 0;
+.containerContent {
+  padding: 0.5rem 0 0 0;
   overflow-y: scroll;
   grid-column: 2/3;
   grid-row: 2/4;
 }
-.containerContent::-webkit-scrollbar{
-    display: none;
+.containerContent::-webkit-scrollbar {
+  display: none;
 }
 
 .about__album {
@@ -38,13 +38,12 @@ export default css.FavoritesStyles`
   display: flex;
   background: linear-gradient(#faf0fa, #d6cbd6);
   position: relative;
- 
 }
 .banner__song {
   margin-right: 2em;
   position: relative;
   top: -3.5rem;
-  left:2rem;
+  left: 2rem;
 }
 .banner__song img {
   height: 600px;
@@ -63,7 +62,7 @@ export default css.FavoritesStyles`
 .title__album {
   color: #0f1e36;
   font-size: 3.6em;
-  font-weight:bold;
+  font-weight: bold;
 }
 .authors__album {
   color: #969696;
@@ -81,50 +80,50 @@ export default css.FavoritesStyles`
   text-align: center;
   font-weight: 600;
 }
-.content__music{
+.content__music {
   width: 60vw;
-  margin:3rem 0 ;
-  max-width:1720px;
+  margin: 3rem 0;
+  max-width: 1720px;
 }
 
-.tab__music{
-  display:flex;
-  justify-content:space-between;
+.tab__music {
+  display: flex;
+  justify-content: space-between;
   padding: 1rem 1rem;
 }
 
-.tab__music:hover{
+.tab__music:hover {
   transition: all 0.3s ease-in-out;
-  background-color:white;
+  background-color: white;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  cursor:context-menu;
+  cursor: context-menu;
 }
-.tab__music:hover{
+.tab__music:hover {
   transition: all 0.3s ease-in-out;
-  background-color:white;
+  background-color: white;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  cursor:context-menu;
+  cursor: context-menu;
 }
-.icon{
-  cursor:pointer;
-  opacity:0.5;
+.icon {
+  cursor: pointer;
+  opacity: 0.5;
 }
-.icon:hover{
-  opacity:1;
+.icon:hover {
+  opacity: 1;
 }
 
 .tab__music__title,
 .tab__music__plays,
-.tab__music__time, 
+.tab__music__time,
 .tab__music__icon {
-  padding-left: 2%; 
+  padding-left: 2%;
 }
-.tab__music__title{
-   width: 250px;
-   padding:0;
-   text-align:left;
+.tab__music__title {
+  width: 250px;
+  padding: 0;
+  text-align: left;
 }
 .tab__music__icon {
   padding-left: 7%;
@@ -133,14 +132,14 @@ export default css.FavoritesStyles`
 .card__song {
   margin-right: 2em;
 }
-.card__song--image{
+.card__song--image {
   position: relative;
 }
 .title__song {
   padding-top: 5px;
   font-size: 0.9em;
   font-weight: 700;
-  max-width:150px;
+  max-width: 150px;
 }
 .artist_name {
   color: #969696;
@@ -148,37 +147,38 @@ export default css.FavoritesStyles`
 }
 .card__song img {
   width: 150px;
-  height:150px;
+  height: 150px;
   border-radius: 5px;
   vertical-align: top;
 }
-.card__overlay{
-    transition: all 0.3s ease-in-out;
-    background: rgb(0, 0, 0, .8);
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    align-items: center;
-    display: none;
-    justify-content: center;
-    border-radius: 5px;
-  }
-  .card__overlay img{
-    height:35px;
-    cursor:pointer;
-    opacity:.7;
-    transition: all 0.4s ease-in-out;
-  }
-  .card__overlay img:hover{
-    height:45px;
-  }
-  .card__song--image:hover .card__overlay{
-    display: flex;
-  }
-  .card__song--image img:hover{
-    opacity:1;
-  }
+.card__overlay {
+  transition: all 0.3s ease-in-out;
+  background: rgb(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  align-items: center;
+  display: none;
+  justify-content: center;
+  border-radius: 5px;
+}
+.card__overlay img {
+  height: 35px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.4s ease-in-out;
+}
+.card__overlay img:hover {
+  height: 45px;
+}
+.card__song--image:hover .card__overlay {
+  display: flex;
+}
+.card__song--image img:hover {
+  opacity: 1;
+}
+
 
 `;

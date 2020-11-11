@@ -5,13 +5,13 @@ import Favorites from "../src/components/Favorites";
 import Play from "../src/components/Play/Play";
 
 function Favorite() {
-	return (
-		<div className='lara'>
-			<HeaderHome></HeaderHome>
-			<NavHomeScreen></NavHomeScreen>
-			<Favorites />
-			<Play></Play>
-		</div>
-	);
+  return (
+    <div className="lara">
+      <HeaderHome></HeaderHome>
+      <NavHomeScreen></NavHomeScreen>
+      <Favorites />
+      <Play></Play>
+    </div>
+  );
 }
 export default Favorite;

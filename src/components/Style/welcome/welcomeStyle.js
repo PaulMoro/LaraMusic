@@ -1,7 +1,5 @@
 import css from "styled-jsx/css";
 export default css.WelcomeStyle`
-
-
 .hero {
   background-color: #9e4f9e;
   display: flex;

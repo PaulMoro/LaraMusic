@@ -13,7 +13,7 @@ export default css.HomeStyle`
   width: 100%;
 }
 .hero__info {
-  margin-left:5rem;
+  margin-left: 5rem;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -157,8 +157,8 @@ footer li {
   letter-spacing: 2px;
 }
 @media screen and (max-width: 1024px) {
-  .hero{
-    height:80vh;
+  .hero {
+    height: 80vh;
   }
   .hero__img {
     top: 1rem;
@@ -168,7 +168,7 @@ footer li {
   }
   .hero__info {
     margin-left: 3rem;
-    top:8rem;
+    top: 8rem;
   }
   .hero__info h1 {
     font-size: 3.1rem;
@@ -345,7 +345,7 @@ footer li {
   }
 
   .lara__specs__img {
- display:none;
+    display: none;
   }
   .artist__info h1 {
     text-align: center;
@@ -359,8 +359,7 @@ footer li {
     font-size: 1.5rem;
   }
   .lara__specs__img {
-    justify-content:center;
-
+    justify-content: center;
   }
 
   .lara__specs__description__cards {
