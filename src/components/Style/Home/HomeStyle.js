@@ -2,7 +2,6 @@ import css from "styled-jsx/css";
 
 export default css.HomeStyle`
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
-
 /* Hero */
 .hero {
   background-color: #9e4f9e;
@@ -11,9 +10,10 @@ export default css.HomeStyle`
   padding: 1rem 10%;
   position: relative;
   height: 600px;
-  width:100%;
+  width: 100%;
 }
 .hero__info {
+  margin-left:5rem;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -34,7 +34,6 @@ export default css.HomeStyle`
   color: white;
   font-weight: 300;
   line-height: 2em;
-
 }
 .hero__info__description a {
   text-decoration: none;
@@ -60,9 +59,9 @@ export default css.HomeStyle`
 }
 /* Lara Specs */
 .lara__specs {
-    margin-top: 2rem;
+  margin-top: 2rem;
   display: flex;
-  height:100vh;
+  height: 100vh;
   padding: 0 10%;
 }
 .description__section {
@@ -99,7 +98,7 @@ export default css.HomeStyle`
 .lara__specs__img img {
   width: 500px;
   height: 650px;
-     object-fit: contain;
+  object-fit: contain;
 }
 /* Top Artist */
 .artist {
@@ -123,21 +122,20 @@ export default css.HomeStyle`
   width: 25vw;
   text-align: center;
 }
-.container__grid{
-  display:flex;
-  margin-top:2rem;
+.container__grid {
+  display: flex;
+  margin-top: 2rem;
 }
 .grid__container__artist {
-  margin:0 auto;
+  margin: 0 auto;
   display: grid;
   grid-template: 1fr 1fr/ 1fr 1fr 1fr;
   gap: 2em;
 }
 /* Footer */
 footer {
-  
   display: flex;
-  height:100px;
+  height: 100px;
   margin-top: 5em;
   justify-content: space-between;
   background-color: #f9f9f9;
@@ -152,22 +150,25 @@ footer ul {
   justify-content: space-evenly;
 }
 footer li {
-  margin-right:2rem;
+  margin-right: 2rem;
   font-weight: 300;
   list-style: none;
   color: #989898;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 1024px) {
-.hero__img{
-      top:7rem;
-}
-  .hero__img img{
-
-    width:400px;
+  .hero{
+    height:80vh;
+  }
+  .hero__img {
+    top: 1rem;
+  }
+  .hero__img img {
+    width: 400px;
   }
   .hero__info {
     margin-left: 3rem;
+    top:8rem;
   }
   .hero__info h1 {
     font-size: 3.1rem;
@@ -182,43 +183,42 @@ footer li {
   .lara__specs__img {
     left: 57%;
   }
-  .lara__specs__description{
-    margin-top:4rem;
+  .lara__specs__description {
+    margin-top: 4rem;
   }
-  .lara__specs__img img{
-    width:400px;
-    height:550px;
+  .lara__specs__img img {
+    width: 400px;
+    height: 550px;
   }
   .grid__container__artist {
     padding: 0;
   }
-.artist {
-  margin-top: 1rem;
-}
+  .artist {
+    margin-top: 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
-  .hero{
-    height:70vh;
+  .hero {
+    height: 70vh;
   }
-  .hero__img{
-      top:3rem;
-}
-  .hero__img img{
-
-    width:300px;
+  .hero__img {
+    top: 3rem;
+  }
+  .hero__img img {
+    width: 300px;
   }
   .hero__info {
     margin-left: 2rem;
   }
-  .lara__specs{
-    height:450px;
+  .lara__specs {
+    height: 450px;
   }
-    .lara__specs__description{
-    margin-top:2rem;
+  .lara__specs__description {
+    margin-top: 2rem;
   }
-  .lara__specs__img img{
-    width:300px;
-    height:400px;
+  .lara__specs__img img {
+    width: 300px;
+    height: 400px;
   }
   .hero__info {
     top: 30%;
@@ -227,36 +227,32 @@ footer li {
     font-size: 2.5rem;
   }
   .hero__info__description {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
-  .hero__info__btn{
-    top:14rem;
-    margin-top:0;
+  .hero__info__btn {
+    top: 14rem;
+    margin-top: 0;
   }
-  .description__title{
+  .description__title {
     font-size: 2rem;
   }
-  .description__p{
+  .description__p {
     font-size: 1rem;
-    
   }
-    .grid__container__artist {
-  
+  .grid__container__artist {
     grid-template: 1fr 1fr 1fr /1fr 1fr;
-
   }
   .artist__info p {
     font-size: 1.5rem;
     width: 70vw;
   }
-    footer ul {
-   
-    flex-direction:column;
-    text-align:right;
-}
+  footer ul {
+    flex-direction: column;
+    text-align: right;
+  }
   footer ul li {
-  margin:0;
-}
+    margin: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .hero {
@@ -274,7 +270,7 @@ footer li {
   }
   .hero__info h1 {
     font-size: 3.5rem;
-    text-align:center;
+    text-align: center;
   }
   .hero__info {
     display: flex;
@@ -293,10 +289,9 @@ footer li {
   .lara__specs {
     display: inline-block;
     height: auto;
-    
   }
   .lara__specs__description__cards {
-    width:auto;
+    width: auto;
   }
   .description__section {
     width: auto;
@@ -316,10 +311,9 @@ footer li {
 
   .lara__specs__img {
     margin-top: 1rem;
-    // padding: 0 5rem;
     display: flex;
     position: static;
-    justify-content:center;
+    justify-content: center;
   }
   .lara__specs__img img {
     width: 250px;
@@ -335,74 +329,58 @@ footer li {
     font-size: 2rem;
     width: 90vw;
   }
-    .grid__container__artist {
-  
+  .grid__container__artist {
     grid-template: 1fr 1fr 1fr 1fr / 1fr;
-
   }
-
-
-
 }
 @media screen and (max-width: 480px) {
-
   .hero__info__description {
     font-size: 1.7rem;
   }
-  .description__title{
+  .description__title {
     font-size: 3rem;
-
   }
   .description__p {
     font-size: 2rem;
-    // width:0;
-  }
-  .lara__specs__img {
-    margin: 0 5rem;
   }
 
   .lara__specs__img {
-    padding: 0 5rem;
-    width:0;
-  
+ display:none;
   }
   .artist__info h1 {
-   text-align:center;
+    text-align: center;
   }
 }
-@media screen and (max-width: 320px) {
-
-  .hero__info h1{
-  font-size:2rem;
-}
-.hero__info p{
-  font-size:1.5rem;
-
-}
-    .lara__specs__img {
-    padding: 0 1.5rem;
-    width:0;
-  
-  }
-  .lara__specs__description__cards {
-    flex-direction:column;
-  }
-  .description__title{
+@media screen and (max-width: 400px) {
+  .hero__info h1 {
     font-size: 2rem;
+  }
+  .hero__info p {
+    font-size: 1.5rem;
+  }
+  .lara__specs__img {
+    justify-content:center;
 
+  }
+
+  .lara__specs__description__cards {
+    flex-direction: column;
+  }
+  .description__title {
+    font-size: 2rem;
   }
   .description__p {
     font-size: 1.5rem;
   }
-    footer ul li {
-  font-size:.7rem;
+  footer ul li {
+    font-size: 0.7rem;
+  }
+  .artist__info h1 {
+    font-size: 2rem;
+  }
+  .artist__info p {
+    font-size: 1.2rem;
+  }
 }
-.artist__info h1{
-  font-size:2rem;
 
-}
-.artist__info p{
-  font-size:1.2rem;
-}
-}
 `;
