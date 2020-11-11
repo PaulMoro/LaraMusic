@@ -353,7 +353,7 @@ footer li {
 }
 @media screen and (max-width: 416px) {
   .hero__info h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
   .hero__info p {
     font-size: 1.5rem;
@@ -367,7 +367,7 @@ footer li {
     flex-direction: column;
   }
   .description__title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .description__p {
     font-size: 1.5rem;
@@ -376,7 +376,7 @@ footer li {
     font-size: 0.7rem;
   }
   .artist__info h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .artist__info p {
     font-size: 1.2rem;
