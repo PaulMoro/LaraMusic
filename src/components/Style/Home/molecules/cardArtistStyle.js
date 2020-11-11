@@ -46,4 +46,18 @@ export default css.cardArtistStyle`
   font-size: 1.3rem;
 }
 }
+@media screen and (max-width: 320px) {
+        .title__song {
+    font-size: 1.3rem;
+}
+
+.artist_name {
+  font-size: 1rem;
+}
+.card__artist img {
+  height: 15rem;
+  width: 15rem;
+}
+
+}
 `;

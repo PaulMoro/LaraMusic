@@ -103,5 +103,21 @@ export default css.HomeStyle`
     font-size:1.1rem;
   }
 }
+@media screen and (max-width: 320px) {
+   .header__img {
+    height:25px;
+    margin:0;
+  }
+  .perfil__user--info h3, .perfil__user--info button{
 
+    font-size:.7rem;
+  }
+  .perfil__img img{
+    height:30px;
+    width:30px;
+  }
+  .header__links a{
+    font-size:.7rem;
+  }
+}
 `;
