@@ -46,7 +46,7 @@ export default css.cardArtistStyle`
   font-size: 1.3rem;
 }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
         .title__song {
     font-size: 1.3rem;
 }
