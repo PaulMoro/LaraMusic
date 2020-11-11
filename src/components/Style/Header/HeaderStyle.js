@@ -103,7 +103,7 @@ export default css.HomeStyle`
     font-size:1.1rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 416spx) {
    .header__img {
     height:25px;
     margin:0;

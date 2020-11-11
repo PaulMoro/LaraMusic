@@ -351,7 +351,7 @@ footer li {
     text-align: center;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 416px) {
   .hero__info h1 {
     font-size: 2rem;
   }
