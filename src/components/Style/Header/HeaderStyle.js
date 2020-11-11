@@ -8,7 +8,6 @@ export default css.HomeStyle`
   background-color: #9e4f9e;
   height: 100px;
   padding: 0 10%;
-  min-width: 1124px;
 }
 .header__img  {
   height: 50px;
@@ -88,12 +87,12 @@ export default css.HomeStyle`
 }
 @media screen and (max-width: 768px) {
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .header__links a{
     font-size:1.2rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     .header__links a{
     font-size:1.4rem;
   }

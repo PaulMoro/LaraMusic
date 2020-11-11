@@ -13,8 +13,10 @@ function TopArtist() {
             and also were a huge breakthrough.
           </p>
         </div>
-        <div className="grid__container__artist">
-          <CardArtist></CardArtist>
+        <div className="container__grid">
+          <div className="grid__container__artist">
+            <CardArtist></CardArtist>
+          </div>
         </div>
       </div>
 

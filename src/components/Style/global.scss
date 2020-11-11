@@ -15,6 +15,7 @@
   align-items: inherit;
   justify-content: inherit;
   flex-wrap: inherit;
+  // border: 1px solid red;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -29,7 +30,7 @@
   height: 100vh;
   grid-auto-rows: 0.1fr;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .lara {
     height: 100%;
   }
@@ -39,9 +40,9 @@
 }
 @media screen and (max-width: 768px) {
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
 }
 // .lara #headerHome {
 //   grid-column: 2/3;
