@@ -15,13 +15,14 @@ export const getPlaylist = async (endpoint, limit) => {
 
   music.map((item) => {
     const song = {
-      songName: item.title,
-      songArtist: item.user.username,
-      songUrl: item.stream_url,
-      songImage: item.artwork_url,
-      songId: item.id,
-      songDuration: time_convert(item.duration),
-      songPlaysCount: item.playback_count,
+      title: item.title,
+      artist: item.user.username,
+      track_uri: item.stream_url,
+      image_uri: item.artwork_url,
+      sound_id: item.id,
+      duration: time_convert(item.duration),
+      views: item.playback_count,
+      fuente: 'hearthis.at',
     };
     songsArray.push(song);
   });
