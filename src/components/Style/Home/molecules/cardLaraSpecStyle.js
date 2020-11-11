@@ -40,11 +40,11 @@ export default css.cardLaraSpecStyle`
 }
 @media screen and (max-width: 480px) {
     .card img {
-  width: 170px;
-  height: 170px;
+  width: 100px;
+  height: 100px;
 }
   .card p {
-    font-size:1.8rem;
+    font-size:1rem;
 }
 }
 `;
