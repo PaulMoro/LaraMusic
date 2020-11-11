@@ -1,4 +1,4 @@
-// export const interface = () => {};
+// interface = () => {};
 
 export const time_convert = (num) => {
   var hours = Math.floor(num / 60);
