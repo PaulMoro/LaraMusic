@@ -86,6 +86,51 @@ export default css.ListTrackStyle`
 .icon:hover{
   opacity:1;
 }
+
+
+.content__music{
+  width: 60vw;
+  margin:3rem 0 ;
+  max-width:1720px;
+}
+
+.tab__music{
+  display:flex;
+  justify-content:space-between;
+  padding: 1rem 1rem;
+}
+
+.tab__music:hover{
+  transition: all 0.3s ease-in-out;
+  background-color:white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  cursor:context-menu;
+}
+.tab__music:hover{
+  transition: all 0.3s ease-in-out;
+  background-color:white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  cursor:context-menu;
+}
+.icon{
+  cursor:pointer;
+  opacity:0.5;
+}
+.icon:hover{
+  opacity:1;
+}
+
+.about__album {
+  margin-top: 5em;
+  grid-column: 2/4;
+  grid-row: 3/5;
+  display: flex;
+  background: linear-gradient(#faf0fa, #d6cbd6);
+  position: relative;
+ 
+}
 `;
 
 /* .track_top h4, .track_list_detail h4 {
