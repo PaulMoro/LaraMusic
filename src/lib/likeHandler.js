@@ -10,6 +10,9 @@ export const likeHandler = async (song, user) => {
   };
   console.log('objeto creado', favoriteSong);
   setLikedSong(favoriteSong);
+  let newList = await updateFavoritesLists(userFavouriteListId);
+  console.log('newList::', newList);
+  return newList;
 };
 
 export const createSong = async (song) => {
@@ -22,6 +25,12 @@ export const createSong = async (song) => {
 export const setLikedSong = async (liked) => {
   const API_HOST = 'https://laramusicapi.herokuapp.com/api/v1/trackinlists/';
   return axios.post(API_HOST, liked).then((res) => {
+    return res.data;
+  });
+};
+export const updateFavoritesLists = async (id) => {
+  const API_HOST = 'https://laramusicapi.herokuapp.com/api/v1/musiclists/';
+  return axios.get(`${API_HOST}${id}`).then((res) => {
     return res.data;
   });
 };

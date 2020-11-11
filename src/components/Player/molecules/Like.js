@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { FaRegThumbsUp, FaThumbsUp } from 'react-icons/fa';
-import { likeHandler, likHandler } from '../../../lib/likeHandler';
+import { likeHandler } from '../../../lib/likeHandler';
+import { useAuth } from '../../../contexts/AuthContext';
 
 const LikeButton = ({ user, song }) => {
+  const { setFavorites } = useAuth();
+
   const [state, setState] = useState({
     isLiked: 'false',
     song: {},
@@ -14,12 +17,14 @@ const LikeButton = ({ user, song }) => {
     });
   }, []);
 
-  function likeClic() {
+  async function likeClic() {
     setState({
       isLiked: !state.isLiked,
       song: state.song,
     });
-    likeHandler(state.song, user);
+    const newList = await likeHandler(state.song, user);
+    console.log(newList.musictracks);
+    setFavorites(newList.musictracks);
   }
 
   if (state.isLiked) {
