@@ -4,7 +4,7 @@ export default css.cardArtistStyle`
 .title__song {
   padding-top: 10px;
   font-weight: 700;
-  max-width:17rem;
+  
 }
 
 .artist_name {
@@ -13,8 +13,8 @@ export default css.cardArtistStyle`
 }
 
 .card__artist img {
-  height: 17rem;
-  width: 17rem;
+  height: 15rem;
+  width: 15rem;
 }
 
 @media screen and (max-width: 1023px) {
@@ -24,7 +24,7 @@ export default css.cardArtistStyle`
 
 
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .title__song {
     font-size: 1.5rem;
 }
@@ -37,7 +37,7 @@ export default css.cardArtistStyle`
   width: 22rem;
 }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
       .title__song {
     font-size: 1.8rem;
 }

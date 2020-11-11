@@ -24,19 +24,21 @@ export default css.cardLaraSpecStyle`
 }
 @media screen and (max-width: 768px) {
   .card p {
-    font-size:1.1rem;
+    font-size:1rem;
 }
-}
-@media screen and (max-width: 480px) {
   .card img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
+}
+@media screen and (max-width: 600px) {
+
   .card p {
+    font-weight:600;
     font-size:1.5rem;
 }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     .card img {
   width: 170px;
   height: 170px;
