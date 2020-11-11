@@ -5,8 +5,6 @@ import Com__SectionProfileStyle from "../Style/Profile/Com__SectionProfileStyle"
 
 const SectionProfile = () => {
   const { user = {} } = useAuth();
-  //const { profile: { musiclist = [] } = {} } = user;
-
   return (
     <>
       {user && (
@@ -20,7 +18,7 @@ const SectionProfile = () => {
               />
             </div>
             <h2>{user.username} </h2>
-            <h4>Change Password</h4>
+            {/* <h4>Change Password</h4> */}
           </div>
           <div className="userForm">
             <h1>Account</h1>
@@ -49,10 +47,14 @@ const SectionProfile = () => {
                 <label className="infAccount__container__name">
                   Your Favourite Music
                 </label>
-                <input placeholder={user.username} type="text" required />
+                <input
+                  placeholder={user?.profile?.biography}
+                  type="text"
+                  required
+                />
               </div>
             </form>
-            <button>Edit</button>
+            {/* <button>Edit</button> */}
           </div>
           <style jsx Com__SectionProfileStyle>
             {Com__SectionProfileStyle}

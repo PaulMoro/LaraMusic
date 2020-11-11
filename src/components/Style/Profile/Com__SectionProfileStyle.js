@@ -1,7 +1,6 @@
 import css from "styled-jsx/css";
 
 export default css.Com__SectionProfileStyle`
-
 #sectionProfile {
   margin: 35px 12% 0 12%;
   display: -webkit-box;
@@ -14,7 +13,6 @@ export default css.Com__SectionProfileStyle`
   height: 620px;
   display: block;
   border-right: 1px solid rgba(181, 181, 181, 0.5);
-  /* $text-grey-color */
 }
 
 .userInf div {
@@ -22,8 +20,8 @@ export default css.Com__SectionProfileStyle`
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .userInf__photo {
@@ -36,22 +34,16 @@ export default css.Com__SectionProfileStyle`
 .userInf h2 {
   text-align: center;
   font-size: 36px;
-  /* $fs-extra */
   font-weight: 200;
-  /* $font-ultra-light */
   letter-spacing: -1px;
   color: #585858;
-  /* $text-grey-color-hard */
 }
 
 .userInf h4 {
   text-align: center;
   font-size: 12px;
-  /* $fs-small */
-  color: #FFC24B;
-  /* $secondary-color */
+  color: #ffc24b;
   font-weight: 600;
-  /* $font-semi-bold */
 }
 
 .userInf p {
@@ -60,10 +52,8 @@ export default css.Com__SectionProfileStyle`
   display: flex;
   text-align: center;
   font-size: 12;
-  color: #3E2AD1;
-  /* $label-color */
+  color: #3e2ad1;
   font-weight: 600;
-  /* $font-semi-bold */
   padding-top: 33px;
   margin-left: 40%;
 }
@@ -81,19 +71,15 @@ export default css.Com__SectionProfileStyle`
 
 .userForm h1 {
   font-size: 58px;
-  /* $fs-huge */
   font-weight: 200;
-  /* $font-ultra-light */
   line-height: 64px;
   letter-spacing: -1px;
 }
 
 .userForm p {
   font-size: 16px;
-  /* $fs-regular */
   padding-top: 9px;
   color: #989898;
-  /* $text-grey-color */
 }
 
 .infAccount {
@@ -110,26 +96,21 @@ export default css.Com__SectionProfileStyle`
 .infAccount__container__name {
   width: 90px;
   font-size: 14px;
-  /* $fs-regular */
   color: #585858;
-  /* $text-grey-color-hard */
   padding-top: 30px;
 }
 
 .infAccount__container input {
   font-size: 24px;
-  /* $fs-big */
   padding: 10px 10px 8px 25px;
   width: 467px;
   border: none;
   border-bottom: 1px solid #989898;
-  /* $text-grey-color */
 }
 
 .infAccount__container input:focus {
   outline: none;
-  border-bottom: 1px solid #9E4F9E;
-  /* $primary-color */
+  border-bottom: 1px solid #9e4f9e;
 }
 
 .userForm button {
@@ -137,19 +118,18 @@ export default css.Com__SectionProfileStyle`
   height: 51px;
   border-radius: 39px;
   border: none;
-  background-color: #9E4F9E;
-  /* $primary-color */
-  color: #FFC24B;
-  /* $secondary-color */
+  background-color: #9e4f9e;
+  color: #ffc24b;
   font-size: 18px;
   font-weight: bolder;
   text-decoration: none;
   cursor: pointer;
 }
 
-.userInf button:focus, button:active {
+.userInf button:focus,
+button:active {
   outline: none;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 `;

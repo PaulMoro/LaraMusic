@@ -1,7 +1,6 @@
 import css from "styled-jsx/css";
 
 export default css.cardLaraSpecStyle`
-
 .card {
   display: inherit;
   flex-direction: column;
@@ -20,29 +19,35 @@ export default css.cardLaraSpecStyle`
   width: 5em;
 }
 @media screen and (max-width: 1023px) {
-
 }
 @media screen and (max-width: 768px) {
   .card p {
-    font-size:1.1rem;
+    font-size: 1rem;
+  }
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
 }
+@media screen and (max-width: 600px) {
+  .card p {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .card img {
-  width: 150px;
-  height: 150px;
-}
+    width: 100px;
+    height: 100px;
+  }
   .card p {
-    font-size:1.5rem;
+    font-size: 1rem;
+  }
 }
-}
-@media screen and (max-width: 320px) {
-    .card img {
-  width: 170px;
-  height: 170px;
-}
-  .card p {
-    font-size:1.8rem;
-}
+@media screen and (max-width: 416px) {
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
 }
 `;

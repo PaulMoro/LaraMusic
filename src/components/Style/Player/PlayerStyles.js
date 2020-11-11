@@ -5,7 +5,7 @@ export default css.PlayerStyles`
   grid-row: 1/2;
   display: flex;
   justify-content: space-between;
-  border-bottom:1px solid rgba(15, 30, 54, 0.05);
+  border-bottom: 1px solid rgba(15, 30, 54, 0.05);
 }
 
 .searchBar {
@@ -141,8 +141,6 @@ strong {
   text-decoration: none;
 }
 
-
-
 .list strong {
   padding-left: 1rem;
   font-size: 14px;
@@ -161,5 +159,6 @@ personal-list {
 }
 @media screen and (max-width: 480px) {
 }
+
 
 `;

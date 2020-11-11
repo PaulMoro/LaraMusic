@@ -1,13 +1,18 @@
 import css from "styled-jsx/css";
 
 export default css.RegisterStyle`
-
-.flex-x, .header__bar, .tabcontent__form .buttons, .tabcontent .form-item, .footer__nav {
+.flex-x,
+.header__bar,
+.tabcontent__form .buttons,
+.tabcontent .form-item,
+.footer__nav {
   display: flex;
   justify-content: space-between;
 }
 
-.flex-y, .tabcontent__form, .tabcontent .form-group {
+.flex-y,
+.tabcontent__form,
+.tabcontent .form-group {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,9 +33,11 @@ export default css.RegisterStyle`
   background-color: transparent;
 }
 
-.login__tabs-link button:hover, .login__tabs-link button:active, .login__tabs-link button:focus {
+.login__tabs-link button:hover,
+.login__tabs-link button:active,
+.login__tabs-link button:focus {
   text-decoration: underline;
-  color: #9E4F9E;
+  color: #9e4f9e;
   outline: none;
 }
 
@@ -39,13 +46,13 @@ export default css.RegisterStyle`
   display: -ms-flexbox;
   display: flex;
 }
-.login__container-image{
-  width:600px;
+.login__container-image {
+  width: 600px;
 }
 .login__container-image img {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .tabcontent {
@@ -76,31 +83,31 @@ export default css.RegisterStyle`
 
 .tabcontent__form .buttons {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin: 20px;
 }
 
 .tabcontent .form-group {
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .tabcontent .form-item {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   width: 90%;
   margin: 10px 20px;
 }
@@ -108,13 +115,13 @@ export default css.RegisterStyle`
 .tabcontent label {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.75rem;
-  margin-right:1rem;
+  margin-right: 1rem;
 }
 
 .tabcontent input {
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px #1D293F;
+  border-bottom: solid 1px #1d293f;
   width: 100%;
   text-align: left;
   padding: 5px 20px;
@@ -145,13 +152,12 @@ export default css.RegisterStyle`
 
 .tabcontent .send {
   background-color: #6b366b;
-  color: #FFC24B;
+  color: #ffc24b;
   border-radius: 28px;
   padding: 10px 20px;
   border: none;
   text-decoration: none;
 }
-
 
 @media screen and (max-width: 860px) {
   .login {
@@ -168,5 +174,6 @@ export default css.RegisterStyle`
     display: none;
   }
 }
+
 
 `;

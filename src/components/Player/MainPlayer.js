@@ -5,7 +5,7 @@ import FeatureTracks from "../Albums/FeatureTracks";
 
 const MainPlayer = () => {
   return (
-    <main className="Container">
+    <main className="containerContent">
       <SectionPopular />
       <article>
         <FeatureTracks />

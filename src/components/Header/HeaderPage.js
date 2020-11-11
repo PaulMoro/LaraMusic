@@ -16,7 +16,7 @@ function Header() {
         <div className="header__links">
           {user && (
             <Link href="/player">
-              <a className="header__link--player">Lara Player</a>
+              <a className="header__link--player">Player</a>
             </Link>
           )}
           {!user && (

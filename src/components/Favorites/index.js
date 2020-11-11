@@ -1,38 +1,39 @@
 import React from "react";
 import { useAuth } from "../../contexts/AuthContext";
-import SectionPopular from "./molecules/SectionPopular.js";
-import FeaturedTracks from "./FeaturedTracks";
 
 import { VscThumbsup } from "react-icons/vsc";
 import { GrAddCircle } from "react-icons/gr";
 import { CgPlayButtonO } from "react-icons/cg";
 import logoAlbum from "../../../assets/img/album.png";
-
+import bannerFavorite from "../../../assets/img/imagen-favoritos1.jpg";
+import FavoritesTracks from "./FavoritesTracks";
 import FavoritesStyles from "../Style/Favorites/FavoritesStyles";
 
-const List = ({ title }) => {
+const Favorites = () => {
   const { user } = useAuth();
-
   const musiclist = user?.profile?.musiclists ?? [];
-
+  const title =
+    musiclist.find((playlist) => playlist.type_list === "favourites")?.title ??
+    [];
   const tracks =
-    musiclist.find((playlist) => playlist.title === title)?.musictracks ?? [];
-
+    musiclist.find((playlist) => playlist.type_list === "favourites")
+      ?.musictracks ?? [];
   return (
-    <main className="containerContent">
-      <FeaturedTracks title={title} />
+    <div className="containerContent">
+      <div id="trending">
+        <img src={bannerFavorite} alt="favorites-list-image" />
+      </div>
+      <FavoritesTracks />
       <section className="about__album">
         <div className="banner__song">
           <img src={logoAlbum} alt="list-image" />
         </div>
         <div className="info__album_container">
-          <a href="">// My personal list</a>
+          <a href="">// My Favorites</a>
           <h1 className="title__album">List Name: {title}</h1>
-          <h2 className="authors__album">
-            Build a unlimited playlist, and listen every time
-          </h2>
+          <h2 className="authors__album">Enjoy your Favorite`s selection!</h2>
 
-          <section className="content__music">
+          <div className="content__music">
             {tracks.map((item) => (
               <div className="tab__music" key={item.id}>
                 <div className="tab__music__icons">
@@ -52,7 +53,7 @@ const List = ({ title }) => {
                 </div>
               </div>
             ))}
-          </section>
+          </div>
           {/* <div className='show__more'>
 						<p>Show More</p>
 					</div> */}
@@ -61,8 +62,8 @@ const List = ({ title }) => {
       <style jsx FavoritesStyles>
         {FavoritesStyles}
       </style>
-    </main>
+    </div>
   );
 };
 
-export default List;
+export default Favorites;

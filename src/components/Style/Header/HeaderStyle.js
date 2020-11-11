@@ -8,11 +8,10 @@ export default css.HomeStyle`
   background-color: #9e4f9e;
   height: 100px;
   padding: 0 10%;
-  min-width: 1124px;
 }
-.header__img  {
+.header__img {
   height: 50px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .perfil {
@@ -34,13 +33,13 @@ export default css.HomeStyle`
 .perfil h3 {
   font-size: 1rem;
   color: #f9f9f9;
-  font-weight:400;
+  font-weight: 400;
   text-transform: capitalize;
   cursor: context-menu;
 }
-.perfil h3:hover{
-  opacity:0.8;
-  cursor:pointer;
+.perfil h3:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .perfil button {
@@ -51,9 +50,9 @@ export default css.HomeStyle`
   border: none;
   text-decoration: none;
 }
-.perfil button:hover{
-  opacity:0.8;
-  cursor:pointer;
+.perfil button:hover {
+  opacity: 0.8;
+  cursor: pointer;
   text-decoration: underline;
 }
 .header__links {
@@ -84,18 +83,41 @@ export default css.HomeStyle`
   color: rgb(214, 214, 214);
 }
 @media screen and (max-width: 1023px) {
-
 }
 @media screen and (max-width: 768px) {
 }
-@media screen and (max-width: 480px) {
-  .header__links a{
-    font-size:1.2rem;
+@media screen and (max-width: 600px) {
+  .header__links a {
+    font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 320px) {
-    .header__links a{
-    font-size:1.4rem;
+@media screen and (max-width: 480px) {
+  .header__img {
+    height: 35px;
+  }
+  .header__links a {
+    margin-right: 1rem;
+  }
+  .header__links a {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 416px) {
+  .header__img {
+    height: 25px;
+    margin: 0;
+  }
+  .perfil__user--info h3,
+  .perfil__user--info button {
+    font-size: 0.7rem;
+  }
+  .perfil__img img {
+    height: 30px;
+    width: 30px;
+  }
+  .header__links a {
+    font-size: 0.9rem;
+    text-align: center;
   }
 }
 

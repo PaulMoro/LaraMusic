@@ -8,13 +8,13 @@ export default css.sectionPopular`
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   height: 307px;
-  color: #0F1E36;
+  color: #0f1e36;
   background-color: rgba(156, 79, 156, 0.7);
 }
 
@@ -56,7 +56,7 @@ export default css.sectionPopular`
   left: 53px;
 }
 
-.buttons__one{
+.buttons__one {
   padding: 10px;
   margin: 3px 5px;
   border: none;
@@ -67,7 +67,7 @@ export default css.sectionPopular`
   transition: 0.5s ease;
 }
 
-.buttons__two{
+.buttons__two {
   padding: 10px;
   margin: 3px 5px;
   border: none;

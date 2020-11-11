@@ -79,7 +79,7 @@ const NavHomeScreen = () => {
         <ul className="list">
           {user &&
             musicLists.map((list) => (
-              <li className="item personal-list">
+              <li className="item personal-list" key={list.id}>
                 <Link
                   href={`/playlist/[title]?title=${list.title}`}
                   as={`/playlist/${list.title}`}

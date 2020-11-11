@@ -1,16 +1,17 @@
 import React from "react";
+
 import Header from "../src/components/Header/HeaderPage";
-import Login from "../src/components/Login/Login";
+import { Welcome } from "../src/components/Welcome/";
 import Footer from "../src/components/Home/FooterPage";
 
-const login = () => {
+export const welcome = () => {
   return (
     <>
       <Header />
-      <Login />
+      <Welcome />
       <Footer />
     </>
   );
 };
 
-export default login;
+export default welcome;

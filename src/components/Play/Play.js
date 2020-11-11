@@ -32,7 +32,17 @@ function Play() {
     setIsVisible(visible);
   }
   const router = useRouter();
+<<<<<<< HEAD
   const visibleIn = ['/player', '/artist', '/album', '/listplayer'];
+=======
+  const visibleIn = [
+    "/player",
+    "/artist",
+    "/album",
+    "/favorites",
+    "/playlist[title]",
+  ];
+>>>>>>> c9f76c70f7d174f3c2b69ffd8c4480d65876c541
 
   useEffect(() => {
     checkIfIsVisible(router.pathname, visibleIn);

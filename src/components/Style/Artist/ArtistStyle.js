@@ -371,4 +371,4 @@ export default css.ArtistStyle`
 			grid-column: 2/3;
 			grid-row: 2/3;
 }
-	`;
+`;

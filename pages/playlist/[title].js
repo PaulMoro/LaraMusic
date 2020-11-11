@@ -6,19 +6,18 @@ import List from "../../src/components/Player/ListPlayer";
 import Play from "../../src/components/Play/Play";
 
 const playlist = () => {
-  const router = useRouter();
-  const { title } = router.query;
-  return (
-    <div className="lara">
-      <p>Im am {title}</p>
-      <HeaderHome />
-      <NavHomeScreen />
-      <div className="containerContent">
-        <List title={title} />
-      </div>
-      <Play></Play>
-    </div>
-  );
+	const router = useRouter();
+	const { title } = router.query;
+	return (
+		<div className='lara'>
+			<HeaderHome />
+			<NavHomeScreen />
+			<div className='containerContent'>
+				<List title={title} />
+			</div>
+			<Play></Play>
+		</div>
+	);
 };
 
 export default playlist;
