@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import SquarePlayButton from '../../Play/molecules/SquarePlayButton';
-import { getPlaylist } from '../../../lib/hearThisAtRequest';
 import { CgShare } from 'react-icons/cg';
 import sectionPopular from '../../Style/Player/molecules/sectionPopular';
-
+import { FiPlay } from 'react-icons/fi';
+import { getPlaylistCleaned } from '../../../lib/spotifyRequest';
 const SectionPopular = () => {
   const [music, setMusic] = useState([]);
   useEffect(() => {
@@ -11,9 +11,9 @@ const SectionPopular = () => {
   }, []);
 
   const obtenerDatos = async () => {
-    const music = await getPlaylist('/feed/popular', 1);
-
-    setMusic(music);
+    const playlist = await getPlaylistCleaned('37i9dQZF1DX5BAPG29mHS8', 1);
+    const musica = playlist;
+    setMusic(musica);
   };
 
   return (
