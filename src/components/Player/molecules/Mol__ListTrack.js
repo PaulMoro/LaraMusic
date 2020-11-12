@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { usePlayer } from '../../../contexts/PlayerContext';
 import { getPlaylist } from '../../../lib/hearThisAtRequest';
 import { useAuth } from '../../../contexts/AuthContext';
 import LikeButton from './Like';
+import RoundPlayButton from '../../Play/molecules/RoundPlayButton';
 import { VscEllipsis } from 'react-icons/vsc';
 import { GrAddCircle } from 'react-icons/gr';
-import { CgPlayButtonO } from 'react-icons/cg';
 import ListTrackStyle from '../../Style/Player/molecules/ListTrackStyle';
 
 const ListTrack = () => {
-  const { setPlayingSong } = usePlayer();
   const { user } = useAuth();
 
   /* call API */
@@ -22,10 +20,6 @@ const ListTrack = () => {
     const music = await getPlaylist('/feed/popular', 5);
 
     setMusic(music);
-  };
-
-  const onPlay = (song) => {
-    setPlayingSong(song);
   };
 
   return (
@@ -44,13 +38,7 @@ const ListTrack = () => {
             <div className='tab__music'>
               <div className='tab__music__icons'>
                 <p>1</p>
-                <div className='icon'>
-                  <CgPlayButtonO
-                    onClick={() => {
-                      onPlay(item);
-                    }}
-                  ></CgPlayButtonO>
-                </div>
+                <RoundPlayButton song={item} />
                 <div className='icon'>
                   <LikeButton user={user} song={item}></LikeButton>
                 </div>

@@ -37,7 +37,7 @@ function Play() {
     '/artist',
     '/album',
     '/favorites',
-    '/playlist[title]',
+    '/playlist/[title]',
   ];
 
   useEffect(() => {

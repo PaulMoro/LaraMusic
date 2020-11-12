@@ -11,7 +11,6 @@ export const likeHandler = async (song, user) => {
   console.log('objeto creado', favoriteSong);
   setLikedSong(favoriteSong);
   let newList = await updateFavoritesLists(userFavouriteListId);
-  console.log('newList::', newList);
   return newList;
 };
 
