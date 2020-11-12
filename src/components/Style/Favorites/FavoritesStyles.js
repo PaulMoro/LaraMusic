@@ -15,11 +15,7 @@ export default css.FavoritesStyles`
 .card__list {
   display: flex;
   margin-top: 10px;
-<<<<<<< HEAD
-  overflow-x:scroll;
-=======
   overflow-x: scroll;
->>>>>>> 4999fd13776b43b90c76c5d3f42e7665274b5dcc
 }
 .card__list img {
   width: 150px;
