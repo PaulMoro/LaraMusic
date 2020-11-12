@@ -14,7 +14,7 @@ export default css.FavoritesStyles`
 .card__list {
   display: flex;
   margin-top: 10px;
-  flex-wrap: wrap;
+  overflow-x:scroll;
 }
 .card__list img {
   width: 150px;
@@ -80,7 +80,13 @@ export default css.FavoritesStyles`
   text-align: center;
   font-weight: 600;
 }
+
 .content__music {
+  height: 500px;
+  overflow-y:scroll;
+}
+
+.content__music__container {
   width: 60vw;
   margin: 3rem 0;
   max-width: 1720px;
