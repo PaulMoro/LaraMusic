@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { getSongs } from "../../../lib/hearthisRequest";
-import { CgShare } from "react-icons/cg";
-import { FiPlay } from "react-icons/fi";
-import sectionPopular from "../../Style/Player/molecules/sectionPopular";
-import { getPlaylistCleaned } from "../../../lib/spotifyRequest";
+import React, { useState, useEffect } from 'react';
+import SquarePlayButton from '../../Play/molecules/SquarePlayButton';
+import { CgShare } from 'react-icons/cg';
+import sectionPopular from '../../Style/Player/molecules/sectionPopular';
+import { FiPlay } from 'react-icons/fi';
+import { getPlaylistCleaned } from '../../../lib/spotifyRequest';
 const SectionPopular = () => {
   const [music, setMusic] = useState([]);
   useEffect(() => {
@@ -11,29 +11,32 @@ const SectionPopular = () => {
   }, []);
 
   const obtenerDatos = async () => {
-    const playlist = await getPlaylistCleaned("37i9dQZF1DX5BAPG29mHS8", 1);
+    const playlist = await getPlaylistCleaned('37i9dQZF1DX5BAPG29mHS8', 1);
     const musica = playlist;
     setMusic(musica);
   };
 
   return (
     <>
-      {music.map((item) => (
-        <section id="trending">
-          <img src={item.image_uri} />
-          <h3>// Trending</h3>
-          <h1>{item.title}</h1>
-          <h2>{item.artist}</h2>
-          <div className="buttons">
-            <button className="buttons__one">
-              Play <FiPlay></FiPlay>
-            </button>
-          </div>
-          <style jsx sectionPopular>
-            {sectionPopular}
-          </style>
-        </section>
-      ))}
+      {music.map((item) => {
+        return (
+          <section id='trending'>
+            <img src={item.image_uri} />
+            <h3>// TRENDING</h3>
+            <h1>{item.title}</h1>
+            <h2>- {item.artist}</h2>
+            <div className='buttons'>
+              <SquarePlayButton song={item} />
+              <button className='buttons__two'>
+                <CgShare />
+              </button>
+            </div>
+            <style jsx sectionPopular>
+              {sectionPopular}
+            </style>
+          </section>
+        );
+      })}
     </>
   );
 };

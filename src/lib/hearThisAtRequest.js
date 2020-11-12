@@ -19,7 +19,7 @@ export const getPlaylist = async (endpoint, limit) => {
       artist: item.user.username,
       track_uri: item.stream_url,
       image_uri: item.artwork_url,
-      sound_id: item.id,
+      song_id: item.id,
       duration: time_convert(item.duration),
       views: item.playback_count,
       fuente: 'hearthis.at',
