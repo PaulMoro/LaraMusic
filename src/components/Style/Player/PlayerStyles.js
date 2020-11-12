@@ -6,6 +6,7 @@ export default css.PlayerStyles`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(15, 30, 54, 0.05);
+  position:static;
 }
 
 .searchBar {
@@ -91,6 +92,8 @@ nav {
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgba(15, 30, 54, 0.05);
+  height:100%;
+  position:fixed;
 }
 
 .logo {
@@ -151,14 +154,30 @@ personal-list {
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
+  nav{
+    border:1px solid red;
+    background-color:red;
+    z-index:1;
+    display:none;
+  }
+  #headerHome {
+      grid-column: 1/3;
+    border:1px solid red;
+  }
+  .userInf{
+    width:0;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 600px) {
 }
 @media screen and (max-width: 480px) {
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 416px) {
 }
+
 
 
 `;

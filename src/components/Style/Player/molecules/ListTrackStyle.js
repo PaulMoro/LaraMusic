@@ -1,10 +1,12 @@
 import css from "styled-jsx/css";
 
 export default css.ListTrackStyle`
+
 .track {
   height: 351px;
-  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  border:1px solid red;
+  grid-column:
   overflow-y: scroll;
 }
 .track::-webkit-scrollbar {
@@ -127,6 +129,10 @@ export default css.ListTrackStyle`
   display: flex;
   background: linear-gradient(#faf0fa, #d6cbd6);
   position: relative;
+}
+
+section h2{
+  font-size:.4rem;
 }
 
 `;
