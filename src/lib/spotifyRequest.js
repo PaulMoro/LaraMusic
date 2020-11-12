@@ -1,7 +1,7 @@
-import axios from 'axios';
-import { spotifyAuth } from './spotifyAuth';
-import { getOnlySongsWithPreview } from './spotifyUtils';
-import { time_convert } from './playerInterface';
+import axios from "axios";
+import { spotifyAuth } from "./spotifyAuth";
+import { getOnlySongsWithPreview } from "./spotifyUtils";
+import { time_convert } from "./playerInterface";
 
 //This function recives a playlistId and the index of songs that will be displayed
 export const getPlaylistCleaned = async (playlistId, limit) => {
@@ -27,10 +27,10 @@ export const getPlaylistCleaned = async (playlistId, limit) => {
       artist: item.track.artists[0].name,
       track_uri: item.track.preview_url,
       image_uri: item.track.album.images[0].url,
-      id: item.track.id,
-      length: time_convert(item.track.duration_ms),
+      song_id: item.track.id,
+      duration: time_convert(item.track.duration_ms),
       views: item.track.popularity,
-      fuente: 'spotify',
+      fuente: "spotify",
     };
     songsArray.push(song);
   });
@@ -41,13 +41,13 @@ export const getPlaylistWithLimit = async (playListId, limit) => {
   //This function fetch a playlist from spotify and return n = limit number of songs only
   //  with preview content.
   let attempt = 1;
-  const limitTemplate = '/tracks?offset=0&limit=';
-  const API_HOST = 'https://api.spotify.com/v1/playlists/';
+  const limitTemplate = "/tracks?offset=0&limit=";
+  const API_HOST = "https://api.spotify.com/v1/playlists/";
   let fetchUrl;
   if (limit > 0) {
     fetchUrl = `${API_HOST}${playListId}${limitTemplate}${limit}`;
   } else {
-    console.error('You must set a limit or use getPlaylist');
+    console.error("You must set a limit or use getPlaylist");
     try {
       return getPlaylist(playListId);
     } catch (e) {
@@ -68,7 +68,7 @@ export const getPlaylistWithLimit = async (playListId, limit) => {
     });
 };
 export const getSong = async (songId) => {
-  const API_HOST = 'https://api.spotify.com/v1/tracks/';
+  const API_HOST = "https://api.spotify.com/v1/tracks/";
   const token = await spotifyAuth();
   return axios
     .get(`${API_HOST}${songId}`, {
@@ -83,7 +83,7 @@ export const getSong = async (songId) => {
 
 export const getPlaylist = async (playlistId) => {
   const token = await spotifyAuth();
-  const API_HOST = 'https://api.spotify.com/v1/playlists/';
+  const API_HOST = "https://api.spotify.com/v1/playlists/";
   const fetchUrl = `${API_HOST}${playlistId}`;
 
   return axios

@@ -25,14 +25,12 @@
 }
 ::-webkit-scrollbar {
   display: none;
-
 }
 .lara {
   display: grid;
   grid-template-columns: 200px 1fr;
   grid-template-rows: 70px 1fr 1fr 1fr 70px;
   font-family: $font;
-  border: 3px solid blue;
 }
 @media screen and (max-width: 1024px) {
   .lara {

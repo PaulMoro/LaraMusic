@@ -23,7 +23,7 @@ export default css.FavoritesStyles`
 }
 .container__favorites{
   overflow-y: scroll;
-  height:70vh;
+  height:65vh;
   position:static;
 
 }
@@ -190,7 +190,7 @@ export default css.FavoritesStyles`
 }
 #trending{
   grid-column:2/3;
-  gird-row:2/3;
+  grid-row:2/3;
   border:1px solid red;
 }
 #trending img{
