@@ -1,6 +1,5 @@
 import React from 'react';
 import { usePlayer } from '../../../contexts/PlayerContext';
-import { CgPlayButtonO } from 'react-icons/cg';
 
 const roundPlayButton = (song) => {
   const { setPlayingSong } = usePlayer();

@@ -2,10 +2,15 @@ import React from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import playbutton from '../../../assets/img/play.svg';
 import FavoritesStyles from '../Style/Favorites/FavoritesStyles';
+import { usePlayer } from '../../contexts/PlayerContext';
 
 function FavoritesTracks() {
   const { favorites } = useAuth();
-  console.log(favorites);
+  const { setPlayingSong } = usePlayer();
+
+  const onPlay = (song) => {
+    setPlayingSong(song);
+  };
   return (
     <section className='feature__tracks'>
       <div className='feature_tracks_title'>
