@@ -14,7 +14,7 @@ export default css.AlbumStyles`
 .card__list {
   display: flex;
   margin-top: 10px;
-  flex-wrap: wrap;
+  overflow-x:scroll;
 }
 .card__list img {
   width: 150px;
