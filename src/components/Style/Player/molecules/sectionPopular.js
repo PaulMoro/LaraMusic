@@ -15,7 +15,7 @@ export default css.sectionPopular`
   justify-content: space-between;
   height: 307px;
   color: #0f1e36;
-  background-color: rgba(156, 79, 156, 0.7);
+ background: linear-gradient(#e9a0e9, #9e4f9e);
 }
 
 #trending img {

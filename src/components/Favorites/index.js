@@ -30,33 +30,33 @@ const Favorites = () => {
         </div>
         <div className="info__album_container">
           <a href="">// My Favorites</a>
-          <h1 className="title__album">List Name: {title}</h1>
-          <h2 className="authors__album">Enjoy your Favorite`s selection!</h2>
-
-          <div className="content__music">
-            {tracks.map((item) => (
-              <div className="tab__music" key={item.id}>
-                <div className="tab__music__icons">
-                  <div className="icon">
-                    <CgPlayButtonO></CgPlayButtonO>
+          <h1 className="title__album">{title}</h1>
+          <h2 className="authors__album">Enjoy your Favorite's selection!</h2>
+          <div className="container__favorites">
+            <div className="content__music">
+              {tracks.map((item) => (
+                <div className="tab__music" key={item.id}>
+                  <div className="tab__music__icons">
+                    <div className="icon">
+                      <CgPlayButtonO></CgPlayButtonO>
+                    </div>
                   </div>
+                  <p className="tab__music__title">
+                    {item.title.substr(0, 12)}
+                  </p>
+                  <p className="tab__music__plays">{item.artist}</p>
+                  <p className="tab__music__time">{item.fuente}</p>
+                  <p className="tab__music__time">{item.gender}</p>
+                  {/* <div className="icon">
+                    <VscThumbsup></VscThumbsup>
+                  </div>
+                  <div className="icon">
+                    <GrAddCircle></GrAddCircle>
+                  </div> */}
                 </div>
-                <p className="tab__music__title">{item.title}</p>
-                <p className="tab__music__plays">{item.artist}</p>
-                <p className="tab__music__time">{item.fuente}</p>
-                <p className="tab__music__time">{item.gender}</p>
-                <div className="icon">
-                  <VscThumbsup></VscThumbsup>
-                </div>
-                <div className="icon">
-                  <GrAddCircle></GrAddCircle>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          {/* <div className='show__more'>
-						<p>Show More</p>
-					</div> */}
         </div>
       </section>
       <style jsx FavoritesStyles>

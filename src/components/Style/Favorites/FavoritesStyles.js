@@ -6,7 +6,7 @@ export default css.FavoritesStyles`
   padding-left: 1rem;
   grid-column: 2/3;
   grid-row: 3/4;
-  border: 1px solid red;
+
 }
 .feature_tracks_title h1 {
   font-size: 1.3rem;
@@ -15,16 +15,21 @@ export default css.FavoritesStyles`
 .card__list {
   display: flex;
   margin-top: 10px;
-  flex-wrap: wrap;
+  overflow-x: scroll;
 }
 .card__list img {
   width: 150px;
   border-radius: 5px;
 }
+.container__favorites{
+  overflow-y: scroll;
+  height:70vh;
+  position:static;
 
+}
 .containerContent {
   padding: 0.5rem 0 0 0;
-  overflow-y: scroll;
+
   grid-column: 2/3;
   grid-row: 2/5;
 }
@@ -36,7 +41,6 @@ export default css.FavoritesStyles`
   margin-top: 5em;
   grid-column: 2/3;
   grid-row: 4/5;
-  border: 1px solid red;
   display: flex;
   background: linear-gradient(#faf0fa, #d6cbd6);
   position: relative;
@@ -51,6 +55,7 @@ export default css.FavoritesStyles`
   height: 600px;
 }
 .info__album_container {
+
   position: absolute;
   top: -3.8em;
   left: 22rem;
@@ -84,8 +89,9 @@ export default css.FavoritesStyles`
 }
 .content__music {
   width: 60vw;
-  margin: 3rem 0;
-  max-width: 1720px;
+  margin: 2rem 0;
+  // max-width: 1720px;
+
 }
 
 .tab__music {
@@ -127,10 +133,11 @@ export default css.FavoritesStyles`
   padding: 0;
   text-align: left;
 }
-.tab__music__icon {
-  padding-left: 7%;
-}
 
+.tab__music__icons {
+  display: flex;
+  justify-content: space-between;
+}
 .card__song {
   margin-right: 2em;
 }
