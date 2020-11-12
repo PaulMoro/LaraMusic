@@ -34,41 +34,43 @@ const ListTrack = () => {
     <section>
       <div className="track">
         <h2 className="title">Top Tracks</h2>
-        <div className="tab__top">
-          <p className="tab__top__number">#</p>
-          <p className="tab__top__tittel">title</p>
-          <p className="tab__top__plays">Daily plays</p>
-          <p className="tab__top__time">Time</p>
-          <p className="tab__top__option">Options</p>
+        <div className="track_container">
+          <div className="tab__top">
+            <p className="tab__top__number">#</p>
+            <p className="tab__top__tittel">title</p>
+            <p className="tab__top__plays">Daily plays</p>
+            <p className="tab__top__time">Time</p>
+            <p className="tab__top__option">Options</p>
+          </div>
+          {music.map((item) => {
+            return (
+              <div className="tab__music">
+                <div className="tab__music__icons">
+                  <p>1</p>
+                  <div className="icon">
+                    <CgPlayButtonO
+                      onClick={() => {
+                        onPlay(item);
+                      }}
+                    ></CgPlayButtonO>
+                  </div>
+                  <div className="icon">
+                    <LikeButton user={user} song={item}></LikeButton>
+                  </div>
+                  <div className="icon">
+                    <GrAddCircle></GrAddCircle>
+                  </div>
+                </div>
+                <p className="tab__music__tittel">{item.title}</p>
+                <p className="tab__music__plays">{item.views}</p>
+                <p className="tab__music__time">{item.length}</p>
+                <div className="tab__music__icon">
+                  <VscEllipsis></VscEllipsis>
+                </div>
+              </div>
+            );
+          })}
         </div>
-        {music.map((item) => {
-          return (
-            <div className="tab__music">
-              <div className="tab__music__icons">
-                <p>1</p>
-                <div className="icon">
-                  <CgPlayButtonO
-                    onClick={() => {
-                      onPlay(item);
-                    }}
-                  ></CgPlayButtonO>
-                </div>
-                <div className="icon">
-                  <LikeButton user={user} song={item}></LikeButton>
-                </div>
-                <div className="icon">
-                  <GrAddCircle></GrAddCircle>
-                </div>
-              </div>
-              <p className="tab__music__tittel">{item.title}</p>
-              <p className="tab__music__plays">{item.views}</p>
-              <p className="tab__music__time">{item.length}</p>
-              <div className="tab__music__icon">
-                <VscEllipsis></VscEllipsis>
-              </div>
-            </div>
-          );
-        })}
 
         <style jsx ListTrackStyle>
           {ListTrackStyle}
